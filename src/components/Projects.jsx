@@ -9,10 +9,12 @@ const ProjectSectionWrapper = styled.section`
 
 const ProjectTitle = styled.h2`
   color: #333;
+  text-align: justify;
 `;
 
 const ProjectDescription = styled.p`
   color: #555;
+  text-align: justify;
 `;
 
 const FundingInfo = styled.p`
