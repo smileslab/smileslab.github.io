@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Automated clinical knowledge graph generation framework for evidence based medicine",
+      "authors": "F Alam, HB Giglou, KM Malik",
+      "venue": "Expert Systems with Applications",
+      "ifValue": "8.5",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423014665"
+    },
+    {
+        "title": "Securing Voice Biometrics: One-Shot Learning Approach for Audio Deepfake Detection",
+        "authors": "A Khan, KM Malik",
+        "venue": "2023 IEEE International Workshop on Information Forensics and Security (WIFS)",
+        "ifValue": "",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10374968/"
+      },
+      {
+        "title": "HolisticDFD:: Infusing spatiotemporal transformer embeddings for deepfake detection",
+        "authors": "M Anas Raza, K Mahmood Malik, I Ul Haq",
+        "venue": "Information Sciences",
+        "ifValue": "8.1",
+        "link": "https://dl.acm.org/doi/abs/10.1016/j.ins.2023.119352"
+      },
+      {
+        "title": "DeepInfusion: A dynamic infusion based-neuro-symbolic AI model for segmentation of intracranial aneurysms",
+        "authors": "Iram Abdullah, Ali Javed, Khalid Mahmood Malik, Ghaus Malik",
+        "venue": "Neurocomputing",
+        "ifValue": "6.0",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231223006331"
+      },
+      {
+        "title": "Strokenet: An automated approach for segmentation and rupture risk prediction of intracranial aneurysm",
+        "authors": "Muhammad Irfan, Khalid Mahmood Malik, Jamil Ahmad, Ghaus Malik",
+        "venue": "Computerized Medical Imaging and Graphics",
+        "ifValue": "5.7",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0895611123000897"
+      },
+      {
+        "title": "Towards Predicting Length of Stay and Identification of Cohort Risk Factors Using Self-Attention-Based Transformers and Association Mining: COVID-19 as a Phenotype",
+        "authors": "Fakhare Alam, Obieda Ananbeh, Khalid Mahmood Malik, Abdulrahman Al Odayani, Ibrahim Bin Hussain, Naoufel Kaabia, Amal Al Aidaroos, Abdul Khader Jilani Saudagar",
+        "venue": "Diagnostics",
+        "ifValue": "3.6",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0895611123000897"
+      },
+      {
+        "title": "Context-aggregator: An approach of loss-and class imbalance-aware aggregation in federated learning",
+        "authors": "Qamar Abbas, Khalid Mahmood Malik, Abdul Khader Jilani Saudagar, Muhammad Badruddin Khan",
+        "venue": "Computers in Biology and Medicine",
+        "ifValue": "7.7",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0010482523006327"
+      }
+  ]
