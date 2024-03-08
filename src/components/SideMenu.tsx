@@ -26,6 +26,7 @@ import HomeComponent from './HomeComponent';
 import Projects from './Projects';
 import Publications from './Publications';
 import Team from './Team';
+import { JoiningUs } from './JoiningUs';
 
 const drawerWidth = 240;
 
@@ -68,8 +69,8 @@ export default function SideMenu(props: Props) {
     { name: 'Team', icon: <GroupsIcon /> },
     { name: 'Projects', icon: <WorkIcon /> },
     { name: 'Publications', icon: <AlignVerticalBottomIcon /> },
-    { name: 'Fundings', icon: <MonetizationOnIcon /> },
-    // { name: 'Join', icon: <ConnectWithoutContactIcon /> },
+    // { name: 'Fundings', icon: <MonetizationOnIcon /> },
+    { name: 'Joining Us', icon: <ConnectWithoutContactIcon /> },
     { name: 'About', icon: <RecentActorsIcon /> },
   ];
 
@@ -79,7 +80,7 @@ export default function SideMenu(props: Props) {
     <div>
       <Toolbar>
         <StaticImage
-          src="./../images/smiles_logo.png"
+          src="./../images/smiles_logo_1.png"
           alt="Logo"
           style={{ height: '70px' }}
         />
@@ -118,8 +119,9 @@ export default function SideMenu(props: Props) {
         return <Projects />;
       case 'Publications':
         return <Publications/>;
-      // // Add cases for other menu items as needed
-      default:
+      case 'Joining Us':
+        return <JoiningUs/>;
+        default:
         return <HomeComponent />;
     }
   };

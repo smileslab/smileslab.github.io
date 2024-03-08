@@ -1,0 +1,121 @@
+[
+  {
+    "title": "A comprehensive review of type-2 fuzzy Ontology",
+    "authors": "Q Iqbal, M Alam, S Khan, A Wahid Khan, K Mahmood Malik",
+    "venue": "Artificial Intelligence Review",
+    "ifValue": "5.0",
+    "link": "https://link.springer.com/article/10.1007/s10462-019-09693-9"
+  },
+  {
+    "title": "A Hybrid Knowledge and Ensemble Classification Approach for Prediction of Venous Thromboembolism",
+    "authors": "S Susan, K Mahmood Malik, A Muhammad, S Vian, E Charaf",
+    "venue": "Expert Systems",
+    "ifValue": "1.5",
+    "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/exsy.12388"
+  },
+  {
+    "title": "Linked open data-based framework for automatic biomedical ontology generation",
+    "authors": "M Alobaidi, Khalid Mahmood Malik, Susan Sabra",
+    "venue": "BMC bioinformatic",
+    "ifValue": "3.2",
+    "link": "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2339-3"
+  },
+  {
+    "title": "A Novel Framework for Intracranial Saccular Aneurysm Detection and Quantification using Morphological Analysis of Cerebral Angiograms",
+    "authors": "Khalid Mahmood Malik, Muhammad Shakeel Anjum, Hafiz Malik, Ghaus M. Malik, H. Soltanian- Zadeh",
+    "venue": "IEEE Access",
+    "ifValue": "4.0",
+    "link": "https://ieeexplore.ieee.org/abstract/document/8272030"
+  },
+  {
+    "title": "Automated Ontology Generation Framework Powered by Linked Biomedical Ontologies for Disease-Drug Domain",
+    "authors": "Alobaidi, Mazen, Khalid Mahmood Malik, Maqbool Hussain",
+    "venue": "Computer Methods and Programs in Biomedicine",
+    "ifValue": "4.2",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0169260717315791"
+  },
+  {
+    "title": "Prediction of venous thromboembolism using semantic and sentiment analyses of clinical narratives",
+    "authors": "S. Sabra, Khalid Mahmood Malik, M. Alobaidi",
+    "venue": "Computers in Biology and Medicine",
+    "ifValue": "2.2",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0010482517304237"
+  },
+  {
+    "title": "Autonomous, Decentralized and Privacy-Enabled Data Preparation for Evidence-based Medicine with Brain Aneurysm as a Phenotype",
+    "authors": "Khalid Mahmood Malik, Hisham Kanaan, Vian Sabeeh, Ghaus Malik",
+    "venue": "IEICE Trans. On communication",
+    "ifValue": "1.5",
+    "link": "https://search.ieice.org/bin/summary.php?id=e101-b_8_1787"
+  },
+  {
+    "title": "Representing Social Network Patient Data as Evidence-Based Knowledge to Support Decision Making in Disease Progression for Comorbidities",
+    "authors": "Krishnamurthy Madan, Pawel Marcinek, Khalid Mahmood Malik, and Muhammad Afzal",
+    "venue": "IEEE Access",
+    "ifValue": "4.0",
+    "link": "https://ieeexplore.ieee.org/abstract/document/8304574"
+  },
+  {
+    "title": "Innovative Citizen’s Services through Public Cloud in Pakistan: User’s Privacy Concerns and Impacts on Adoption",
+    "authors": "Ali Umar, Amjad Mehmood, Muhammad Faran Majeed, Siraj Muhammad, Muhammad Kamal Khan, Houbing Song, Khalid Mahmood Malik",
+    "venue": "Mobile Networks and Applications ",
+    "ifValue": "2.3",
+    "link": "https://link.springer.com/article/10.1007/s11036-018-1132-x"
+  },
+  {
+    "title": "NBC-MAIDS: Naïve Bayesian classification technique in multi-agent system-enriched IDS for securing IoT against DDoS attacks",
+    "authors": "Mehmood, Amjad, Mithun Mukherjee, Syed Hassan Ahmed, Houbing Song, Khalid Mahmood Malik",
+    "venue": "The Journal of Supercomputing",
+    "ifValue": "2.1",
+    "link": "https://link.springer.com/article/10.1007/s11227-018-2413-7"
+  },
+  {
+    "title": "Autonomous Decentralized Semantic-based Architecture for Dynamic Content Classification",
+    "authors": "Khalid Mahmood Malik, Raza A., Krishnamurthy M., Takahashi H.",
+    "venue": "IEICE Transactions on Communications",
+    "ifValue": "1.5",
+    "link": "https://search.ieice.org/bin/summary.php?id=e99-b_4_849"
+  },
+  {
+    "title": "Autonomous Decentralized Semantic based Traceability Link Recovery Framework",
+    "authors": "Khalid Mahmood Malik, Alobadi M, Takahashi H.",
+    "venue": "IEICE Transaction on Information and Systems",
+    "ifValue": "1.3",
+    "link": "https://search.ieice.org/bin/summary.php?id=e99-d_9_2283"
+  },
+  {
+    "title": "Knowledge Extraction Based on Linked Open Data for Clinical Documentation",
+    "authors": "Alobaidi, M, Khalid Mahmood Malik., & Sabra, S.",
+    "venue": "The International Journal of Simulation and Process Modelling",
+    "ifValue": "",
+    "link": "https://www.inderscienceonline.com/doi/abs/10.1504/IJSPM.2018.091697"
+  },
+  {
+    "title": "Autonomous Pull-Push Community Construction Technology for High-Assurance",
+    "authors": "Khalid Mahmood Malik., X.D. Lu, Y. Horikoshi and K. Mori",
+    "venue": "IEICE Trans. on INFO. & SYST",
+    "ifValue": "1.5",
+    "link": "https://search.ieice.org/bin/summary.php?id=e92-d_10_1836"
+  },
+  {
+    "title": "Autonomous Community Construction Technology to Achieve Service Assurance in ADCS",
+    "authors": "Khalid Mahmood Malik., X. Lu, K. Mori",
+    "venue": "IEICE Trans. on INFO. & SYST",
+    "ifValue": "1.5",
+    "link": "https://search.ieice.org/bin/summary.php?id=e91-d_9_2259"
+  },
+  {
+    "title": "Autonomous L3 Cache Technology for High Responsiveness",
+    "authors": "Takahashi H., Khalid Mahmood Malik., K. Mori",
+    "venue": "Journal of Information Processing",
+    "ifValue": "",
+    "link": "https://www.jstage.jst.go.jp/article/ipsjjip/20/2/20_2_358/_article/-char/ja/"
+  },
+  {
+    "title": "Secure Banking: Authenticating Peer-to-Peer Ad Hoc Interactions",
+    "authors": "Khalid Mahmood Malik, I. Hameed, K. Rashid",
+    "venue": "Journal of Applied Science",
+    "ifValue": "",
+    "link": "https://scialert.net/fulltext/?doi=jas.2003.346.359"
+  }
+]

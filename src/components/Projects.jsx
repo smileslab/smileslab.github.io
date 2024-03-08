@@ -19,13 +19,13 @@ const ProjectCard = ({
   return (
     <Card sx={{ marginBottom: 4, width: '100%' }}>
       <CardContent sx={{ px: 2 }}>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h5" gutterBottom>
           {title}
         </Typography>
-        <Typography variant="body2" color="textSecondary" paragraph sx={{maxWidth: '100%', textAlign: 'justify' }}>
+        <Typography variant="body1" paragraph sx={{maxWidth: '100%', textAlign: 'justify' }}>
           {description}
         </Typography>
-        {fundingSource.length >0? (<Typography variant="body2" color="textSecondary" sx={{ fontWeight: 'bold', maxWidth: '100%', textAlign: 'justify'}}>
+        {fundingSource.length >0? (<Typography variant="body1" sx={{ fontWeight: 'bold', maxWidth: '100%', textAlign: 'justify'}}>
           Funded by: {fundingSource}
         </Typography>):""}
         <br />
