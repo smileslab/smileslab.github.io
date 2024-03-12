@@ -42,7 +42,7 @@ export default function SideMenu(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isClosing, setIsClosing] = React.useState(false);
-  const [selectedMenuItem, setSelectedMenuItem] = React.useState<string | null>(null);
+  const [selectedMenuItem, setSelectedMenuItem] = React.useState<string | null>("Home");
 
 
   const handleDrawerClose = () => {
@@ -80,7 +80,7 @@ export default function SideMenu(props: Props) {
     <div>
       <Toolbar>
         <StaticImage
-          src="./../images/smiles_logo_1.png"
+          src="./../images/smiles_logo.jpeg"
           alt="Logo"
           style={{ height: '70px' }}
         />

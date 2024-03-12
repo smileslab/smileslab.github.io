@@ -10,30 +10,35 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
+import labPic1 from "./../images/lab_pic_1.jpeg";
+import labPic2 from "./../images/lab_pic_2.jpeg";
+import labPic3 from "./../images/lab_pic_3.jpeg";
+import labPic4 from "./../images/lab_pic_4.jpeg";
+import labPic5 from "./../images/lab_pic_5.jpeg";
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'SMILES event',
+    imgPath: labPic1,
   },
   {
-    label: 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'SMILES event',
+    imgPath: labPic2,
   },
   {
-    label: 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+    label: 'SMILES event',
+    imgPath: labPic3,
   },
   {
-    label: 'Goč, Serbia',
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'SMILES event',
+    imgPath: labPic4,
   },
-];
+  {
+    label: 'SMILES event',
+    imgPath: labPic5,
+  }];
 
 const HomeComponent = ()=> {
   const theme = useTheme();
@@ -54,7 +59,7 @@ const HomeComponent = ()=> {
 
   return (
     <Box sx={{ maxWidth: '100%', overflow: 'hidden' }}>
-      <Paper
+      {/* <Paper
         square
         elevation={0}
         sx={{
@@ -65,8 +70,8 @@ const HomeComponent = ()=> {
           bgcolor: 'background.default',
         }}
       >
-        {/* <Typography>{images[activeStep].label}</Typography> */}
-      </Paper>
+        <Typography>{images[activeStep].label}</Typography>
+      </Paper> */}
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
