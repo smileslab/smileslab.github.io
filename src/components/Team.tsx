@@ -12,7 +12,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SchoolIcon from '@mui/icons-material/School';
 import PublicIcon from '@mui/icons-material/Public';
 import PublicOutlinedIcon from '@mui/icons-material/PublicOutlined';
-import { YouTube } from '@mui/icons-material';
+import { YouTube, WorkHistory } from '@mui/icons-material';
 import malikHeadshot from "./../images/malik_headshot.jpeg";
 import ijazHeadshot from "./../images/ijaz_headshot.jpg";
 import irfanHeadshot from "./../images/irfan_headshot.jpeg";
@@ -20,6 +20,7 @@ import jjHeadshot from "./../images/jj_headshot.jpeg";
 import awaisHeadshot from "./../images/awais_headshot.jpg";
 import anasHeadshot from "./../images/anas_headshot.png";
 import umarHeadshot from "./../images/umar_headshot.jpeg";
+import malikCV from "./../data/CV_Khalid_Malik-March_2024.pdf";
 
 // School, Language
 
@@ -134,6 +135,9 @@ const TeamMemberCard = ({ name, imageSrc, occupation, researchAreas, links }) =>
                 {links.youtubeLink && <IconButton color='primary' href={links.youtubeLink} target="_blank" style={{ marginRight: '10px' }}>
                     <YouTube />
                 </IconButton>}
+                {links.cvLink && <IconButton color='primary' href={links.cvLink} target="_blank" style={{ marginRight: '10px' }}>
+                    <WorkHistory />
+                </IconButton>}
             </div>
             {/* </CardActionArea> */}
 
@@ -148,12 +152,12 @@ const Team = () => {
             imageSrc: malikHeadshot,
             occupation: 'Director of Cyber Security and Professor, CS, UM-Flint',//'Khalid Mahmood Malik is currently a Professor at Computer Science, University of Michigan-Flint. His research interests include multimedia forensics, development of intelligent decision support systems using analysis of medical imaging and clinical text, secure multicast protocols for intelligent transportation systems, and Automated ontology and knowledge graph generation. His research is supported by the National Science Foundation (NSF) and Brain Aneurysm Foundation.',
             researchAreas: "Cybersecurity, Deep Fake Detection, Neuro-symbolic AI, Neurological disorders.",
-            links: { linkedinLink: "https://www.linkedin.com/in/khalid-malik-8495195", scholarLink: "https://scholar.google.ca/citations?user=MZGQT2wAAAAJ&hl=en", youtubeLink: "https://www.youtube.com/watch?v=j0xpudgyW2I" }
+            links: { linkedinLink: "https://www.linkedin.com/in/khalid-malik-8495195", scholarLink: "https://scholar.google.ca/citations?user=MZGQT2wAAAAJ&hl=en", youtubeLink: "https://www.youtube.com/watch?v=j0xpudgyW2I", cvLink:malikCV }
         },
         {
             name: 'Dr. Ijaz Ul Haq',
             imageSrc: ijazHeadshot,
-            occupation: 'Senior Fellow, Cyber Security, CS',//'Ijaz Ul Haq received the Ph.D. degree from the Sejong University, Seoul, Korea in 2022. He is currently working as Research Fellow in University of Michigan. His research interests include the multimodal and  neurosymbolic learning for multimedia forensics.',
+            occupation: 'Senior Fellow, Cyber Security, CS, UM-Flint',//'Ijaz Ul Haq received the Ph.D. degree from the Sejong University, Seoul, Korea in 2022. He is currently working as Research Fellow in University of Michigan. His research interests include the multimodal and  neurosymbolic learning for multimedia forensics.',
             researchAreas: "Video Summarization, Multimedia Forensics, DeepFake.",
             links: { linkedinLink: "https://www.linkedin.com/in/ijaz-ul-haq-48a294167", scholarLink: "https://scholar.google.ca/citations?hl=en&user=TdaSaRgAAAAJ", youtubeLink:"" }
         },
