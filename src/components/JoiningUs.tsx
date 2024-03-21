@@ -30,10 +30,10 @@ export const JoiningUs = () => {
                 </ul>
             </Typography>
             <Typography variant="h6" paragraph sx={{ maxWidth: '100%', textAlign: 'justify', fontWeight: "bold" }}>
-                Ideal Ph.D. Student Profile
+                The Ideal Ph.D. Student Profile
             </Typography>
             <Typography variant="body1" paragraph sx={{ maxWidth: '100%', textAlign: 'justify' }}>
-                I am always looking for motivated students to join my Ph.D. program. While not all
+                I am always looking for motivated students to join my lab as part of their Ph.D. journey. While not all
                 requirements, the following qualities are highly valued:
                 <ul>
                     <li>Bachelor’s or master’s degree in computer science or electrical engineering</li>
@@ -74,7 +74,7 @@ export const JoiningUs = () => {
                 Funding Opportunities
             </Typography>
             <Typography variant="body1" paragraph sx={{ maxWidth: '100%', textAlign: 'justify' }}>
-                Ph.D. students in the College of Innovation and Technology are typically funded for their
+                Ph.D. students in the College of Innovation and Technology at UM—Flint are typically funded for their
                 entire degree program through Graduate Student Research Assistantships (GSRAs)
                 or Teaching Assistantships (TAs). These opportunities are generally prioritized for
                 outstanding Ph.D. candidates whose research interests closely align with mine from the

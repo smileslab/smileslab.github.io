@@ -1,5 +1,12 @@
 [
   {
+    "title": "Federated Fusion Learning with Attention Mechanism for Multi-Client Medical Image Analysis",
+    "authors": "Muhammad Irfan, Khalid Mahmood Malik, Khan Muhammad",
+    "venue": "Information Fusion (2024)",
+    "ifValue": "18.16",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1566253524001428"
+  },
+  {
     "title": "HolisticDFD:: Infusing spatiotemporal transformer embeddings for deepfake detection",
     "authors": "M Anas Raza, K Mahmood Malik, I Ul Haq",
     "venue": "Information Sciences",
@@ -138,6 +145,132 @@
     "venue": "Diagnostics ",
     "ifValue": "3.99",
     "link": "https://www.mdpi.com/2075-4418/13/8/1387"
+  },
+  {
+    "title": "Towards Protecting Cyber- physical and IoT Systems from Single- and Multi-order Voice Spoofing Attacks",
+    "authors": "A Javed, K Mahmood Malik, A Irtaza, and H Malik",
+    "venue": "Journal of Applied Acoustics",
+    "ifValue": "2.63",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0003682X21003777"
+  },
+  {
+    "title": "Voice Spoofing Detection Corpus for Single and Multi-order Audio Replays",
+    "authors": "R Baumann, K Mahmood Malik, A Javed, A Ball, B Kujawaa, H Malik",
+    "venue": "Computer Speech & Language",
+    "ifValue": "2.16",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0885230820300656"
+  },
+  {
+    "title": "ALMS: Asymmetric Lightweight Centralized Group Key Management Protocol for VANETs",
+    "authors": "M Ahmad, M Khalid Mahmood, A Alkaff, and H Kanaan",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "ifValue": "6.856",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9013027/"
+  },
+  {
+    "title": "Automated Domain-Specific Healthcare Knowledge Graph Curation Framework: Subarachnoid Hemorrhage as Phenotype",
+    "authors": "K Mahmood Malik, M Alobaidi, M Krishnamurthy, M Hussain, F Alam, G Malik",
+    "venue": "Expert Systems with Applications ",
+    "ifValue": "5.42",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0957417419308371"
+  },
+  {
+    "title": "Acquiring Guideline-enabled data driven clinical knowledge model using formally verified refined knowledge acquisition method",
+    "authors": "M Hussain, M Afzal, K Mahmood Malik, T Ali, W Ali Khan, M Irfan, A Jamshed, S Lee",
+    "venue": "Computer Methods and Programs in Biomedicine",
+    "ifValue": "3.62",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0169260720315340?casa_token=tvUmHtdR8YEAAAAA:cYh8d_DuuLvGZW2bkGXXSZwgg2Ak4aouPZ4zDWoCGADpBkjEnLi7woW2pUolELUwVFYWxaIP"
+  },
+  {
+    "title": "A Clinical Context- aware Biomedical Text Summarization using Deep Neural Network: Model Development and Validation",
+    "authors": "M Afzal, F Alam, K Mahmood Malik, G Malik ",
+    "venue": "Journal of Medical Internet Research",
+    "ifValue": "5.03",
+    "link": "https://www.jmir.org/2020/10/e19810/"
+  },
+  {
+    "title": "Introducing the Rupture Criticality Index to Compare Risk Factors and Risk Factor Combinations Associated with Aneurysmal Rupture",
+    "authors": "K Mahmood Malik, M Krishnamurthy, F Alam, H Mostafa Zakaria, G Malik ",
+    "venue": "Journal of World Neurosurgery ",
+    "ifValue": "2.816",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1878875020321884"
+  },
+  {
+    "title": "Robust Watermarking Scheme for NIfTI Medical Images",
+    "authors": "K Abhishek, K Udham Singh, V Devadoss Ambeth Kumar, T Kant, A Khader Jilani Saudagar, A Al Tameem, M Al Khathami, M Badruddin Khan, M Hoque Abul Hasanat, and K Mahmood Malik.",
+    "venue": "CMC-COMPUTERS MATERIALS & CONTINUA ",
+    "ifValue": "3.86",
+    "link": "https://d1wqtxts1xzle7.cloudfront.net/86810555/pdf-libre.pdf?1654064793=&response-content-disposition=inline%3B+filename%3DRobust_Watermarking_Scheme_for_NIfTI_Med.pdf&Expires=1710969914&Signature=b2TStRvxailb8M0zjy~C1und4vq8ObHuAvnoz0zaIz36nEksNz5xvc0pvP8hLYt9ipNIkcZ2USZQVITxwyNVBecJ75CroqBE7Egyv9g9i6BpowanAngWcb02LS-kdI9GJK7Xjc7Mdn9fyIB1mxZnDT4b6nwWKt1JzMjTVZqtxDYF6Dg9ZGEBluGDS~NjKlpr83pb9-SrfGu7gfTAw6J8vLq8CrHiu4lSUptuK12svsQaxSfmxdqrz5UU~kabHVdiTIc1XiuGcbJwywUT43zgEuJ25op1T~~U3TMrYPktjn304bELHjwSGD~3zGqad4eo3Sv5a4oHOHiXNGLYypV90w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+  },
+  {
+    "title": "Covid-19 related sentiment analysis using state-of-the-art machine learning and deep learning techniques",
+    "authors": "J Zunera, A Abbasi, A Rehman Javed, M Badruddin Khan, M Hoque Abul Hasanat, K Mahmood Malik, and A Khader Jilani Saudagar",
+    "venue": "Frontiers in Public Health ",
+    "ifValue": "6.46",
+    "link": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2021.812735/full"
+  },
+  {
+    "title": "A Decision Tree Framework for Shot Classification of Field Sports Videos",
+    "authors": "A Javed, K Mahmood Malik, A Irtaza, H Malik",
+    "venue": "The Journal of Supercomputing",
+    "ifValue": "2.46",
+    "link": "https://link.springer.com/article/10.1007/s11227-020-03155-8"
+  },
+  {
+    "title": "Defocus Blur Detection using novel Local Directional Mean Patterns and segmentation via KNN Matting",
+    "authors": "A Khan, A Irtaza, A Javed, T Nazir, H Malik, K Mahmood Malik, M Ammar Khan",
+    "venue": "Frontiers of Computer Science",
+    "ifValue": "1.27",
+    "link": "https://link.springer.com/article/10.1007/s11704-020-9526-x"
+  },
+  {
+    "title": "Robust Watermarking Scheme for NIfTI Medical Images",
+    "authors": "K Abhishek, K Udham Singh, V Devadoss Ambeth Kumar, T Kant, A Khader Jilani Saudagar, A Al Tameem, M Al Khathami, M Badruddin Khan, M Hoque Abul Hasanat, and K Mahmood Malik",
+    "venue": "CMC-COMPUTERS MATERIALS & CONTINUA",
+    "ifValue": "2.89",
+    "link": "https://d1wqtxts1xzle7.cloudfront.net/86810555/pdf-libre.pdf?1654064793=&response-content-disposition=inline%3B+filename%3DRobust_Watermarking_Scheme_for_NIfTI_Med.pdf&Expires=1710970508&Signature=EcC8i8~1UoYaqPlBUQfbJiLCMYSB0D~5yIzmXRQpIQUnF-S6u389WK8VoJ09UWGRSCaqDGboSk8nJ1sK1-w8WWxYSEFCdOVyoLFLrR4oxO7bvf8gXL8q-gQG2GvCMJEKvVmo2sr-kUVHW677eZbrj-vw-LScZJev7BAtZ13yzBaL6r8i1mNb0YT72~Biei1G5jTfkk6e1lsgxwgM1Thaiil-~ND1mtCwqN4h5D2HaPrk~3ksZVVoz~URxUnybbBiS0nn2at~L~j3eAmFd46Ov73MSyE9y5XIFj6Li3~sOmpylZgHMRwqGaECEKfa5av0j9PyMgUJKyFch1U613Jygg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+  },
+  {
+    "title": "COVID-DAI: A novel framework for COVID‐19 detection and infection growth estimation using computed tomography images",
+    "authors": "N Tahira, M Nawaz, A Javed, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem, and M AlKathami",
+    "venue": "Microscopy Research and Technique",
+    "ifValue": "3.39",
+    "link": "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/abs/10.1002/jemt.24088?casa_token=o9PJaMnnjX4AAAAA:gpDmP2lo4NR0GKc_mcjxxvaSALSOPIOgqigaJAA1wq8ouSbcqAFG8cnDROda_zhCheCJbxrdvioZ9A"
+  },
+  {
+    "title": "Disease Progression Detection via Deep Sequence Learning of Successive Radiographic Scans",
+    "authors": "J Ahmed, K Malik, A Khader Jilani Saudagar, M Badruddin Khan",
+    "venue": "International Journal of Environmental Research and Public Health",
+    "ifValue": "3.39",
+    "link": "https://www.mdpi.com/1660-4601/19/1/480"
+  },
+  {
+    "title": "Convergence Track Based Adaptive Differential Evolution Algorithm (CTbADE)",
+    "authors": "Q Abbas, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem,and M AlKhathami",
+    "venue": "CMC-Computers, Materials & Continua",
+    "ifValue": "",
+    "link": "https://cdn.techscience.cn/ueditor/files/cmc/TSP_CMC-72-1/TSP_CMC_24211/TSP_CMC_24211.pdf"
+  },
+  {
+    "title": "A diagnostic system for COVID-19 detection and growth rate prediction",
+    "authors": "A Javed, T Nazir, M Nawaz, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem, and M AlKhathami",
+    "venue": "Microscopy Research technique",
+    "ifValue": "",
+    "link": ""
+  },
+  {
+    "title": "WEENet: An Edge Intelligence-Assisted COVID-19 Detection System for IoMT Environments",
+    "authors": "K Muhammad, Z Khan, A Khader Jilani Saudagar, A AlTameem, M AlKhathami, M Badruddin Khan, M Hoque Abul Hasanat, K Mahmood Malik, M Sajjad",
+    "venue": "Frontiers in Oncology",
+    "ifValue": "5.60",
+    "link": ""
+  },
+  {
+    "title": "Automated Query Generation and Quality Recognition to Curate Evidence from Biomedical Literature",
+    "authors": "M Afzal, M Hussain, K Mahmood Malik",
+    "venue": "JMIR Medical Informatics",
+    "ifValue": "3.18",
+    "link": ""
   },
   {
     "title": "A comprehensive review of type-2 fuzzy Ontology",
