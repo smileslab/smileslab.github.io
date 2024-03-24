@@ -43,6 +43,22 @@ const ProjectCard = ({
 const Projects = () => {
   const projectsData = [
     {
+      title: 'Hemorrhagepredictor: A Multimodal, Neuro-symbolic, and Federated AI-based Tool for Subarachnoid Hemorrhage Prediction',
+      description: `Dr. Khalid Malik (Sole PI) was awarded $221,009 by the Michigan Translational Research and Commercialization (MTRAC) Life Sciences to support the work "Hemorrhagepredictor: A Multimodal, Neuro-symbolic, and Federated AI-based Tool for Subarachnoid Hemorrhage Prediction"`,
+      fundingSource: 'Michigan Translational Research and Commercialization (MTRAC) Life Sciences',
+      links: [
+        { label: 'The University Record', url: 'https://record.umich.edu/articles/medc-u-m-award-1-8m-for-biomedical-research-projects/' },
+      ],
+    },
+    {
+      title: 'REU Site: Research Experience for Undergraduates in Digital Accessibility',
+      description: `Marouane Kessentini, Doughlas Zytko, Khalid Malik (senior personnel) was awarded $429,397.00 by the NSF to support the work "REU Site: Research Experience for Undergraduates in Digital Accessibility""`,
+      fundingSource: 'National Science Foundation',
+      links: [
+        { label: 'NSF Award', url: 'https://www.nsf.gov/awardsearch/showAward?AWD_ID=2349350&HistoricalAwards=false' },
+      ],
+    },
+    {
       title: 'Development of an Explainable and Robust Detector of Forged Multimedia and Cyber Threats using Artificial intelligence.',
       description: `Disinformation has seen a distinctive rise in recent months, fueled by deepfaked multimedia. From political leaders delivering fabricated speeches to manipulated audio and video in scams, deepfakes pose a significant threat. With research over 6 years and nearly $1M in grants, we developed a deepfake detector. The DFD detects audio-visual forgeries, including various types of deepfakes. This NSF-PFI and MTRAC funded project seeks to further improve the Deep Forgery Detector (DFD) technology.`,
       fundingSource: 'National Science Foundation & Michigan Translational Research and Commercialization',
@@ -86,9 +102,9 @@ const Projects = () => {
 
   return (
     <Container maxWidth="lg">
-      <Typography variant="h4" gutterBottom>
+      {/* <Typography variant="h4" gutterBottom>
         Research Projects
-      </Typography>
+      </Typography> */}
       <Grid container spacing={3}>
         {projectsData.map((project) => (
           <Grid item key={project.title} xs={12}>

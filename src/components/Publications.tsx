@@ -80,9 +80,9 @@ const Publications = () => {
 
     return (
         <Container maxWidth="lg">
-            <Typography variant="h4" gutterBottom>
+            {/* <Typography variant="h4" gutterBottom>
                 Publications
-            </Typography>
+            </Typography> */}
             <Grid container spacing={3}>
                 {publicationsData.map((publication) => (
                     <Grid item key={publication.title} xs={12}>
