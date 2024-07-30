@@ -15,6 +15,7 @@ import PublicOutlinedIcon from '@mui/icons-material/PublicOutlined';
 import { YouTube, WorkHistory } from '@mui/icons-material';
 import malikHeadshot from "./../images/malik_headshot.jpeg";
 import ijazHeadshot from "./../images/ijaz_headshot.jpg";
+import kutubHeadshot from "./../images/kutub_headshot.jpeg";
 import irfanHeadshot from "./../images/irfan_headshot.jpeg";
 import jjHeadshot from "./../images/jj_headshot.jpeg";
 import awaisHeadshot from "./../images/awais_headshot.jpg";
@@ -160,6 +161,13 @@ const Team = () => {
             occupation: 'Senior Fellow, Cyber Security, CS, UM-Flint',//'Ijaz Ul Haq received the Ph.D. degree from the Sejong University, Seoul, Korea in 2022. He is currently working as Research Fellow in University of Michigan. His research interests include the multimodal and  neurosymbolic learning for multimedia forensics.',
             researchAreas: "Video Summarization, Multimedia Forensics, DeepFake.",
             links: { linkedinLink: "https://www.linkedin.com/in/ijaz-ul-haq-48a294167", scholarLink: "https://scholar.google.ca/citations?hl=en&user=TdaSaRgAAAAJ", youtubeLink:"" }
+        },
+        {
+            name: 'Dr. Kutub Uddin',
+            imageSrc: kutubHeadshot,
+            occupation: 'Senior Fellow, Cyber Security, CS, UM-Flint',//'Ijaz Ul Haq received the Ph.D. degree from the Sejong University, Seoul, Korea in 2022. He is currently working as Research Fellow in University of Michigan. His research interests include the multimodal and  neurosymbolic learning for multimedia forensics.',
+            researchAreas: "Image/video compression, image processing, machine learning, image/video forensics, and 3D point cloud processing.",
+            links: { linkedinLink: "https://www.linkedin.com/in/kutub-uddin-227a51183/?trk=opento_sprofile_topcard", scholarLink: "https://scholar.google.com/citations?user=OX2Bzg0AAAAJ&hl=en&authuser=1", youtubeLink:"" }
         },
         {
             name: 'Awais Khan',

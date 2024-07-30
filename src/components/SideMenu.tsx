@@ -80,7 +80,7 @@ export default function SideMenu(props: Props) {
     <div>
       <Toolbar>
         <StaticImage
-          src="./../images/smiles_logo.jpeg"
+          src="./../images/smiles_logo.png"
           alt="Logo"
           style={{ height: '70px' }}
         />
