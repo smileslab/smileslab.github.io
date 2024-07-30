@@ -16,6 +16,9 @@ Add/Modify components/pages as you want, then run deployment script (FIRST make 
 $ npm run deploy
 This script will create a build based on the current changes in the feature branch, and put build in the public folder.
 But as we have /public folder in the .gitignore file so public folder changes won't be reflected in the editor git control.
+If changes reflected in git controll in public folder, it may have published to tge gh-pages without
+any problems. Navigate to smileslab.github.io to see the changes. If latest changes are there
+just commit current changes to the feature branch and merge to origin/main
 
 Now switch to the gh-pages branch that is the deployment branch.
 $ git checkout origin/gh-pages
