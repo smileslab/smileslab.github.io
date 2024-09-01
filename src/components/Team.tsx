@@ -17,6 +17,7 @@ import malikHeadshot from "./../images/malik_headshot.jpeg";
 import ijazHeadshot from "./../images/ijaz_headshot.jpg";
 import kutubHeadshot from "./../images/kutub_headshot.jpeg";
 import irfanHeadshot from "./../images/irfan_headshot.jpeg";
+import saadHeadshot from "./../images/saad_headshot.jpg";
 import jjHeadshot from "./../images/jj_headshot.jpeg";
 import awaisHeadshot from "./../images/awais_headshot.jpg";
 import anasHeadshot from "./../images/anas_headshot.png";
@@ -172,7 +173,7 @@ const Team = () => {
         {
             name: 'Awais Khan',
             imageSrc: awaisHeadshot,
-            occupation: "PhD Student, CSI, Oakland University", //'Awais Khan is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
+            occupation: "PhD Student, CS, UM-Flint", //'Awais Khan is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
             researchAreas: "Multimedia Forensics, DeepFake, Audio Spoofing.",
             links: { linkedinLink: "https://www.linkedin.com/in/awais-khan-01620a14a", scholarLink: "https://scholar.google.ca/citations?hl=en&user=N3awCpYAAAAJ", youtubeLink:""  }
         },
@@ -184,6 +185,13 @@ const Team = () => {
             links: { linkedinLink: "https://www.linkedin.com/in/muhammad-irfan-1b0a4014a", scholarLink: "https://scholar.google.ca/citations?hl=en&user=MfhBA7EAAAAJ", youtubeLink:""  }
         },
         {
+            name: 'Muhammad Saad Saeed',
+            imageSrc: saadHeadshot,
+            occupation: "PhD Student, CS, UM-Flint", //'Muhammad Irfan is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
+            researchAreas: "Computer Vision, Multimodal Learning - Deep Fake Detection, Autonomous Driving, Web Content Filtering.",
+            links: { linkedinLink: "https://www.linkedin.com/in/msaadsaeed58/", scholarLink: "https://scholar.google.com/citations?user=uyhEJ5IAAAAJ&hl=en", youtubeLink:""  }
+        },
+        {
             name: 'James Ryan',
             imageSrc: jjHeadshot,
             occupation: "PhD Student, CS, UM-Flint", //'James Ryan is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
@@ -191,16 +199,9 @@ const Team = () => {
             links: { linkedinLink: "https://www.linkedin.com/in/jjryan111/", scholarLink: "", youtubeLink:""  }
         },
         {
-            name: 'Muhammad Anas Raza',
-            imageSrc: anasHeadshot,
-            occupation: "PhD Student, CSI, Oakland University", //'Anas fell in love with programming in 6th grade when he learned that my friend could develop the games he played on his PC. He attempted to create a Visual Basic application in high school. He adores reading, writing, thinking about, improving, and understanding programs, especially in Python. At SMILES Lab, He works in using Computer Vision techniques for multimedia forensics personal website: https://anasrz.com',
-            researchAreas: "Computer Vision, Multimedia Forensics, DeepFake.",
-            links: { linkedinLink: "https://www.linkedin.com/in/memanasraza/", scholarLink: "", websiteLink: "https://anasrz.com", youtubeLink:""  }
-        },
-        {
             name: 'Muhammad Umar Farooq',
             imageSrc: umarHeadshot,
-            occupation: "PhD Student, CSI, Oakland University", //'Muhammad Umar Farooq is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
+            occupation: "PhD Student, CS, UM-Flint", //'Muhammad Umar Farooq is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
             researchAreas: "Computer Vision, Multimedia Forensics, DeepFake.",
             links: { linkedinLink: "https://www.linkedin.com/in/muhammad-umar-farooq-345a7a141/", scholarLink: "", websiteLink: "https://stackoverflow.com/users/7344164/devloverumar", youtubeLink:""  }
         },
