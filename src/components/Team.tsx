@@ -19,6 +19,7 @@ import kutubHeadshot from "./../images/kutub_headshot.jpeg";
 import irfanHeadshot from "./../images/irfan_headshot.jpeg";
 import saadHeadshot from "./../images/saad_headshot.jpg";
 import jjHeadshot from "./../images/jj_headshot.jpeg";
+import ryanHeadshot from "./../images/ryan_headshot.jpg";
 import awaisHeadshot from "./../images/awais_headshot.jpg";
 import anasHeadshot from "./../images/anas_headshot.png";
 import umarHeadshot from "./../images/umar_headshot.jpeg";
@@ -197,6 +198,13 @@ const Team = () => {
             occupation: "PhD Student, CS, UM-Flint", //'James Ryan is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
             researchAreas: "Cyber Security, Autonomous Driving.",
             links: { linkedinLink: "https://www.linkedin.com/in/jjryan111/", scholarLink: "", youtubeLink:""  }
+        },
+        {
+            name: 'Ryan Raymond',
+            imageSrc: ryanHeadshot,
+            occupation: "PhD Student, CS, UM-Flint", //'James Ryan is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
+            researchAreas: "Cybersecurity, Networking, Industrial automation, Penetration-testing.",
+            links: { linkedinLink: "", scholarLink: "", youtubeLink:"", websiteLink: "https://auxmonster.github.io/"  }
         },
         {
             name: 'Muhammad Umar Farooq',
