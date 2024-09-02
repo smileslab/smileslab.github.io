@@ -202,7 +202,7 @@ const Team = () => {
         {
             name: 'Ryan Raymond',
             imageSrc: ryanHeadshot,
-            occupation: "PhD Student, CS, UM-Flint", //'James Ryan is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
+            occupation: "MS Student, CS, UM-Flint", //'James Ryan is currently pursuing a Doctor of Philosophy in Computer Science at the School of Engineering and Computer Science, Oakland University, Rochester, Michigan, USA. His research interests revolve around the captivating realm of speech processing, with a particular emphasis on topics like Deepfake Detection, Automatic Speaker Verification, and Anti-Spoofing. He aims to enhance security and combat emerging threats within voice-based technologies.',
             researchAreas: "Cybersecurity, Networking, Industrial automation, Penetration-testing.",
             links: { linkedinLink: "", scholarLink: "", youtubeLink:"", websiteLink: "https://auxmonster.github.io/"  }
         },
