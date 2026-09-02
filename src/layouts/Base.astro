@@ -123,12 +123,18 @@ const orgSchema = {
     <Footer />
 
     <script>
-      // Reveal-on-scroll. Purely decorative: if this never runs, the CSS
-      // leaves every element fully visible.
-      const targets = document.querySelectorAll('[data-reveal]')
+      // Reveal-on-scroll. Purely decorative, and deliberately fail-safe: the
+      // CSS only hides [data-reveal] elements once `reveal-active` is on
+      // <html>, and that class is added here, immediately before observing.
+      // If this script never runs, nothing is ever hidden.
+      const targets = document.querySelectorAll<HTMLElement>('[data-reveal]')
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)')
 
-      if (targets.length && !reduced.matches && 'IntersectionObserver' in window) {
+      if (
+        targets.length &&
+        !reduced.matches &&
+        'IntersectionObserver' in window
+      ) {
         const observer = new IntersectionObserver(
           (entries) => {
             for (const entry of entries) {
@@ -141,9 +147,16 @@ const orgSchema = {
           },
           { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
         )
+
+        document.documentElement.classList.add('reveal-active')
         targets.forEach((target) => observer.observe(target))
-      } else {
-        targets.forEach((target) => target.classList.add('is-visible'))
+
+        // Safety net: if the observer has not reported on an element within a
+        // second (background tab, prerender, an engine quirk), show it anyway
+        // rather than leaving content invisible.
+        window.setTimeout(() => {
+          targets.forEach((target) => target.classList.add('is-visible'))
+        }, 1000)
       }
     </script>
   </body>

@@ -47,19 +47,21 @@ const areas = [
 ---
 
 <Base>
+  {/* The hero deliberately carries no data-reveal: above-the-fold content
+      paints immediately, and animating the LCP image delays it. */}
   <section class="hero">
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow" data-reveal>{site.institution}</p>
-        <h1 data-reveal data-reveal-delay="60">
+        <p class="eyebrow">{site.institution}</p>
+        <h1>
           Making AI systems<br /><span class="grad">you can trust.</span>
         </h1>
-        <p class="lede" data-reveal data-reveal-delay="120">
+        <p class="lede">
           The SMILES Lab builds multimodal, neuro-symbolic AI for multimedia
           forensics, cybersecurity and clinical decision support — systems whose
           conclusions can be examined, not just accepted.
         </p>
-        <div class="hero-actions" data-reveal data-reveal-delay="180">
+        <div class="hero-actions">
           <a href="/research" class="btn btn-primary">
             Explore our research
             <Icon name="arrow-right" size={16} />
@@ -68,7 +70,7 @@ const areas = [
         </div>
       </div>
 
-      <div class="hero-media" data-reveal data-reveal-delay="240">
+      <div class="hero-media">
         <Image
           src={heroImage}
           alt="Members of the SMILES Lab at a lab event"
