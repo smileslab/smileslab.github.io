@@ -24,7 +24,7 @@ const links = z
   .default({})
 
 const team = defineCollection({
-  loader: glob({ base: './src/content/team', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/team', pattern: ['**/*.md', '!**/_*'] }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -39,7 +39,7 @@ const team = defineCollection({
 })
 
 const alumni = defineCollection({
-  loader: glob({ base: './src/content/alumni', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/alumni', pattern: ['**/*.md', '!**/_*'] }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -55,7 +55,7 @@ const alumni = defineCollection({
 })
 
 const projects = defineCollection({
-  loader: glob({ base: './src/content/projects', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/projects', pattern: ['**/*.md', '!**/_*'] }),
   schema: () =>
     z.object({
       title: z.string(),
@@ -78,7 +78,7 @@ const projects = defineCollection({
 })
 
 const news = defineCollection({
-  loader: glob({ base: './src/content/news', pattern: '**/*.{md,mdx}' }),
+  loader: glob({ base: './src/content/news', pattern: ['**/*.{md,mdx}', '!**/_*'] }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
