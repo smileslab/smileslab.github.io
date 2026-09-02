@@ -3,151 +3,176 @@
     "title": "PSA-Net: Parallel Stacked Aggregation Network for Secure Voice Biometrics in IoT-enabled Consumer Devices",
     "authors": "A Khan, IU Haq, KM Malik",
     "venue": "IEEE Transactions on Consumer Electronics",
-    "year": 2026
+    "year": 2026,
+    "link": "https://doi.org/10.1109/tce.2026.3714273"
   },
   {
     "title": "Linking faces and voices across languages: Insights from the FAME 2026 challenge",
     "authors": "M Moscati, A Abdullah, MS Saeed, S Nawaz, RK Das, MZ Zaheer, J Mir, et al.",
     "venue": "ICASSP 2026 - IEEE International Conference on Acoustics, Speech and Signal Processing",
-    "year": 2026
+    "year": 2026,
+    "link": "https://doi.org/10.1109/icassp55912.2026.11462260"
   },
   {
     "title": "TRACE: Training-free partial audio deepfake detection via embedding trajectory analysis of speech foundation models",
     "authors": "A Khan, MU Farooq, K Uddin, K Malik",
-    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-    "year": 2026
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2026,
+    "link": "https://openaccess.thecvf.com/content/CVPR2026W/MMFM5/html/khan_TRACE_Training-Free_Partial_Audio_Deepfake_Detection_via_Embedding_Trajectory_Analysis_CVPRW_2026_paper.html"
   },
   {
     "title": "ARAN: Leveraging Foundation Models for Vasculature-Tree-Informed Artery-Aware Intracranial Aneurysm Detection in 3D CTA and ToF-MRA",
     "authors": "M Shafique, N Rahim, MS Saeed, G Malik, K Malik",
-    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-    "year": 2026
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2026,
+    "link": "https://openaccess.thecvf.com/content/CVPR2026W/PHAROS-AIF-MIH/html/Shafique_ARAN_Leveraging_Foundation_Models_for_Vasculature-Tree-Informed_ARtery-Aware_Intracranial_ANeurysm_Detection_CVPRW_2026_paper.html"
   },
   {
     "title": "Adversarial and generative AI-based anti-forensics in audio-visual deepfake detection: A comprehensive review and analysis",
     "authors": "QU Ain, F Khalid, H Ilyas, A Javed, KM Malik, K Muhammad, A Irtaza",
     "venue": "Information Fusion",
-    "year": 2026
+    "year": 2026,
+    "link": "https://doi.org/10.1016/j.inffus.2025.104120"
   },
   {
     "title": "Domain-Adaptive Representation Learning for Multimodal Deepfake Detection",
     "authors": "IU Haq, KM Malik",
     "venue": "IEEE Transactions on Computational Social Systems",
-    "year": 2025
+    "year": 2025,
+    "link": "https://doi.org/10.1109/tcss.2025.3637242"
   },
   {
     "title": "SHIELD: A secure and highly enhanced integrated learning for robust deepfake detection against adversarial attacks",
     "authors": "K Uddin, A Khan, MU Farooq, KM Malik",
     "venue": "IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
-    "year": 2025
+    "year": 2025,
+    "link": "https://doi.org/10.1109/iccvw69036.2025.00161"
   },
   {
     "title": "Generalized deepfake detection using identity, behavioral, and geometric signatures",
     "authors": "MU Farooq, A Khan, IU Haq, KM Malik",
     "venue": "IEEE Transactions on Computational Social Systems",
-    "year": 2025
+    "year": 2025,
+    "link": "https://doi.org/10.1109/tcss.2025.3588348"
   },
   {
     "title": "Regularized forensic efficient net: a game theory based generalized approach for video deepfakes detection",
     "authors": "QU Ain, A Javed, KM Malik, A Irtaza",
     "venue": "Multimedia Tools and Applications",
-    "year": 2025
+    "year": 2025,
+    "link": "https://doi.org/10.1007/s11042-024-20268-x"
   },
   {
     "title": "One-shot learning for generalization in medical image classification across modalities",
     "authors": "M Irfan, IU Haq, KM Malik, K Muhammad",
     "venue": "Computerized Medical Imaging and Graphics",
-    "year": 2025
+    "year": 2025,
+    "link": "https://doi.org/10.1016/j.compmedimag.2025.102507"
   },
   {
     "title": "Transferable adversarial attacks on audio deepfake detection",
     "authors": "MU Farooq, A Khan, K Uddin, KM Malik",
     "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)",
-    "year": 2025
+    "year": 2025,
+    "link": "https://doi.org/10.1109/wacvw65960.2025.00178"
   },
   {
     "title": "Exposing the limits of deepfake detection using novel facial mole attack: a perceptual black-box adversarial attack study",
     "authors": "QU Ain, A Javed, KM Malik, A Irtaza",
     "venue": "IEEE International Conference on Image Processing (ICIP)",
-    "year": 2024
+    "year": 2024,
+    "link": "https://doi.org/10.1109/icip51287.2024.10647949"
   },
   {
     "title": "ConvNext-PNet: An interpretable and explainable deep-learning model for deepfakes detection",
     "authors": "H Ilyas, A Javed, KM Malik",
     "venue": "IEEE International Joint Conference on Biometrics (IJCB)",
-    "year": 2024
+    "year": 2024,
+    "link": "https://doi.org/10.1109/ijcb62174.2024.10744484"
   },
   {
     "title": "RuleBoost: a neuro-symbolic framework for robust deepfake detection",
     "authors": "MA Raza, KM Malik, IU Haq",
     "venue": "IEEE International Joint Conference on Biometrics (IJCB)",
-    "year": 2024
+    "year": 2024,
+    "link": "https://doi.org/10.1109/ijcb62174.2024.10744498"
   },
   {
     "title": "ExplaNet: A descriptive framework for detecting deepfakes with interpretable prototypes",
     "authors": "F Khalid, A Javed, KM Malik, A Irtaza",
     "venue": "IEEE Transactions on Biometrics, Behavior, and Identity Science",
-    "year": 2024
+    "year": 2024,
+    "link": "https://doi.org/10.1109/tbiom.2024.3407650"
   },
   {
     "title": "Frame-to-utterance convergence: A spectra-temporal approach for unified spoofing detection",
     "authors": "A Khan, KM Malik, S Nawaz",
     "venue": "ICASSP 2024 - IEEE International Conference on Acoustics, Speech and Signal Processing",
-    "year": 2024
+    "year": 2024,
+    "link": "https://doi.org/10.1109/icassp48485.2024.10447500"
   },
   {
     "title": "Securing voice biometrics: One-shot learning approach for audio deepfake detection",
     "authors": "A Khan, KM Malik",
     "venue": "IEEE International Workshop on Information Forensics and Security (WIFS)",
-    "year": 2023
+    "year": 2023,
+    "link": "https://doi.org/10.1109/wifs58808.2023.10374968"
   },
   {
     "title": "DFP-Net: An explainable and trustworthy framework for detecting deepfakes using interpretable prototypes",
     "authors": "F Khalid, A Javed, KM Malik, A Irtaza",
     "venue": "IEEE International Joint Conference on Biometrics (IJCB)",
-    "year": 2023
+    "year": 2023,
+    "link": "https://doi.org/10.1109/ijcb57857.2023.10448842"
   },
   {
     "title": "SpotNet: A spoofing-aware transformer network for effective synthetic speech detection",
     "authors": "A Khan, KM Malik",
     "venue": "Proceedings of the 2nd ACM International Workshop on Multimedia AI against Disinformation",
-    "year": 2023
+    "year": 2023,
+    "link": "https://doi.org/10.1145/3592572.3592841"
   },
   {
     "title": "Deepfakes catcher: a novel fused truncated densenet model for deepfakes detection",
     "authors": "F Khalid, A Javed, A Irtaza, KM Malik",
     "venue": "Proceedings of International Conference on Information Technology and Applications",
-    "year": 2023
+    "year": 2023,
+    "link": "https://doi.org/10.1007/978-981-19-9331-2_20"
   },
   {
     "title": "NeuroClustr: Empowering biomedical text clustering with neuro-symbolic intelligence",
     "authors": "F Alam, K Malik, M Krishnamurthy",
     "venue": "International Joint Conference on Artificial Intelligence (IJCAI) Workshop",
-    "year": 2023
+    "year": 2023,
+    "link": "https://openreview.net/forum?id=eu12MV19ho"
   },
   {
     "title": "Deepfakes examiner: An end-to-end deep learning model for deepfakes videos detection",
     "authors": "H Ilyas, A Irtaza, A Javed, KM Malik",
     "venue": "16th International Conference on Open Source Systems and Technologies (ICOSST)",
-    "year": 2022
+    "year": 2022,
+    "link": "https://doi.org/10.1109/icosst57195.2022.10016871"
   },
   {
     "title": "Efficient-ECGNet framework for COVID-19 classification and correlation prediction with the cardio disease through electrocardiogram medical imaging",
     "authors": "M Nawaz, T Nazir, A Javed, KM Malik, AKJ Saudagar, MB Khan, et al.",
     "venue": "Frontiers in Medicine",
-    "year": 2022
+    "year": 2022,
+    "link": "https://doi.org/10.3389/fmed.2022.1005920"
   },
   {
     "title": "Faceswap deepfakes detection using novel multi-directional hexadecimal feature descriptor",
     "authors": "A Javed, KM Malik",
     "venue": "19th International Bhurban Conference on Applied Sciences and Technology (IBCAST)",
-    "year": 2022
+    "year": 2022,
+    "link": "https://doi.org/10.1109/ibcast54850.2022.9990223"
   },
   {
     "title": "A diagnostic system for intracranial saccular and fusiform aneurysms with location detection",
     "authors": "Y Zafar, A Javed, KM Malik, J Santamaria, G Malik",
     "venue": "IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)",
-    "year": 2021
+    "year": 2021,
+    "link": "https://doi.org/10.1109/bhi50953.2021.9508536"
   },
   {
     "title": "Federated Fusion Learning with Attention Mechanism for Multi-Client Medical Image Analysis",
