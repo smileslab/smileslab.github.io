@@ -1,0 +1,102 @@
+---
+import Base from '../layouts/Base.astro'
+import Icon from '../components/Icon.astro'
+
+const suggestions = [
+  { label: 'Research projects', href: '/research' },
+  { label: 'Publications', href: '/publications' },
+  { label: 'Team', href: '/team' },
+  { label: 'News', href: '/news' },
+]
+---
+
+<Base
+  title="Page not found"
+  description="That page does not exist on the SMILES Lab website."
+  noindex
+>
+  <div class="notfound">
+    <div class="wrap">
+      <p class="code">404</p>
+      <h1>We couldn't find that page</h1>
+      <p class="lede">
+        The link may be out of date — the site was reorganized in 2026 and some
+        old URLs changed. Try one of these instead:
+      </p>
+
+      <ul class="suggestions">
+        {
+          suggestions.map((item) => (
+            <li>
+              <a href={item.href}>
+                {item.label}
+                <Icon name="arrow-right" size={15} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <a href="/" class="btn btn-primary">Back to the home page</a>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .notfound {
+    padding-block: clamp(4rem, 12vw, 8rem);
+    text-align: center;
+  }
+
+  .code {
+    font-size: clamp(4rem, 12vw, 7rem);
+    font-weight: 750;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: var(--accent);
+    opacity: 0.22;
+  }
+
+  h1 {
+    font-size: var(--text-3xl);
+    margin-top: -0.5rem;
+  }
+
+  .lede {
+    margin: 1.15rem auto 0;
+    max-width: 46ch;
+  }
+
+  .suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 2.25rem 0;
+  }
+
+  .suggestions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--r-full);
+    background: var(--surface);
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    font-weight: 550;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition:
+      border-color 0.18s var(--ease),
+      color 0.18s var(--ease);
+  }
+
+  .suggestions a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+</style>

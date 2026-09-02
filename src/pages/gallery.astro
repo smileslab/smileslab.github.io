@@ -1,0 +1,249 @@
+---
+import { Image } from 'astro:assets'
+import Base from '../layouts/Base.astro'
+import PageHeader from '../components/PageHeader.astro'
+import Icon from '../components/Icon.astro'
+import lab1 from '../assets/lab/lab-1.jpeg'
+import lab2 from '../assets/lab/lab-2.jpeg'
+import lab3 from '../assets/lab/lab-3.jpeg'
+import lab4 from '../assets/lab/lab-4.jpeg'
+import lab5 from '../assets/lab/lab-5.jpeg'
+
+// TODO: replace these generic captions with the real event and date for each
+// photo — they carry a lot of the page's value.
+const photos = [
+  { src: lab1, alt: 'SMILES Lab members at a lab event', caption: 'Lab event' },
+  { src: lab2, alt: 'SMILES Lab members at a lab event', caption: 'Lab event' },
+  { src: lab3, alt: 'SMILES Lab members at a lab event', caption: 'Lab event' },
+  { src: lab4, alt: 'SMILES Lab members at a lab event', caption: 'Lab event' },
+  { src: lab5, alt: 'SMILES Lab members at a lab event', caption: 'Lab event' },
+]
+---
+
+<Base
+  title="Gallery"
+  description="Photographs from SMILES Lab events, talks and everyday research life at the University of Michigan–Flint."
+>
+  <PageHeader
+    eyebrow="Gallery"
+    title="Life in the lab"
+    lede="Talks, milestones and the occasional group photo."
+  />
+
+  <div class="section">
+    <div class="wrap">
+      <ul class="gallery">
+        {
+          photos.map((photo, index) => (
+            <li
+              class:list={['shot', { wide: index % 5 === 0 }]}
+              data-reveal
+              data-reveal-delay={(index % 3) * 70}
+            >
+              <button
+                type="button"
+                data-lightbox
+                data-index={index}
+                aria-label={`View larger: ${photo.caption}`}
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={index % 5 === 0 ? 1200 : 700}
+                  height={index % 5 === 0 ? 700 : 520}
+                  densities={[1, 2]}
+                  loading={index < 2 ? 'eager' : 'lazy'}
+                />
+                <span class="zoom" aria-hidden="true">
+                  <Icon name="search" size={16} />
+                </span>
+              </button>
+              <figcaption>{photo.caption}</figcaption>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+
+  <dialog class="lightbox" data-lightbox-dialog aria-label="Photo viewer">
+    <button
+      type="button"
+      class="close"
+      data-lightbox-close
+      aria-label="Close photo viewer"
+    >
+      <Icon name="close" size={20} />
+    </button>
+    <img data-lightbox-image src="" alt="" />
+  </dialog>
+</Base>
+
+<style>
+  .gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+    gap: 1rem;
+  }
+
+  .shot button {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    overflow: hidden;
+    background: var(--surface-2);
+    cursor: zoom-in;
+    box-shadow: var(--shadow-sm);
+    transition:
+      transform 0.3s var(--ease),
+      box-shadow 0.3s var(--ease);
+  }
+
+  .shot button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+  }
+
+  .shot :global(img) {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.5s var(--ease);
+  }
+
+  .shot button:hover :global(img) {
+    transform: scale(1.04);
+  }
+
+  .zoom {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    display: grid;
+    place-items: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: var(--r-full);
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    backdrop-filter: blur(6px);
+    color: var(--ink);
+    opacity: 0;
+    transform: translateY(4px);
+    transition:
+      opacity 0.25s var(--ease),
+      transform 0.25s var(--ease);
+  }
+
+  .shot button:hover .zoom,
+  .shot button:focus-visible .zoom {
+    opacity: 1;
+    transform: none;
+  }
+
+  figcaption {
+    margin-top: 0.65rem;
+    color: var(--muted);
+    font-size: var(--text-sm);
+  }
+
+  @media (min-width: 60rem) {
+    .shot.wide {
+      grid-column: span 2;
+    }
+
+    .shot.wide :global(img) {
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  /* --- lightbox --- */
+  .lightbox {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    max-width: min(92vw, 1200px);
+    max-height: 92vh;
+    overflow: visible;
+  }
+
+  .lightbox::backdrop {
+    background: rgb(6 10 18 / 0.82);
+    backdrop-filter: blur(4px);
+  }
+
+  .lightbox img {
+    width: 100%;
+    height: auto;
+    max-height: 92vh;
+    object-fit: contain;
+    border-radius: var(--r);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .close {
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: var(--r-full);
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+
+  .close:hover {
+    background: var(--surface-2);
+  }
+</style>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>(
+    '[data-lightbox-dialog]'
+  )
+  const target = document.querySelector<HTMLImageElement>(
+    '[data-lightbox-image]'
+  )
+  const closeButton = document.querySelector<HTMLButtonElement>(
+    '[data-lightbox-close]'
+  )
+
+  // Without <dialog> support the buttons simply do nothing and the grid still
+  // works, so there is no need for a fallback path.
+  if (dialog && target && typeof dialog.showModal === 'function') {
+    document.querySelectorAll<HTMLButtonElement>('[data-lightbox]').forEach(
+      (button) => {
+        button.addEventListener('click', () => {
+          const image = button.querySelector('img')
+          if (!image) return
+          target.src = image.currentSrc || image.src
+          target.alt = image.alt
+          dialog.showModal()
+        })
+      }
+    )
+
+    closeButton?.addEventListener('click', () => dialog.close())
+
+    // Clicking the backdrop (i.e. the dialog itself, outside the image).
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) dialog.close()
+    })
+
+    dialog.addEventListener('close', () => {
+      target.src = ''
+    })
+  }
+</script>

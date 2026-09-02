@@ -1,0 +1,453 @@
+---
+import Base from '../layouts/Base.astro'
+import PageHeader from '../components/PageHeader.astro'
+import Icon from '../components/Icon.astro'
+import { contact } from '../data/site'
+
+const profile = [
+  "Bachelor's or master's degree in computer science or electrical engineering",
+  'Coursework in signal and image processing',
+  'Coursework in machine learning and deep learning',
+  'Coursework in NLP, computer vision or cybersecurity, depending on the project you choose',
+  'Strong programming skills and practical experience',
+  'A solid background in mathematics, probability and statistics',
+  'Prior experience in artificial intelligence, human or biological vision, knowledge representation, or neuro-symbolic AI',
+  'Publications or significant research/industry experience in cybersecurity, computer vision, NLP or AI — helpful, but not required',
+]
+
+const materials = [
+  { title: 'Résumé or CV', note: 'Including publications and technical skills' },
+  {
+    title: 'Statement of research interests',
+    note: 'Which of our projects you want to work on, and why',
+  },
+  {
+    title: 'Any relevant publications',
+    note: 'Preprints and workshop papers count',
+  },
+]
+---
+
+<Base
+  title="Join us"
+  description="How to apply for a PhD or master's position in the SMILES Lab, working on multimodal neuro-symbolic AI in cybersecurity and stroke informatics."
+>
+  <PageHeader
+    eyebrow="Join us"
+    title="Applying to the lab"
+    lede="Guidance for prospective PhD and master's students interested in multimodal neuro-symbolic AI for cybersecurity or stroke informatics."
+  />
+
+  <div class="section">
+    <div class="wrap layout">
+      <div class="content">
+        <section class="block">
+          <p class="intro">
+            I receive many inquiries from prospective Ph.D. students, so I have
+            written this page to answer the common questions. These comments
+            reflect my personal views, not official department or university
+            policy.
+          </p>
+
+          <ul class="notes">
+            <li>
+              <Icon name="sparkle" size={18} />
+              <span>
+                I accept a small number of new Ph.D. students each year, so
+                there is no need to ask about availability. Please do consider
+                the information below carefully before applying.
+              </span>
+            </li>
+            <li>
+              <Icon name="brain" size={18} />
+              <span>
+                My research focuses on <strong
+                  >multimodal neuro-symbolic AI in cybersecurity and clinical
+                  stroke management</strong
+                >. The lab works primarily on multimodal and neuro-symbolic AI —
+                see the <a href="/research">lab's projects</a> for detail.
+              </span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="block" id="profile">
+          <h2>The ideal Ph.D. student profile</h2>
+          <p>
+            I am always looking for motivated students to join the lab as part
+            of their Ph.D. journey. These are not hard requirements, but they
+            are the qualities I value most:
+          </p>
+          <ul class="checks">
+            {
+              profile.map((item) => (
+                <li>
+                  <span class="check" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="11" height="11" fill="none">
+                      <path
+                        d="M3 8.4 6.2 11.5 13 4.8"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  {item}
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <section class="block" id="applying">
+          <h2>Applying to the program</h2>
+          <p>
+            If your background aligns with the criteria above and with the
+            lab's active research projects, please send the following:
+          </p>
+          <ol class="materials">
+            {
+              materials.map((material, index) => (
+                <li>
+                  <span class="num">{index + 1}</span>
+                  <div>
+                    <strong>{material.title}</strong>
+                    <span class="note">{material.note}</span>
+                  </div>
+                </li>
+              ))
+            }
+          </ol>
+        </section>
+
+        <section class="block" id="funding">
+          <h2>Funding</h2>
+          <p>
+            Ph.D. students in the College of Innovation and Technology at
+            UM–Flint are typically funded for their entire degree program
+            through Graduate Student Research Assistantships (GSRAs) or Teaching
+            Assistantships (TAs). These opportunities are generally prioritized
+            for outstanding Ph.D. candidates whose research interests closely
+            align with mine from the outset.
+          </p>
+          <p>
+            Master's students do not typically receive funding through GSRAs or
+            TAs. There are occasional openings, though they are not common.
+            Master's funding is generally prioritized for:
+          </p>
+          <ul class="checks">
+            <li>
+              <span class="check" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="11" height="11" fill="none">
+                  <path
+                    d="M3 8.4 6.2 11.5 13 4.8"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </span>
+              Individuals already in the U.S.
+            </li>
+            <li>
+              <span class="check" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="11" height="11" fill="none">
+                  <path
+                    d="M3 8.4 6.2 11.5 13 4.8"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </span>
+              Students who have previously taken one of my courses
+            </li>
+            <li>
+              <span class="check" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="11" height="11" fill="none">
+                  <path
+                    d="M3 8.4 6.2 11.5 13 4.8"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </span>
+              Students interested in a master's thesis aligned with my funded
+              research projects
+            </li>
+          </ul>
+          <p>
+            For more information on applying to the Ph.D. program in computing,
+            please refer to the
+            <a
+              href="https://www.umflint.edu/cit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >official CIT website <Icon name="arrow-up-right" size={13} /></a
+            >.
+          </p>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <div class="panel card">
+          <h2>At a glance</h2>
+          <dl>
+            <div>
+              <dt>Positions</dt>
+              <dd>Ph.D. (funded) · Master's thesis</dd>
+            </div>
+            <div>
+              <dt>Areas</dt>
+              <dd>
+                Multimedia forensics · Neuro-symbolic AI · Stroke informatics ·
+                Cybersecurity
+              </dd>
+            </div>
+            <div>
+              <dt>Program</dt>
+              <dd>College of Innovation &amp; Technology, UM–Flint</dd>
+            </div>
+          </dl>
+
+          <a class="btn btn-primary" href={`mailto:${contact.email}`}>
+            <Icon name="mail" size={16} />
+            Email your application
+          </a>
+          <p class="fineprint">
+            Please put the project you are interested in in the subject line.
+          </p>
+        </div>
+
+        <nav class="toc card" aria-label="On this page">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#profile">Ideal student profile</a></li>
+            <li><a href="#applying">Applying</a></li>
+            <li><a href="#funding">Funding</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .layout {
+    display: grid;
+    gap: clamp(2.5rem, 5vw, 4rem);
+    align-items: start;
+  }
+
+  .content {
+    min-width: 0;
+    max-width: 72ch;
+  }
+
+  .block + .block {
+    margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  }
+
+  .block h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: 1rem;
+  }
+
+  .block p {
+    color: var(--ink-2);
+    font-size: var(--text-lg);
+  }
+
+  .block p + p {
+    margin-top: 1.15rem;
+  }
+
+  .intro {
+    font-size: var(--text-xl) !important;
+    color: var(--ink) !important;
+    line-height: 1.6;
+  }
+
+  .notes {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.75rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .notes li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 1.15rem 1.35rem;
+    background: var(--bg-tint);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    color: var(--ink-2);
+  }
+
+  .notes :global(svg) {
+    color: var(--accent);
+    margin-top: 0.25rem;
+  }
+
+  .checks {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .checks li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: start;
+    color: var(--ink-2);
+  }
+
+  .check {
+    display: grid;
+    place-items: center;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-top: 0.3rem;
+    border-radius: var(--r-full);
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .materials {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+    counter-reset: step;
+  }
+
+  .materials li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 1.15rem 1.35rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+  }
+
+  .num {
+    display: grid;
+    place-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: var(--r-full);
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-size: var(--text-sm);
+    font-weight: 680;
+  }
+
+  .materials strong {
+    display: block;
+    color: var(--ink);
+    font-weight: 620;
+  }
+
+  .note {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--muted);
+    font-size: var(--text-sm);
+  }
+
+  /* --- sidebar --- */
+  .sidebar {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .panel {
+    padding: 1.6rem;
+  }
+
+  .panel h2,
+  .toc h2 {
+    font-size: var(--text-xs);
+    font-weight: 650;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .panel dl {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .panel dt {
+    font-size: var(--text-xs);
+    font-weight: 620;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .panel dd {
+    margin: 0.2rem 0 0;
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.55;
+  }
+
+  .panel .btn {
+    width: 100%;
+  }
+
+  .fineprint {
+    margin-top: 0.85rem;
+    color: var(--muted);
+    font-size: var(--text-xs);
+    text-align: center;
+  }
+
+  .toc {
+    padding: 1.4rem 1.6rem;
+    background: var(--bg-tint);
+  }
+
+  .toc ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .toc a {
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    text-decoration: none;
+  }
+
+  .toc a:hover {
+    color: var(--accent);
+  }
+
+  @media (min-width: 62rem) {
+    .layout {
+      grid-template-columns: minmax(0, 1fr) 20rem;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 6rem;
+    }
+  }
+</style>

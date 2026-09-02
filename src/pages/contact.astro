@@ -1,0 +1,261 @@
+---
+import Base from '../layouts/Base.astro'
+import PageHeader from '../components/PageHeader.astro'
+import Icon from '../components/Icon.astro'
+import { contact, site } from '../data/site'
+
+const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  contact.mapQuery
+)}`
+
+const routes = [
+  {
+    icon: 'brain' as const,
+    title: 'Prospective students',
+    body: 'Read the application guidance first — it answers most questions and tells you what to send.',
+    action: { label: 'Applying to the lab', href: '/join' },
+  },
+  {
+    icon: 'shield' as const,
+    title: 'Research collaboration',
+    body: 'Industry and academic partnerships across multimedia forensics, cybersecurity and clinical AI.',
+    action: { label: `Email ${contact.email}`, href: `mailto:${contact.email}` },
+  },
+  {
+    icon: 'book' as const,
+    title: 'Press & speaking',
+    body: 'Enquiries about deepfake detection, AI trust and safety, or the lab’s clinical work.',
+    action: { label: `Email ${contact.email}`, href: `mailto:${contact.email}` },
+  },
+]
+---
+
+<Base
+  title="Contact"
+  description={`How to reach the SMILES Lab at the ${site.institution} — for prospective students, collaborators and press.`}
+>
+  <PageHeader
+    eyebrow="Contact"
+    title="Get in touch"
+    lede="Whether you are applying to the lab, exploring a collaboration, or writing about our work — here is where to start."
+  />
+
+  <div class="section">
+    <div class="wrap layout">
+      <div class="routes">
+        {
+          routes.map((route, index) => (
+            <article class="route card" data-reveal data-reveal-delay={index * 70}>
+              <span class="glyph" aria-hidden="true">
+                <Icon name={route.icon} size={22} />
+              </span>
+              <div>
+                <h2>{route.title}</h2>
+                <p>{route.body}</p>
+                <a class="route-action" href={route.action.href}>
+                  {route.action.label}
+                  <Icon name="arrow-right" size={15} />
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+
+      <aside class="details">
+        <div class="card panel">
+          <h2>Lab address</h2>
+          <address>
+            {contact.address.map((line) => <span>{line}</span>)}
+          </address>
+          <a
+            class="btn btn-secondary btn-sm"
+            href={mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name="map-pin" size={15} />
+            Open in Google Maps
+          </a>
+        </div>
+
+        <div class="card panel">
+          <h2>Principal investigator</h2>
+          <p class="pi-name">{contact.piName}</p>
+          <p class="pi-role">{contact.piRole}</p>
+          <div class="pi-links">
+            <a href="/cv-khalid-malik.pdf" target="_blank" rel="noopener">
+              <Icon name="file-text" size={15} />
+              Curriculum vitae
+            </a>
+            <a
+              href="https://scholar.google.ca/citations?user=MZGQT2wAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="scholar" size={15} />
+              Google Scholar
+            </a>
+          </div>
+        </div>
+
+        <div class="card panel accent">
+          <h2>General enquiries</h2>
+          <a class="email" href={`mailto:${contact.email}`}>
+            <Icon name="mail" size={18} />
+            {contact.email}
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .layout {
+    display: grid;
+    gap: clamp(2rem, 4vw, 3rem);
+    align-items: start;
+  }
+
+  .routes {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .route {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1.15rem;
+    padding: 1.6rem 1.75rem;
+  }
+
+  .glyph {
+    display: grid;
+    place-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    flex: none;
+    border-radius: var(--r-sm);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    color: var(--accent);
+  }
+
+  .route h2 {
+    font-size: var(--text-xl);
+  }
+
+  .route p {
+    margin-top: 0.5rem;
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+  }
+
+  .route-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  .route-action:hover {
+    text-decoration: underline;
+  }
+
+  .details {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .panel {
+    padding: 1.6rem 1.75rem;
+  }
+
+  .panel h2 {
+    font-size: var(--text-xs);
+    font-weight: 650;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  address {
+    display: grid;
+    gap: 0.15rem;
+    font-style: normal;
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin-bottom: 1.35rem;
+  }
+
+  .pi-name {
+    color: var(--ink);
+    font-size: var(--text-lg);
+    font-weight: 620;
+  }
+
+  .pi-role {
+    margin-top: 0.25rem;
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.55;
+  }
+
+  .pi-links {
+    display: grid;
+    gap: 0.6rem;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .pi-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--text-sm);
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  .pi-links a:hover {
+    text-decoration: underline;
+  }
+
+  .panel.accent {
+    background: linear-gradient(
+      150deg,
+      var(--accent-soft),
+      var(--surface) 75%
+    );
+    border-color: var(--accent-border);
+  }
+
+  .email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: var(--text-lg);
+    font-weight: 620;
+    text-decoration: none;
+    word-break: break-all;
+  }
+
+  .email:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 60rem) {
+    .layout {
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    }
+  }
+</style>

@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content'
+import Base from '../../layouts/Base.astro'
+import PageHeader from '../../components/PageHeader.astro'
+import ProjectCard from '../../components/ProjectCard.astro'
+
+const projects = (await getCollection('projects')).sort(
+  (a, b) => a.data.order - b.data.order
+)
+
+const funded = projects.filter((project) => project.data.funder)
+const funders = [
+  ...new Set(
+    funded.flatMap((project) =>
+      (project.data.funder ?? '').split('&').map((name) => name.trim())
+    )
+  ),
+].filter(Boolean)
+---
+
+<Base
+  title="Research"
+  description="Funded research at the SMILES Lab: deepfake detection, stroke informatics, neuro-symbolic reasoning, web content filtering and cybersecurity education."
+>
+  <PageHeader
+    eyebrow="Research"
+    title="Projects &amp; funding"
+    lede="Our work is supported by the National Science Foundation, the Brain Aneurysm Foundation, Michigan Translational Research and Commercialization, and industry partners."
+  />
+
+  <div class="section">
+    <div class="wrap">
+      <div class="grid grid-cards">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+  </div>
+
+  {
+    funders.length > 0 && (
+      <section class="section section-tint">
+        <div class="wrap">
+          <h2 class="eyebrow">Supported by</h2>
+          <ul class="funders">
+            {funders.map((funder) => (
+              <li data-reveal>{funder}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+</Base>
+
+<style>
+  .funders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+
+  .funders li {
+    padding: 0.7rem 1.15rem;
+    border-radius: var(--r-full);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    font-weight: 550;
+    box-shadow: var(--shadow-sm);
+  }
+</style>
