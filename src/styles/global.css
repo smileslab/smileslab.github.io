@@ -243,8 +243,13 @@ hr {
 }
 
 /* A page header already supplies generous breathing room below its lede, so
-   the first section after one does not need a full section's worth again. */
-.page-header + .section {
+   the first section after one does not need a full section's worth again.
+   Covers the article headers too; on a post with a cover image the cover sits
+   between them and supplies its own spacing, so the rule correctly no longer
+   matches. */
+.page-header + .section,
+.project-header + .section,
+.post-header + .section {
   padding-top: clamp(1.25rem, 2.5vw, 2rem);
 }
 
