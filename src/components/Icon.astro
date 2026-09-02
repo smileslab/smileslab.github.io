@@ -1,0 +1,30 @@
+---
+import { filledIcons, iconPaths, type IconName } from '../lib/icons'
+
+interface Props {
+  name: IconName
+  size?: number | string
+  class?: string
+  /** Set when the icon carries meaning on its own. */
+  label?: string
+}
+
+const { name, size = 20, class: className, label } = Astro.props
+const isFilled = filledIcons.has(name)
+---
+
+<svg
+  class={className}
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill={isFilled ? 'currentColor' : 'none'}
+  stroke={isFilled ? 'none' : 'currentColor'}
+  stroke-width={isFilled ? undefined : 1.6}
+  stroke-linecap={isFilled ? undefined : 'round'}
+  stroke-linejoin={isFilled ? undefined : 'round'}
+  role={label ? 'img' : undefined}
+  aria-label={label}
+  aria-hidden={label ? undefined : 'true'}
+  set:html={iconPaths[name]}
+/>

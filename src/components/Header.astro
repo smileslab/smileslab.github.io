@@ -1,0 +1,316 @@
+---
+import { nav, site } from '../data/site'
+import Icon from './Icon.astro'
+import ThemeToggle from './ThemeToggle.astro'
+
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/'
+
+function isCurrent(href: string) {
+  if (href === '/') return path === '/'
+  return path === href || path.startsWith(href + '/')
+}
+---
+
+<header class="site-header">
+  <div class="bar wrap">
+    <a href="/" class="brand" aria-label={`${site.name} — home`}>
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30" fill="none">
+          <rect width="32" height="32" rx="9" fill="currentColor"></rect>
+          <path
+            d="M10 20.5c1.6 1.3 3.6 2 6 2s4.4-.7 6-2"
+            stroke="var(--accent-ink)"
+            stroke-width="2.1"
+            stroke-linecap="round"></path>
+          <circle cx="11.6" cy="13" r="1.85" fill="var(--accent-ink)"></circle>
+          <circle cx="20.4" cy="13" r="1.85" fill="var(--accent-ink)"></circle>
+        </svg>
+      </span>
+      <span class="wordmark">
+        <strong>SMILES</strong>
+        <span class="sub">Lab</span>
+      </span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main">
+      {
+        nav
+          .filter((item) => !item.cta)
+          .map((item) => (
+            <a
+              href={item.href}
+              class="nav-link"
+              aria-current={isCurrent(item.href) ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
+          ))
+      }
+    </nav>
+
+    <div class="actions">
+      <ThemeToggle />
+      {
+        nav
+          .filter((item) => item.cta)
+          .map((item) => (
+            <a href={item.href} class="btn btn-primary btn-sm cta">
+              {item.label}
+              <Icon name="arrow-right" size={15} />
+            </a>
+          ))
+      }
+      <button
+        type="button"
+        class="menu-button"
+        data-menu-button
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <Icon name="menu" size={22} class="icon-open" />
+        <Icon name="close" size={22} class="icon-close" />
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+    <nav class="wrap" aria-label="Main, mobile">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class:list={['mobile-link', { 'is-cta': item.cta }]}
+            aria-current={isCurrent(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+            <Icon name="arrow-right" size={16} />
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.25s var(--ease), background-color 0.25s var(--ease);
+  }
+
+  /* A hairline appears only once the page has scrolled, so the header sits
+     flush against the hero at rest. */
+  :global(html.is-scrolled) .site-header {
+    border-bottom-color: var(--border);
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+  }
+
+  @supports not (backdrop-filter: blur(1px)) {
+    .site-header {
+      background: var(--bg);
+    }
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 4.5rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--ink);
+    margin-right: auto;
+  }
+
+  .mark {
+    display: grid;
+    place-items: center;
+    color: var(--accent);
+    transition: transform 0.3s var(--ease);
+  }
+
+  .brand:hover .mark {
+    transform: rotate(-6deg) scale(1.05);
+  }
+
+  .wordmark {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+    line-height: 1;
+  }
+
+  .wordmark strong {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .wordmark .sub {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  .nav-desktop {
+    display: none;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 0.45rem 0.8rem;
+    border-radius: var(--r-full);
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    font-weight: 550;
+    text-decoration: none;
+    transition: color 0.18s var(--ease), background-color 0.18s var(--ease);
+  }
+
+  .nav-link:hover {
+    color: var(--ink);
+    background: var(--surface-2);
+  }
+
+  .nav-link[aria-current='page'] {
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-grid;
+    place-items: center;
+    width: 2.35rem;
+    height: 2.35rem;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--r-full);
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .menu-button :global(svg) {
+    grid-area: 1 / 1;
+  }
+
+  .menu-button :global(.icon-close) {
+    display: none;
+  }
+
+  .menu-button[aria-expanded='true'] :global(.icon-open) {
+    display: none;
+  }
+
+  .menu-button[aria-expanded='true'] :global(.icon-close) {
+    display: block;
+  }
+
+  .mobile-nav {
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    padding-block: 0.5rem 1rem;
+  }
+
+  .mobile-nav nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 0.25rem;
+    color: var(--ink);
+    font-size: var(--text-lg);
+    font-weight: 550;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mobile-link :global(svg) {
+    color: var(--muted);
+  }
+
+  .mobile-link[aria-current='page'] {
+    color: var(--accent);
+  }
+
+  .mobile-link.is-cta {
+    color: var(--accent);
+    border-bottom: 0;
+  }
+
+  @media (min-width: 62rem) {
+    .nav-desktop,
+    .cta {
+      display: inline-flex;
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: none;
+    }
+
+    .actions {
+      gap: 0.6rem;
+    }
+  }
+</style>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>('[data-menu-button]')
+  const panel = document.querySelector<HTMLElement>('[data-mobile-nav]')
+
+  if (button && panel) {
+    button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') === 'true'
+      button.setAttribute('aria-expanded', String(!open))
+      panel.hidden = open
+    })
+
+    // Close the panel if the viewport grows past the breakpoint while open,
+    // so the hidden attribute cannot strand desktop navigation.
+    const wide = window.matchMedia('(min-width: 62rem)')
+    wide.addEventListener('change', (event) => {
+      if (event.matches) {
+        button.setAttribute('aria-expanded', 'false')
+        panel.hidden = true
+      }
+    })
+  }
+
+  // Drives the header's scrolled hairline.
+  const onScroll = () => {
+    document.documentElement.classList.toggle('is-scrolled', window.scrollY > 8)
+  }
+  onScroll()
+  window.addEventListener('scroll', onScroll, { passive: true })
+</script>

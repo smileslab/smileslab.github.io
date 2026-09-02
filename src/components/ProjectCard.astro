@@ -1,0 +1,181 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import Icon from './Icon.astro'
+
+interface Props {
+  project: CollectionEntry<'projects'>
+  /** Compact variant used on the home page. */
+  compact?: boolean
+}
+
+const { project, compact = false } = Astro.props
+const { title, summary, area, icon, funder, amount, status } = project.data
+const href = `/research/${project.id}`
+---
+
+<article class:list={['project card card-hover', { compact }]} data-reveal>
+  <div class="head">
+    <span class="glyph" aria-hidden="true"><Icon name={icon} size={22} /></span>
+    <div class="meta">
+      <span class="area">{area}</span>
+      {status === 'completed' && <span class="pill">Completed</span>}
+    </div>
+  </div>
+
+  <h3>
+    <a href={href}>
+      {title}
+      <span class="stretch" aria-hidden="true"></span>
+    </a>
+  </h3>
+
+  <p class="summary">{summary}</p>
+
+  {
+    (funder || amount) && !compact && (
+      <dl class="funding">
+        {funder && (
+          <div>
+            <dt>Funded by</dt>
+            <dd>{funder}</dd>
+          </div>
+        )}
+        {amount && (
+          <div>
+            <dt>Award</dt>
+            <dd class="amount">{amount}</dd>
+          </div>
+        )}
+      </dl>
+    )
+  }
+
+  <span class="more">
+    Read more <Icon name="arrow-right" size={15} />
+  </span>
+</article>
+
+<style>
+  .project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .glyph {
+    display: grid;
+    place-items: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    flex: none;
+    border-radius: var(--r-sm);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    color: var(--accent);
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .area {
+    font-size: var(--text-xs);
+    font-weight: 620;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+    line-height: 1.3;
+  }
+
+  h3 a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  h3 a:hover {
+    color: var(--accent);
+  }
+
+  /* Makes the whole card the click target while keeping a real link for
+     keyboard and assistive technology. */
+  .stretch::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+
+  .summary {
+    margin-top: 0.7rem;
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+  }
+
+  .funding {
+    margin-top: 1.15rem;
+    padding-top: 1.15rem;
+    border-top: 1px solid var(--border);
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .funding div {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  dt {
+    font-size: var(--text-xs);
+    font-weight: 620;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  dd {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
+  .amount {
+    font-weight: 640;
+    color: var(--ink);
+  }
+
+  .more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 1.25rem;
+    color: var(--accent);
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .more :global(svg) {
+    transition: transform 0.25s var(--ease);
+  }
+
+  .project:hover .more :global(svg) {
+    transform: translateX(3px);
+  }
+</style>

@@ -1,0 +1,209 @@
+---
+import { Image } from 'astro:assets'
+import type { CollectionEntry } from 'astro:content'
+import SocialLinks from './SocialLinks.astro'
+
+interface Props {
+  person: CollectionEntry<'team'> | CollectionEntry<'alumni'>
+  /** Renders the larger treatment used for faculty. */
+  featured?: boolean
+}
+
+const { person, featured = false } = Astro.props
+const data = person.data
+
+const researchAreas =
+  'researchAreas' in data ? data.researchAreas : ([] as string[])
+const now = 'now' in data ? data.now : undefined
+const years = 'years' in data ? data.years : undefined
+
+// Initials stand in when a person has no photo yet.
+const initials = data.name
+  .replace(/^(Dr\.|Prof\.)\s+/i, '')
+  .split(/\s+/)
+  .slice(0, 2)
+  .map((part) => part[0])
+  .join('')
+---
+
+<article class:list={['person card card-hover', { featured }]} data-reveal>
+  <div class="photo">
+    {
+      data.photo ? (
+        <Image
+          src={data.photo}
+          alt={`Portrait of ${data.name}`}
+          width={featured ? 480 : 360}
+          height={featured ? 480 : 360}
+          densities={[1, 2]}
+          loading="lazy"
+          decoding="async"
+        />
+      ) : (
+        <span class="initials" aria-hidden="true">
+          {initials}
+        </span>
+      )
+    }
+  </div>
+
+  <div class="body">
+    <h3>{data.name}</h3>
+    <p class="role">{data.role}</p>
+    {years && <p class="years">{years}</p>}
+    {
+      now && (
+        <p class="now">
+          <span>Now</span> {now}
+        </p>
+      )
+    }
+
+    {
+      researchAreas.length > 0 && (
+        <ul class="areas">
+          {researchAreas.map((area) => (
+            <li class="pill">{area}</li>
+          ))}
+        </ul>
+      )
+    }
+
+    <div class="slot"><slot /></div>
+  </div>
+
+  <div class="foot">
+    <SocialLinks links={data.links} personName={data.name} />
+  </div>
+</article>
+
+<style>
+  .person {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .photo {
+    position: relative;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(
+      160deg,
+      var(--accent-soft),
+      var(--surface-2) 70%
+    );
+    overflow: hidden;
+  }
+
+  .photo :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+    transition: transform 0.5s var(--ease);
+  }
+
+  .person:hover .photo :global(img) {
+    transform: scale(1.035);
+  }
+
+  .initials {
+    font-size: 2.5rem;
+    font-weight: 650;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+    opacity: 0.55;
+  }
+
+  .body {
+    padding: 1.1rem 1.15rem 0.5rem;
+    flex: 1;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: 640;
+  }
+
+  .role {
+    margin-top: 0.2rem;
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+  }
+
+  .years {
+    margin-top: 0.15rem;
+    color: var(--muted);
+    font-size: var(--text-xs);
+  }
+
+  .now {
+    margin-top: 0.5rem;
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+  }
+
+  .now span {
+    color: var(--muted);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: 600;
+  }
+
+  .areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.85rem;
+  }
+
+  .slot:not(:empty) {
+    margin-top: 0.9rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--border);
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+  }
+
+  .foot {
+    padding: 0.5rem 0.8rem 0.8rem;
+  }
+
+  /* Faculty get a wider, two-column treatment on roomy viewports. */
+  @media (min-width: 46rem) {
+    .person.featured {
+      display: grid;
+      grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+      grid-template-rows: 1fr auto;
+    }
+
+    .person.featured .photo {
+      grid-row: 1 / -1;
+      aspect-ratio: auto;
+      min-height: 100%;
+    }
+
+    .person.featured .body {
+      padding: 1.6rem 1.75rem 0.75rem;
+    }
+
+    .person.featured h3 {
+      font-size: var(--text-2xl);
+    }
+
+    .person.featured .role {
+      font-size: var(--text-base);
+    }
+
+    .person.featured .foot {
+      padding: 0 1.5rem 1.4rem;
+    }
+  }
+</style>

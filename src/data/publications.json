@@ -1,8 +1,184 @@
 [
   {
+    "title": "PSA-Net: Parallel Stacked Aggregation Network for Secure Voice Biometrics in IoT-enabled Consumer Devices",
+    "authors": "A Khan, IU Haq, KM Malik",
+    "venue": "IEEE Transactions on Consumer Electronics",
+    "year": 2026,
+    "link": "https://doi.org/10.1109/tce.2026.3714273"
+  },
+  {
+    "title": "Linking faces and voices across languages: Insights from the FAME 2026 challenge",
+    "authors": "M Moscati, A Abdullah, MS Saeed, S Nawaz, RK Das, MZ Zaheer, J Mir, et al.",
+    "venue": "ICASSP 2026 - IEEE International Conference on Acoustics, Speech and Signal Processing",
+    "year": 2026,
+    "link": "https://doi.org/10.1109/icassp55912.2026.11462260"
+  },
+  {
+    "title": "TRACE: Training-free partial audio deepfake detection via embedding trajectory analysis of speech foundation models",
+    "authors": "A Khan, MU Farooq, K Uddin, K Malik",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2026,
+    "link": "https://openaccess.thecvf.com/content/CVPR2026W/MMFM5/html/khan_TRACE_Training-Free_Partial_Audio_Deepfake_Detection_via_Embedding_Trajectory_Analysis_CVPRW_2026_paper.html"
+  },
+  {
+    "title": "ARAN: Leveraging Foundation Models for Vasculature-Tree-Informed Artery-Aware Intracranial Aneurysm Detection in 3D CTA and ToF-MRA",
+    "authors": "M Shafique, N Rahim, MS Saeed, G Malik, K Malik",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2026,
+    "link": "https://openaccess.thecvf.com/content/CVPR2026W/PHAROS-AIF-MIH/html/Shafique_ARAN_Leveraging_Foundation_Models_for_Vasculature-Tree-Informed_ARtery-Aware_Intracranial_ANeurysm_Detection_CVPRW_2026_paper.html"
+  },
+  {
+    "title": "Adversarial and generative AI-based anti-forensics in audio-visual deepfake detection: A comprehensive review and analysis",
+    "authors": "QU Ain, F Khalid, H Ilyas, A Javed, KM Malik, K Muhammad, A Irtaza",
+    "venue": "Information Fusion",
+    "year": 2026,
+    "link": "https://doi.org/10.1016/j.inffus.2025.104120"
+  },
+  {
+    "title": "Domain-Adaptive Representation Learning for Multimodal Deepfake Detection",
+    "authors": "IU Haq, KM Malik",
+    "venue": "IEEE Transactions on Computational Social Systems",
+    "year": 2025,
+    "link": "https://doi.org/10.1109/tcss.2025.3637242"
+  },
+  {
+    "title": "SHIELD: A secure and highly enhanced integrated learning for robust deepfake detection against adversarial attacks",
+    "authors": "K Uddin, A Khan, MU Farooq, KM Malik",
+    "venue": "IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+    "year": 2025,
+    "link": "https://doi.org/10.1109/iccvw69036.2025.00161"
+  },
+  {
+    "title": "Generalized deepfake detection using identity, behavioral, and geometric signatures",
+    "authors": "MU Farooq, A Khan, IU Haq, KM Malik",
+    "venue": "IEEE Transactions on Computational Social Systems",
+    "year": 2025,
+    "link": "https://doi.org/10.1109/tcss.2025.3588348"
+  },
+  {
+    "title": "Regularized forensic efficient net: a game theory based generalized approach for video deepfakes detection",
+    "authors": "QU Ain, A Javed, KM Malik, A Irtaza",
+    "venue": "Multimedia Tools and Applications",
+    "year": 2025,
+    "link": "https://doi.org/10.1007/s11042-024-20268-x"
+  },
+  {
+    "title": "One-shot learning for generalization in medical image classification across modalities",
+    "authors": "M Irfan, IU Haq, KM Malik, K Muhammad",
+    "venue": "Computerized Medical Imaging and Graphics",
+    "year": 2025,
+    "link": "https://doi.org/10.1016/j.compmedimag.2025.102507"
+  },
+  {
+    "title": "Transferable adversarial attacks on audio deepfake detection",
+    "authors": "MU Farooq, A Khan, K Uddin, KM Malik",
+    "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)",
+    "year": 2025,
+    "link": "https://doi.org/10.1109/wacvw65960.2025.00178"
+  },
+  {
+    "title": "Exposing the limits of deepfake detection using novel facial mole attack: a perceptual black-box adversarial attack study",
+    "authors": "QU Ain, A Javed, KM Malik, A Irtaza",
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "year": 2024,
+    "link": "https://doi.org/10.1109/icip51287.2024.10647949"
+  },
+  {
+    "title": "ConvNext-PNet: An interpretable and explainable deep-learning model for deepfakes detection",
+    "authors": "H Ilyas, A Javed, KM Malik",
+    "venue": "IEEE International Joint Conference on Biometrics (IJCB)",
+    "year": 2024,
+    "link": "https://doi.org/10.1109/ijcb62174.2024.10744484"
+  },
+  {
+    "title": "RuleBoost: a neuro-symbolic framework for robust deepfake detection",
+    "authors": "MA Raza, KM Malik, IU Haq",
+    "venue": "IEEE International Joint Conference on Biometrics (IJCB)",
+    "year": 2024,
+    "link": "https://doi.org/10.1109/ijcb62174.2024.10744498"
+  },
+  {
+    "title": "ExplaNet: A descriptive framework for detecting deepfakes with interpretable prototypes",
+    "authors": "F Khalid, A Javed, KM Malik, A Irtaza",
+    "venue": "IEEE Transactions on Biometrics, Behavior, and Identity Science",
+    "year": 2024,
+    "link": "https://doi.org/10.1109/tbiom.2024.3407650"
+  },
+  {
+    "title": "Frame-to-utterance convergence: A spectra-temporal approach for unified spoofing detection",
+    "authors": "A Khan, KM Malik, S Nawaz",
+    "venue": "ICASSP 2024 - IEEE International Conference on Acoustics, Speech and Signal Processing",
+    "year": 2024,
+    "link": "https://doi.org/10.1109/icassp48485.2024.10447500"
+  },
+  {
+    "title": "Securing voice biometrics: One-shot learning approach for audio deepfake detection",
+    "authors": "A Khan, KM Malik",
+    "venue": "IEEE International Workshop on Information Forensics and Security (WIFS)",
+    "year": 2023,
+    "link": "https://doi.org/10.1109/wifs58808.2023.10374968"
+  },
+  {
+    "title": "DFP-Net: An explainable and trustworthy framework for detecting deepfakes using interpretable prototypes",
+    "authors": "F Khalid, A Javed, KM Malik, A Irtaza",
+    "venue": "IEEE International Joint Conference on Biometrics (IJCB)",
+    "year": 2023,
+    "link": "https://doi.org/10.1109/ijcb57857.2023.10448842"
+  },
+  {
+    "title": "SpotNet: A spoofing-aware transformer network for effective synthetic speech detection",
+    "authors": "A Khan, KM Malik",
+    "venue": "Proceedings of the 2nd ACM International Workshop on Multimedia AI against Disinformation",
+    "year": 2023,
+    "link": "https://doi.org/10.1145/3592572.3592841"
+  },
+  {
+    "title": "Deepfakes catcher: a novel fused truncated densenet model for deepfakes detection",
+    "authors": "F Khalid, A Javed, A Irtaza, KM Malik",
+    "venue": "Proceedings of International Conference on Information Technology and Applications",
+    "year": 2023,
+    "link": "https://doi.org/10.1007/978-981-19-9331-2_20"
+  },
+  {
+    "title": "NeuroClustr: Empowering biomedical text clustering with neuro-symbolic intelligence",
+    "authors": "F Alam, K Malik, M Krishnamurthy",
+    "venue": "International Joint Conference on Artificial Intelligence (IJCAI) Workshop",
+    "year": 2023,
+    "link": "https://openreview.net/forum?id=eu12MV19ho"
+  },
+  {
+    "title": "Deepfakes examiner: An end-to-end deep learning model for deepfakes videos detection",
+    "authors": "H Ilyas, A Irtaza, A Javed, KM Malik",
+    "venue": "16th International Conference on Open Source Systems and Technologies (ICOSST)",
+    "year": 2022,
+    "link": "https://doi.org/10.1109/icosst57195.2022.10016871"
+  },
+  {
+    "title": "Efficient-ECGNet framework for COVID-19 classification and correlation prediction with the cardio disease through electrocardiogram medical imaging",
+    "authors": "M Nawaz, T Nazir, A Javed, KM Malik, AKJ Saudagar, MB Khan, et al.",
+    "venue": "Frontiers in Medicine",
+    "year": 2022,
+    "link": "https://doi.org/10.3389/fmed.2022.1005920"
+  },
+  {
+    "title": "Faceswap deepfakes detection using novel multi-directional hexadecimal feature descriptor",
+    "authors": "A Javed, KM Malik",
+    "venue": "19th International Bhurban Conference on Applied Sciences and Technology (IBCAST)",
+    "year": 2022,
+    "link": "https://doi.org/10.1109/ibcast54850.2022.9990223"
+  },
+  {
+    "title": "A diagnostic system for intracranial saccular and fusiform aneurysms with location detection",
+    "authors": "Y Zafar, A Javed, KM Malik, J Santamaria, G Malik",
+    "venue": "IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)",
+    "year": 2021,
+    "link": "https://doi.org/10.1109/bhi50953.2021.9508536"
+  },
+  {
     "title": "Federated Fusion Learning with Attention Mechanism for Multi-Client Medical Image Analysis",
     "authors": "Muhammad Irfan, Khalid Mahmood Malik, Khan Muhammad",
     "venue": "Information Fusion (2024)",
+    "year": 2024,
     "ifValue": "18.16",
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S1566253524001428"
   },
@@ -10,6 +186,7 @@
     "title": "HolisticDFD:: Infusing spatiotemporal transformer embeddings for deepfake detection",
     "authors": "M Anas Raza, K Mahmood Malik, I Ul Haq",
     "venue": "Information Sciences",
+    "year": 2023,
     "ifValue": "8.1",
     "link": "https://dl.acm.org/doi/abs/10.1016/j.ins.2023.119352"
   },
@@ -17,6 +194,7 @@
     "title": "Multimodal Neuro-Symbolic Approach for Explainable Deepfake Detection",
     "authors": "Ijaz Ul Haq, Khalid Mahmood Malik, Khan Muhammad",
     "venue": "Transactions on Multimedia Computing Communications and Applications",
+    "year": 2024,
     "ifValue": "4.094",
     "link": "https://dl.acm.org/doi/abs/10.1145/3624748"
   },
@@ -24,6 +202,7 @@
     "title": "Avfakenet: A Unified End-to-End Dense Swin Transformer Deep Learning Model for Audio-Visual Deepfakes Detection",
     "authors": "Hafsa Ilyas, Ali Javed, Khalid Mahmood Malik",
     "venue": "Applied Soft Computing",
+    "year": 2023,
     "ifValue": "8.8",
     "link": "https://www.sciencedirect.com/science/article/pii/S1568494623001424"
   },
@@ -31,6 +210,7 @@
     "title": "Battling Voice Spoofing: A Review, Comparative Analysis, and Generalizability Evaluation of State-of-the-Art Voice Spoofing Countermeasures",
     "authors": "Khan, Awais, Khalid Mahmood Malik, James Ryan, and Mikul Saravanan",
     "venue": "Artificial Intelligence Review ",
+    "year": 2023,
     "ifValue": "9.5",
     "link": "https://link.springer.com/article/10.1007/s10462-023-10539-8"
   },
@@ -38,6 +218,7 @@
     "title": "Automated clinical knowledge graph generation framework for evidence based medicine",
     "authors": "F Alam, HB Giglou, KM Malik",
     "venue": "Expert Systems with Applications",
+    "year": 2023,
     "ifValue": "8.5",
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423014665"
   },
@@ -45,6 +226,7 @@
     "title": "Strokenet: An automated approach for segmentation and rupture risk prediction of intracranial aneurysm",
     "authors": "Muhammad Irfan, Khalid Mahmood Malik, Jamil Ahmad, Ghaus Malik",
     "venue": "Computerized Medical Imaging and Graphics",
+    "year": 2023,
     "ifValue": "5.7",
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0895611123000897"
   },
@@ -52,6 +234,7 @@
     "title": "Context-aggregator: An approach of loss-and class imbalance-aware aggregation in federated learning",
     "authors": "Qamar Abbas, Khalid Mahmood Malik, Abdul Khader Jilani Saudagar, Muhammad Badruddin Khan",
     "venue": "Computers in Biology and Medicine",
+    "year": 2023,
     "ifValue": "7.7",
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0010482523006327"
   },
@@ -59,6 +242,7 @@
     "title": "DeepInfusion: A dynamic infusion based-neuro-symbolic AI model for segmentation of intracranial aneurysms",
     "authors": "Iram Abdullah, Ali Javed, Khalid Mahmood Malik, Ghaus Malik",
     "venue": "Neurocomputing",
+    "year": 2023,
     "ifValue": "5.7",
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231223006331"
   },
@@ -66,6 +250,7 @@
     "title": "Toward Grading Subarachnoid Hemorrhage Risk Prediction: A Machine Learning-based Aneurysm Rupture Score",
     "authors": "Khalid Mahmood Malik, Fakhare Alam, Jeremy Santamaria, Madan Krishnamurthy, and Ghaus Malik",
     "venue": "World Neurosurgery ",
+    "year": 2023,
     "ifValue": "2.21",
     "link": "https://www.sciencedirect.com/science/article/pii/S1878875022016163"
   },
@@ -73,6 +258,7 @@
     "title": "E-Cap Net: an efficient-capsule network for shallow and deepfakes forgery detection",
     "authors": "Ilyas, Hafsa, Ali Javed, Khalid Mahmood Malik, and Aun Irtaza.",
     "venue": "Multimedia Systems ",
+    "year": 2023,
     "ifValue": "2.63",
     "link": "https://link.springer.com/article/10.1007/s00530-023-01092-z"
   },
@@ -80,6 +266,7 @@
     "title": "Towards Predicting Length of Stay and Identification of Cohort Risk Factors Using Self-Attention-Based Transformers and Association Mining: COVID-19 as a Phenotype",
     "authors": "Fakhare Alam, Obieda Ananbeh, Khalid Mahmood Malik, Abdulrahman Al Odayani, Ibrahim Bin Hussain, Naoufel Kaabia, Amal Al Aidaroos, Abdul Khader Jilani Saudagar",
     "venue": "Diagnostics",
+    "year": 2023,
     "ifValue": "3.6",
     "link": "https://www.mdpi.com/2075-4418/13/10/1760"
   },
@@ -87,6 +274,7 @@
     "title": "Secure Automatic Speaker Verification (SASV) System through sm- ALTP Features and Asymmetric Bagging",
     "authors": "Muteb Aljasem, Aun Irtaza, Hafiz Malik, Noushin Saba, Ali Javed, Khalid Mahmood Malik, and Mohammad Meharmohammadi",
     "venue": "IEEE Transactions on Information Forensics and Security",
+    "year": 2021,
     "ifValue": "7.17",
     "link": "https://ieeexplore.ieee.org/abstract/document/9437191"
   },
@@ -94,6 +282,7 @@
     "title": "Voice Spoofing Detector: A Unified Anti-Spoofing Framework",
     "authors": "Ali Javed, Khalid Mahmood Malik, Aun Irtaza, and Hafiz Malik",
     "venue": "Expert System with Applications",
+    "year": 2022,
     "ifValue": "8.6",
     "link": "https://www.sciencedirect.com/science/article/pii/S0957417422002330"
   },
@@ -101,6 +290,7 @@
     "title": "Deepview: Deep Learning based Users Field of View Selection in 360∘ Videos for Industrial Environments",
     "authors": "Muhammad Irfan, Khan Muhammad, Muhammad Sajjad, Khalid Mahmood Malik, Faouzi Alaya Cheikh, Joel JPC Rodrigues, Victor Hugo C de Albuquerque",
     "venue": "IEEE Internet of Things Journal",
+    "year": 2021,
     "ifValue": "9.51",
     "link": "https://ieeexplore.ieee.org/abstract/document/9560167"
   },
@@ -108,6 +298,7 @@
     "title": "Do project-based learning, hands-on activities, and flipped teaching enhance student’s learning of introductory theoretical computing classes?",
     "authors": "Khalid Mahmood Malik, and Meina Zhu",
     "venue": "Education and Information Technologies",
+    "year": 2023,
     "ifValue": "3.66",
     "link": "https://link.springer.com/article/10.1007/s10639-022-11350-8"
   },
@@ -115,6 +306,7 @@
     "title": "Deepfakes Generation and Detection: State-of-the-art, open challenges, countermeasures, and way forward",
     "authors": "Momina Masood, Marriam Nawaz, Khalid Mahmood Malik, Ali Javed, Aun Irtaza, Hafiz Malik ",
     "venue": "Applied Intelligence",
+    "year": 2023,
     "ifValue": "5.06",
     "link": "https://link.springer.com/article/10.1007/s10489-022-03766-z"
   },
@@ -129,6 +321,7 @@
     "title": "Towards Realigning Automatic Speaker Verification in the Era of COVID-19",
     "authors": "Awais Khan, Ali Javed, Khalid Mahmood Malik, Muhammad Anas, James Ryan, and Hafiz Malik",
     "venue": "Sensors ",
+    "year": 2022,
     "ifValue": "4.38",
     "link": "https://www.mdpi.com/1424-8220/22/7/2638"
   },
@@ -143,6 +336,7 @@
     "title": "Prognosis Prediction in COVID-19 Patients through Deep Feature Space Reasoning",
     "authors": "Ahmad, Jamil, Abdul Khader Jilani Saudagar, Khalid Mahmood Malik, Muhammad Badruddin Khan, Abdullah AlTameem, Mohammed Alkhathami, and Mozaherul Hoque Abul Hasanat",
     "venue": "Diagnostics ",
+    "year": 2023,
     "ifValue": "3.99",
     "link": "https://www.mdpi.com/2075-4418/13/8/1387"
   },
@@ -150,6 +344,7 @@
     "title": "Towards Protecting Cyber- physical and IoT Systems from Single- and Multi-order Voice Spoofing Attacks",
     "authors": "A Javed, K Mahmood Malik, A Irtaza, and H Malik",
     "venue": "Journal of Applied Acoustics",
+    "year": 2021,
     "ifValue": "2.63",
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0003682X21003777"
   },
@@ -220,6 +415,7 @@
     "title": "Defocus Blur Detection using novel Local Directional Mean Patterns and segmentation via KNN Matting",
     "authors": "A Khan, A Irtaza, A Javed, T Nazir, H Malik, K Mahmood Malik, M Ammar Khan",
     "venue": "Frontiers of Computer Science",
+    "year": 2022,
     "ifValue": "1.27",
     "link": "https://link.springer.com/article/10.1007/s11704-020-9526-x"
   },
@@ -234,6 +430,7 @@
     "title": "COVID-DAI: A novel framework for COVID‐19 detection and infection growth estimation using computed tomography images",
     "authors": "N Tahira, M Nawaz, A Javed, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem, and M AlKathami",
     "venue": "Microscopy Research and Technique",
+    "year": 2022,
     "ifValue": "3.39",
     "link": "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/abs/10.1002/jemt.24088?casa_token=o9PJaMnnjX4AAAAA:gpDmP2lo4NR0GKc_mcjxxvaSALSOPIOgqigaJAA1wq8ouSbcqAFG8cnDROda_zhCheCJbxrdvioZ9A"
   },
@@ -248,29 +445,28 @@
     "title": "Convergence Track Based Adaptive Differential Evolution Algorithm (CTbADE)",
     "authors": "Q Abbas, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem,and M AlKhathami",
     "venue": "CMC-Computers, Materials & Continua",
-    "ifValue": "",
     "link": "https://cdn.techscience.cn/ueditor/files/cmc/TSP_CMC-72-1/TSP_CMC_24211/TSP_CMC_24211.pdf"
   },
   {
     "title": "A diagnostic system for COVID-19 detection and growth rate prediction",
     "authors": "A Javed, T Nazir, M Nawaz, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem, and M AlKhathami",
-    "venue": "Microscopy Research technique",
-    "ifValue": "",
-    "link": ""
+    "venue": "Microscopy Research technique"
   },
   {
-    "title": "WEENet: An Edge Intelligence-Assisted COVID-19 Detection System for IoMT Environments",
-    "authors": "K Muhammad, Z Khan, A Khader Jilani Saudagar, A AlTameem, M AlKhathami, M Badruddin Khan, M Hoque Abul Hasanat, K Mahmood Malik, M Sajjad",
+    "title": "WEENet: An Intelligent System for Diagnosing COVID-19 and Lung Cancer in IoMT Environments",
+    "authors": "K Muhammad, H Ullah, ZA Khan, AKJ Saudagar, A AlTameem, M AlKhathami, MB Khan, MHA Hasanat, KM Malik, M Sajjad",
     "venue": "Frontiers in Oncology",
+    "year": 2022,
     "ifValue": "5.60",
-    "link": ""
+    "link": "https://doi.org/10.3389/fonc.2021.811355"
   },
   {
-    "title": "Automated Query Generation and Quality Recognition to Curate Evidence from Biomedical Literature",
-    "authors": "M Afzal, M Hussain, K Mahmood Malik",
+    "title": "Impact of Automatic Query Generation and Quality Recognition Using Deep Learning to Curate Evidence From Biomedical Literature: Empirical Study",
+    "authors": "M Afzal, M Hussain, KM Malik, S Lee",
     "venue": "JMIR Medical Informatics",
+    "year": 2019,
     "ifValue": "3.18",
-    "link": ""
+    "link": "https://doi.org/10.2196/13430"
   },
   {
     "title": "A comprehensive review of type-2 fuzzy Ontology",
@@ -360,7 +556,6 @@
     "title": "Knowledge Extraction Based on Linked Open Data for Clinical Documentation",
     "authors": "Alobaidi, M, Khalid Mahmood Malik., & Sabra, S.",
     "venue": "The International Journal of Simulation and Process Modelling",
-    "ifValue": "",
     "link": "https://www.inderscienceonline.com/doi/abs/10.1504/IJSPM.2018.091697"
   },
   {
@@ -381,14 +576,12 @@
     "title": "Autonomous L3 Cache Technology for High Responsiveness",
     "authors": "Takahashi H., Khalid Mahmood Malik., K. Mori",
     "venue": "Journal of Information Processing",
-    "ifValue": "",
     "link": "https://www.jstage.jst.go.jp/article/ipsjjip/20/2/20_2_358/_article/-char/ja/"
   },
   {
     "title": "Secure Banking: Authenticating Peer-to-Peer Ad Hoc Interactions",
     "authors": "Khalid Mahmood Malik, I. Hameed, K. Rashid",
     "venue": "Journal of Applied Science",
-    "ifValue": "",
     "link": "https://scialert.net/fulltext/?doi=jas.2003.346.359"
   }
 ]

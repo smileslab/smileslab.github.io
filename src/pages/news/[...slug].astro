@@ -1,0 +1,252 @@
+---
+import type { GetStaticPaths } from 'astro'
+import { Image } from 'astro:assets'
+import { getCollection, render, type CollectionEntry } from 'astro:content'
+import Base from '../../layouts/Base.astro'
+import Icon from '../../components/Icon.astro'
+import { formatDate, isoDate, readingTime } from '../../lib/format'
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  // Drafts and link-only items get no page of their own.
+  const posts = await getCollection(
+    'news',
+    ({ data }) => !data.draft && !data.externalUrl
+  )
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }))
+}
+
+type Props = { post: CollectionEntry<'news'> }
+
+const { post } = Astro.props
+const { Content } = await render(post)
+const { title, date, description, kind, tags, author, cover, coverAlt } =
+  post.data
+
+const minutes = kind === 'blog' ? readingTime(post.body ?? '') : null
+
+const siblings = (await getCollection('news', ({ data }) => !data.draft))
+  .filter((entry) => entry.id !== post.id)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 2)
+---
+
+<Base
+  title={title}
+  description={description}
+  type="article"
+  publishedTime={date}
+>
+  <article>
+    <header class="post-header">
+      <div class="wrap-narrow">
+        <a href="/news" class="back">
+          <Icon name="arrow-right" size={15} class="flip" />
+          All news
+        </a>
+
+        <div class="meta">
+          <span class:list={['pill', kind === 'blog' ? 'pill-accent' : '']}>
+            {kind === 'blog' ? 'Blog' : 'News'}
+          </span>
+          <time datetime={isoDate(date)}>{formatDate(date)}</time>
+          {minutes && <span class="dot">·</span>}
+          {minutes && <span>{minutes}</span>}
+        </div>
+
+        <h1>{title}</h1>
+        <p class="lede">{description}</p>
+        {author && <p class="byline">By {author}</p>}
+      </div>
+    </header>
+
+    {
+      cover && (
+        <div class="cover wrap">
+          <Image
+            src={cover}
+            alt={coverAlt ?? ''}
+            width={1600}
+            height={840}
+            densities={[1, 2]}
+            loading="eager"
+          />
+        </div>
+      )
+    }
+
+    <div class="section">
+      <div class="wrap-narrow">
+        <div class="prose">
+          <Content />
+        </div>
+
+        {
+          tags.length > 0 && (
+            <ul class="tags">
+              {tags.map((tag) => (
+                <li class="pill">#{tag}</li>
+              ))}
+            </ul>
+          )
+        }
+      </div>
+    </div>
+  </article>
+
+  {
+    siblings.length > 0 && (
+      <section class="section section-tint">
+        <div class="wrap-narrow">
+          <h2 class="eyebrow">Keep reading</h2>
+          <ul class="siblings">
+            {siblings.map((sibling) => (
+              <li>
+                <a href={sibling.data.externalUrl ?? `/news/${sibling.id}`}>
+                  <time datetime={isoDate(sibling.data.date)}>
+                    {formatDate(sibling.data.date)}
+                  </time>
+                  <span class="sibling-title">{sibling.data.title}</span>
+                  <Icon name="arrow-right" size={16} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+</Base>
+
+<style>
+  .post-header {
+    padding-block: clamp(2rem, 5vw, 3.25rem) clamp(1.5rem, 3vw, 2rem);
+    background:
+      radial-gradient(
+        55rem 22rem at 20% -20%,
+        var(--accent-soft) 0%,
+        transparent 65%
+      ),
+      var(--bg);
+  }
+
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--muted);
+    font-size: var(--text-sm);
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  .back:hover {
+    color: var(--accent);
+  }
+
+  .back :global(.flip) {
+    transform: rotate(180deg);
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.75rem;
+    color: var(--muted);
+    font-size: var(--text-sm);
+  }
+
+  .dot {
+    opacity: 0.6;
+  }
+
+  h1 {
+    font-size: var(--text-4xl);
+    margin-top: 1.1rem;
+  }
+
+  .lede {
+    margin-top: 1.15rem;
+  }
+
+  .byline {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: var(--text-sm);
+  }
+
+  .cover {
+    margin-top: 2.5rem;
+  }
+
+  .cover :global(img) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+    border-radius: var(--r-lg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    list-style: none;
+    padding: 2.5rem 0 0;
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .siblings {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .siblings a {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.2rem 1rem;
+    padding: 1.1rem 1.35rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    text-decoration: none;
+    transition:
+      border-color 0.2s var(--ease),
+      transform 0.2s var(--ease);
+  }
+
+  .siblings a:hover {
+    border-color: var(--border-strong);
+    transform: translateX(3px);
+  }
+
+  .siblings time {
+    grid-column: 1;
+    color: var(--muted);
+    font-size: var(--text-xs);
+  }
+
+  .sibling-title {
+    grid-column: 1;
+    color: var(--ink);
+    font-weight: 580;
+    line-height: 1.4;
+  }
+
+  .siblings :global(svg) {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    color: var(--accent);
+  }
+</style>

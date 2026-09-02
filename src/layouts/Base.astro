@@ -1,0 +1,175 @@
+---
+import '../styles/global.css'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import { site } from '../data/site'
+
+interface Props {
+  /** Page-specific title. Omit on the home page to use the site title alone. */
+  title?: string
+  description?: string
+  /** Absolute or root-relative path to a social share image. */
+  image?: string
+  /** Set on article pages so Open Graph reports the right type. */
+  type?: 'website' | 'article'
+  publishedTime?: Date
+  /** Keeps a page out of search results (used on 404). */
+  noindex?: boolean
+}
+
+const {
+  title,
+  description = site.description,
+  image = site.ogImage,
+  type = 'website',
+  publishedTime,
+  noindex = false,
+} = Astro.props
+
+const pageTitle = title ? `${title} · ${site.name}` : `${site.name} · ${site.longName}`
+const canonical = new URL(Astro.url.pathname, site.url).href.replace(/\/$/, '') || site.url
+const socialImage = new URL(image, site.url).href
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ResearchOrganization',
+  name: site.name,
+  alternateName: site.longName,
+  url: site.url,
+  description: site.description,
+  parentOrganization: {
+    '@type': 'CollegeOrUniversity',
+    name: site.institution,
+    url: 'https://www.umflint.edu/',
+  },
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/smiles-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${site.name} — News`}
+      href="/rss.xml"
+    />
+
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    {
+      publishedTime && (
+        <meta
+          property="article:published_time"
+          content={publishedTime.toISOString()}
+        />
+      )
+    }
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..750&display=swap"
+    />
+
+    <script
+      is:inline
+      set:html={`
+      (function () {
+        var root = document.documentElement;
+        root.classList.add('js');
+        try {
+          var stored = localStorage.getItem('smiles-theme');
+          if (stored === 'light' || stored === 'dark') root.dataset.theme = stored;
+        } catch (e) {
+          /* blocked site data — fall back to the OS preference */
+        }
+      })();
+    `}
+    />
+
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(orgSchema)}
+    />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      // Reveal-on-scroll. Purely decorative, and deliberately fail-safe: the
+      // CSS only hides [data-reveal] elements once `reveal-active` is on
+      // <html>, and that class is added here, immediately before observing.
+      // If this script never runs, nothing is ever hidden.
+      const targets = document.querySelectorAll<HTMLElement>('[data-reveal]')
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)')
+
+      if (
+        targets.length &&
+        !reduced.matches &&
+        'IntersectionObserver' in window
+      ) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue
+              const el = entry.target as HTMLElement
+              const delay = Number(el.dataset.revealDelay ?? 0)
+              window.setTimeout(() => el.classList.add('is-visible'), delay)
+              observer.unobserve(el)
+            }
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+        )
+
+        document.documentElement.classList.add('reveal-active')
+        targets.forEach((target) => observer.observe(target))
+
+        // Safety net: if the observer has not reported on an element within a
+        // second (background tab, prerender, an engine quirk), show it anyway
+        // rather than leaving content invisible.
+        window.setTimeout(() => {
+          targets.forEach((target) => target.classList.add('is-visible'))
+        }, 1000)
+      }
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+</style>
