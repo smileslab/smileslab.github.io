@@ -49,8 +49,8 @@ function slugify(value: string): string {
     .slice(0, 70)
 }
 
-export const publications: Publication[] = (raw as RawPublication[]).map(
-  (entry, index) => {
+export const publications: Publication[] = (raw as RawPublication[])
+  .map((entry, index) => {
     const venue = cleanVenue(entry.venue)
     const authors = (entry.authors ?? '').trim()
     const title = entry.title.trim()
@@ -64,9 +64,21 @@ export const publications: Publication[] = (raw as RawPublication[]).map(
       link: entry.link?.trim() || null,
       year: extractYear(entry),
       search: `${title} ${authors} ${venue}`.toLowerCase(),
+      // Preserves source order as the tie-break, so undated entries keep the
+      // sequence they were curated in.
+      _index: index,
     }
-  }
-)
+  })
+  // Newest first. Entries with no year yet sort to the end rather than being
+  // treated as year zero and burying them among the oldest work.
+  .sort((a, b) => {
+    if (a.year !== null && b.year !== null) {
+      return b.year - a.year || a._index - b._index
+    }
+    if (a.year === null && b.year === null) return a._index - b._index
+    return a.year === null ? 1 : -1
+  })
+  .map(({ _index, ...publication }) => publication)
 
 export const publicationCount = publications.length
 
