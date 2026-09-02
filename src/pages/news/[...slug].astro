@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths } from 'astro'
 import { Image } from 'astro:assets'
-import { getCollection, render } from 'astro:content'
+import { getCollection, render, type CollectionEntry } from 'astro:content'
 import Base from '../../layouts/Base.astro'
 import Icon from '../../components/Icon.astro'
 import { formatDate, isoDate, readingTime } from '../../lib/format'
@@ -17,6 +17,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     props: { post },
   }))
 }
+
+type Props = { post: CollectionEntry<'news'> }
 
 const { post } = Astro.props
 const { Content } = await render(post)

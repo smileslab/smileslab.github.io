@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro'
-import { getCollection, render } from 'astro:content'
+import { getCollection, render, type CollectionEntry } from 'astro:content'
 import Base from '../../layouts/Base.astro'
 import Icon from '../../components/Icon.astro'
 
@@ -11,6 +11,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     props: { project },
   }))
 }
+
+type Props = { project: CollectionEntry<'projects'> }
 
 const { project } = Astro.props
 const { Content } = await render(project)
