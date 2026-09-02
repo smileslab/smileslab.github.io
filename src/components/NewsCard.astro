@@ -16,9 +16,17 @@ const { title, date, description, kind, tags, cover, coverAlt, externalUrl } =
 
 const href = externalUrl ?? `/news/${post.id}`
 const isExternal = Boolean(externalUrl)
+
+// The featured treatment is a two-column split with the cover on one side.
+// Without a cover there is nothing to put there, so fall back to the regular
+// single-column card rather than leaving half the row empty.
+const isSplit = featured && Boolean(cover)
 ---
 
-<article class:list={['news card card-hover', { featured }]} data-reveal>
+<article
+  class:list={['news card card-hover', { featured: isSplit, lead: featured }]}
+  data-reveal
+>
   {
     cover && (
       <a class="cover" href={href} tabindex="-1" aria-hidden="true">
@@ -179,6 +187,20 @@ const isExternal = Boolean(externalUrl)
 
   .news:hover .more :global(svg) {
     transform: translateX(3px);
+  }
+
+  /* Coverless lead post: no split, just a touch more presence. */
+  .news.lead:not(.featured) .body {
+    padding: 1.75rem 1.85rem 1.6rem;
+  }
+
+  .news.lead:not(.featured) h3 {
+    font-size: var(--text-2xl);
+  }
+
+  .news.lead:not(.featured) .excerpt {
+    font-size: var(--text-base);
+    max-width: 62ch;
   }
 
   @media (min-width: 46rem) {

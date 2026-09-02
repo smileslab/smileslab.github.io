@@ -242,6 +242,12 @@ hr {
   padding-block: var(--section-y);
 }
 
+/* A page header already supplies generous breathing room below its lede, so
+   the first section after one does not need a full section's worth again. */
+.page-header + .section {
+  padding-top: clamp(1.25rem, 2.5vw, 2rem);
+}
+
 .section-tint {
   background: var(--bg-tint);
   border-block: 1px solid var(--border);
