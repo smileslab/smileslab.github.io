@@ -1,0 +1,92 @@
+---
+import Icon from './Icon.astro'
+import type { IconName } from './Icon.astro'
+
+interface Props {
+  links: {
+    website?: string
+    scholar?: string
+    linkedin?: string
+    github?: string
+    youtube?: string
+    email?: string
+    cv?: string
+  }
+  /** Name of the person, so each link has a distinct accessible label. */
+  personName: string
+  size?: number
+}
+
+const { links, personName, size = 17 } = Astro.props
+
+const order: {
+  key: keyof Props['links']
+  icon: IconName
+  label: string
+  href: (value: string) => string
+}[] = [
+  {
+    key: 'scholar',
+    icon: 'scholar',
+    label: 'Google Scholar',
+    href: (v) => v,
+  },
+  { key: 'website', icon: 'globe', label: 'Personal website', href: (v) => v },
+  { key: 'github', icon: 'github', label: 'GitHub', href: (v) => v },
+  { key: 'linkedin', icon: 'linkedin', label: 'LinkedIn', href: (v) => v },
+  { key: 'youtube', icon: 'youtube', label: 'YouTube', href: (v) => v },
+  { key: 'cv', icon: 'file-text', label: 'CV', href: (v) => v },
+  { key: 'email', icon: 'mail', label: 'Email', href: (v) => `mailto:${v}` },
+]
+
+const available = order.filter((item) => Boolean(links[item.key]))
+---
+
+{
+  available.length > 0 && (
+    <ul class="socials">
+      {available.map((item) => (
+        <li>
+          <a
+            href={item.href(links[item.key]!)}
+            target={item.key === 'email' ? undefined : '_blank'}
+            rel={item.key === 'email' ? undefined : 'noopener noreferrer'}
+            aria-label={`${personName} — ${item.label}`}
+            title={item.label}
+          >
+            <Icon name={item.icon} size={size} />
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+<style>
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--r-full);
+    color: var(--muted);
+    background: transparent;
+    transition:
+      color 0.18s var(--ease),
+      background-color 0.18s var(--ease);
+  }
+
+  a:hover {
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+</style>

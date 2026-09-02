@@ -1,0 +1,92 @@
+---
+import Icon from './Icon.astro'
+---
+
+<button
+  type="button"
+  class="theme-toggle"
+  data-theme-toggle
+  aria-label="Switch between light and dark theme"
+  title="Switch theme"
+>
+  <Icon name="sun" size={18} class="icon-sun" />
+  <Icon name="moon" size={18} class="icon-moon" />
+</button>
+
+<style>
+  .theme-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 2.35rem;
+    height: 2.35rem;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: var(--r-full);
+    background: transparent;
+    color: var(--ink-2);
+    cursor: pointer;
+    transition:
+      background-color 0.18s var(--ease),
+      color 0.18s var(--ease),
+      border-color 0.18s var(--ease);
+  }
+
+  .theme-toggle:hover {
+    background: var(--surface-2);
+    border-color: var(--border);
+    color: var(--ink);
+  }
+
+  /* Both glyphs occupy the same cell; only one is shown. */
+  .theme-toggle :global(svg) {
+    grid-area: 1 / 1;
+  }
+
+  .theme-toggle :global(.icon-moon) {
+    display: none;
+  }
+
+  :global(:root[data-theme='dark']) .theme-toggle :global(.icon-sun) {
+    display: none;
+  }
+
+  :global(:root[data-theme='dark']) .theme-toggle :global(.icon-moon) {
+    display: block;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not([data-theme='light'])) .theme-toggle :global(.icon-sun) {
+      display: none;
+    }
+    :global(:root:not([data-theme='light'])) .theme-toggle :global(.icon-moon) {
+      display: block;
+    }
+  }
+</style>
+
+<script>
+  // The inline script in Base.astro has already applied the stored theme
+  // before first paint; this only wires up the click behaviour.
+  const STORAGE_KEY = 'smiles-theme'
+
+  function currentTheme(): 'light' | 'dark' {
+    const explicit = document.documentElement.dataset.theme
+    if (explicit === 'light' || explicit === 'dark') return explicit
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light'
+  }
+
+  document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const next = currentTheme() === 'dark' ? 'light' : 'dark'
+      document.documentElement.dataset.theme = next
+      try {
+        localStorage.setItem(STORAGE_KEY, next)
+      } catch {
+        // Private browsing or blocked site data — the theme still applies for
+        // this page view, it just will not be remembered.
+      }
+    })
+  })
+</script>
