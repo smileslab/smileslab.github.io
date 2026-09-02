@@ -453,16 +453,20 @@
     "venue": "Microscopy Research technique"
   },
   {
-    "title": "WEENet: An Edge Intelligence-Assisted COVID-19 Detection System for IoMT Environments",
-    "authors": "K Muhammad, Z Khan, A Khader Jilani Saudagar, A AlTameem, M AlKhathami, M Badruddin Khan, M Hoque Abul Hasanat, K Mahmood Malik, M Sajjad",
+    "title": "WEENet: An Intelligent System for Diagnosing COVID-19 and Lung Cancer in IoMT Environments",
+    "authors": "K Muhammad, H Ullah, ZA Khan, AKJ Saudagar, A AlTameem, M AlKhathami, MB Khan, MHA Hasanat, KM Malik, M Sajjad",
     "venue": "Frontiers in Oncology",
-    "ifValue": "5.60"
+    "year": 2022,
+    "ifValue": "5.60",
+    "link": "https://doi.org/10.3389/fonc.2021.811355"
   },
   {
-    "title": "Automated Query Generation and Quality Recognition to Curate Evidence from Biomedical Literature",
-    "authors": "M Afzal, M Hussain, K Mahmood Malik",
+    "title": "Impact of Automatic Query Generation and Quality Recognition Using Deep Learning to Curate Evidence From Biomedical Literature: Empirical Study",
+    "authors": "M Afzal, M Hussain, KM Malik, S Lee",
     "venue": "JMIR Medical Informatics",
-    "ifValue": "3.18"
+    "year": 2019,
+    "ifValue": "3.18",
+    "link": "https://doi.org/10.2196/13430"
   },
   {
     "title": "A comprehensive review of type-2 fuzzy Ontology",
