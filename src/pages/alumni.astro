@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 import Base from '../layouts/Base.astro'
 import PageHeader from '../components/PageHeader.astro'
 import PersonCard from '../components/PersonCard.astro'
@@ -8,6 +8,14 @@ import Icon from '../components/Icon.astro'
 const alumni = (await getCollection('alumni')).sort(
   (a, b) =>
     a.data.order - b.data.order || a.data.name.localeCompare(b.data.name)
+)
+
+// Alumni entries may carry a short note about their time in the lab.
+const entries = await Promise.all(
+  alumni.map(async (person) => ({
+    person,
+    Content: person.body?.trim() ? (await render(person)).Content : null,
+  }))
 )
 ---
 
@@ -26,8 +34,10 @@ const alumni = (await getCollection('alumni')).sort(
       {
         alumni.length > 0 ? (
           <div class="grid grid-people">
-            {alumni.map((person) => (
-              <PersonCard person={person} />
+            {entries.map(({ person, Content }) => (
+              <PersonCard person={person}>
+                {Content && <Content />}
+              </PersonCard>
             ))}
           </div>
         ) : (

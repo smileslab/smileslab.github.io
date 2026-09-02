@@ -1,9 +1,8 @@
 ---
 name: Ryan Raymond
-role: MS Student, Computer Science
-group: ms
+role: MS in Computer Science
 photo: ../../assets/people/ryan-raymond.jpg
-order: 30
+order: 20
 researchAreas:
   - Cybersecurity
   - Networking

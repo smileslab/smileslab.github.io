@@ -49,6 +49,7 @@ const alumni = defineCollection({
       /** Where they went next. */
       now: z.string().optional(),
       photo: image().optional(),
+      researchAreas: z.array(z.string()).default([]),
       links: links,
       order: z.number().default(100),
     }),
