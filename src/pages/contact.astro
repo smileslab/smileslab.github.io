@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro'
 import PageHeader from '../components/PageHeader.astro'
 import Icon from '../components/Icon.astro'
+import EmailLink from '../components/EmailLink.astro'
 import { contact, site } from '../data/site'
 
 const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -19,13 +20,13 @@ const routes = [
     icon: 'shield' as const,
     title: 'Research collaboration',
     body: 'Industry and academic partnerships across multimedia forensics, cybersecurity and clinical AI.',
-    action: { label: `Email ${contact.email}`, href: `mailto:${contact.email}` },
+    action: null,
   },
   {
     icon: 'book' as const,
     title: 'Press & speaking',
     body: 'Enquiries about deepfake detection, AI trust and safety, or the lab’s clinical work.',
-    action: { label: `Email ${contact.email}`, href: `mailto:${contact.email}` },
+    action: null,
   },
 ]
 ---
@@ -52,10 +53,14 @@ const routes = [
               <div>
                 <h2>{route.title}</h2>
                 <p>{route.body}</p>
-                <a class="route-action" href={route.action.href}>
-                  {route.action.label}
-                  <Icon name="arrow-right" size={15} />
-                </a>
+                {route.action ? (
+                  <a class="route-action" href={route.action.href}>
+                    {route.action.label}
+                    <Icon name="arrow-right" size={15} />
+                  </a>
+                ) : (
+                  <EmailLink class="route-action" label="Email the lab" showIcon />
+                )}
               </div>
             </article>
           ))
@@ -101,10 +106,7 @@ const routes = [
 
         <div class="card panel accent">
           <h2>General enquiries</h2>
-          <a class="email" href={`mailto:${contact.email}`}>
-            <Icon name="mail" size={18} />
-            {contact.email}
-          </a>
+          <EmailLink class="email" showIcon />
         </div>
       </aside>
     </div>

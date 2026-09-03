@@ -24,8 +24,8 @@ export const site = {
 } as const
 
 export const contact = {
-  // TODO: replace with the lab's real contact address.
-  email: 'smileslab@umich.edu',
+  // Never rendered as a literal mailto: — see components/EmailLink.astro.
+  email: 'drmalik@umich.edu',
   piName: 'Dr. Khalid Mahmood Malik',
   piRole: 'Director, Cyber Security · Professor of Computer Science',
   // TODO: verify the building and room number.

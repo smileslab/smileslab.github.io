@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro'
 import PageHeader from '../components/PageHeader.astro'
 import Icon from '../components/Icon.astro'
-import { contact } from '../data/site'
+import EmailLink from '../components/EmailLink.astro'
 
 const profile = [
   "Bachelor's or master's degree in computer science or electrical engineering",
@@ -212,10 +212,11 @@ const materials = [
             </div>
           </dl>
 
-          <a class="btn btn-primary" href={`mailto:${contact.email}`}>
-            <Icon name="mail" size={16} />
-            Email your application
-          </a>
+          <EmailLink
+            variant="button"
+            label="Email your application"
+            showIcon
+          />
           <p class="fineprint">
             Please put the project you are interested in in the subject line.
           </p>

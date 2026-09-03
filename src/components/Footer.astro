@@ -1,5 +1,6 @@
 ---
 import { contact, footerNav, site } from '../data/site'
+import EmailLink from './EmailLink.astro'
 import Icon from './Icon.astro'
 
 const year = new Date().getFullYear()
@@ -32,10 +33,7 @@ const year = new Date().getFullYear()
             site.institution
           }.
         </p>
-        <a class="mail" href={`mailto:${contact.email}`}>
-          <Icon name="mail" size={16} />
-          {contact.email}
-        </a>
+        <EmailLink class="mail" showIcon />
       </div>
 
       <div class="links">
