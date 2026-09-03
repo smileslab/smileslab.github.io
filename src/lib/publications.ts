@@ -115,3 +115,26 @@ export const topImpactFactor: string | null = publications.reduce<
   if (best === null) return publication.impactFactor
   return value > Number.parseFloat(best) ? publication.impactFactor : best
 }, null)
+
+/**
+ * Publications grouped under a year heading, newest first. Entries with no
+ * year yet are collected into a final `null` group so they are still listed
+ * rather than silently dropped.
+ */
+export const publicationsByYear: { year: number | null; items: Publication[] }[] =
+  (() => {
+    const groups = new Map<number | null, Publication[]>()
+    for (const publication of publications) {
+      const key = publication.year
+      const bucket = groups.get(key)
+      if (bucket) bucket.push(publication)
+      else groups.set(key, [publication])
+    }
+    return [...groups.entries()]
+      .map(([year, items]) => ({ year, items }))
+      .sort((a, b) => {
+        if (a.year === null) return 1
+        if (b.year === null) return -1
+        return b.year - a.year
+      })
+  })()
