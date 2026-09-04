@@ -380,7 +380,7 @@
     "venue": "Computer Methods and Programs in Biomedicine",
     "year": 2020,
     "ifValue": "3.62",
-    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0169260720315340?casa_token=tvUmHtdR8YEAAAAA:cYh8d_DuuLvGZW2bkGXXSZwgg2Ak4aouPZ4zDWoCGADpBkjEnLi7woW2pUolELUwVFYWxaIP"
+    "link": "https://doi.org/10.1016/j.cmpb.2020.105701"
   },
   {
     "title": "A Clinical Context- aware Biomedical Text Summarization using Deep Neural Network: Model Development and Validation",
@@ -436,7 +436,7 @@
     "venue": "Microscopy Research and Technique",
     "year": 2022,
     "ifValue": "3.39",
-    "link": "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/abs/10.1002/jemt.24088?casa_token=o9PJaMnnjX4AAAAA:gpDmP2lo4NR0GKc_mcjxxvaSALSOPIOgqigaJAA1wq8ouSbcqAFG8cnDROda_zhCheCJbxrdvioZ9A"
+    "link": "https://doi.org/10.1002/jemt.24088"
   },
   {
     "title": "Disease Progression Detection via Deep Sequence Learning of Successive Radiographic Scans",
