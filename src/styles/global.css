@@ -280,23 +280,12 @@ hr {
    ========================================================================== */
 
 .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: inline-block;
   font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
-}
-
-.eyebrow::before {
-  content: '';
-  width: 1.75rem;
-  height: 2px;
-  border-radius: 2px;
-  background: currentColor;
-  opacity: 0.5;
 }
 
 .section-title {

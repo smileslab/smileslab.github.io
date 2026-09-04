@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" aria-hidden="true">
+  <!-- Shield ring: evenodd so the inner outline subtracts from the outer. -->
+  <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+        d="M128 24C102 43 74 57 43 64C35 66 30 73 30 81V120C30 172 63 211 128 233C193 211 226 172 226 120V81C226 73 221 66 213 64C182 57 154 43 128 24ZM128 47C105 62 80 74 53 81V120C53 159 77 190 128 210C179 190 203 159 203 120V81C176 74 151 62 128 47Z"/>
+  <!-- Nodes and edges: nonzero so overlapping shapes merge instead of
+       cancelling, which is what produced notches where edges met nodes. -->
+  <path fill="currentColor" fill-rule="nonzero"
+        d="M128 69A18 18 0 1 1 127.999 105A18 18 0 0 1 128 69ZM121 98H135V124H121ZM128 118A19 19 0 1 1 127.999 156A19 19 0 0 1 128 118ZM113 140L123 151L91 179L81 168ZM143 140L175 168L165 179L133 151ZM78 158A18 18 0 1 1 77.999 194A18 18 0 0 1 78 158ZM178 158A18 18 0 1 1 177.999 194A18 18 0 0 1 178 158Z"/>
+</svg>
