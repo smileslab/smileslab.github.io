@@ -1,9 +1,7 @@
 ---
-# TODO: confirm Ali Javed's exact role while with the lab (postdoc, visiting
-# researcher, collaborating faculty?) and add `years:` and `now:` if you want
-# them shown on the card.
+# TODO: add `years:` and `now:` when known.
 name: Ali Javed
-role: Researcher
+role: Postdoctoral Researcher
 order: 10
 researchAreas:
   - Voice spoofing detection
