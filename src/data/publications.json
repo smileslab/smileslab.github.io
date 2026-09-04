@@ -4,6 +4,7 @@
     "authors": "A Khan, IU Haq, KM Malik",
     "venue": "IEEE Transactions on Consumer Electronics",
     "year": 2026,
+    "ifValue": "9.9",
     "link": "https://doi.org/10.1109/tce.2026.3714273"
   },
   {
@@ -40,6 +41,7 @@
     "authors": "IU Haq, KM Malik",
     "venue": "IEEE Transactions on Computational Social Systems",
     "year": 2025,
+    "ifValue": "4.9",
     "link": "https://doi.org/10.1109/tcss.2025.3637242"
   },
   {
@@ -54,6 +56,7 @@
     "authors": "MU Farooq, A Khan, IU Haq, KM Malik",
     "venue": "IEEE Transactions on Computational Social Systems",
     "year": 2025,
+    "ifValue": "4.9",
     "link": "https://doi.org/10.1109/tcss.2025.3588348"
   },
   {
@@ -61,6 +64,7 @@
     "authors": "QU Ain, A Javed, KM Malik, A Irtaza",
     "venue": "Multimedia Tools and Applications",
     "year": 2025,
+    "ifValue": "3.6",
     "link": "https://doi.org/10.1007/s11042-024-20268-x"
   },
   {
@@ -104,6 +108,7 @@
     "authors": "F Khalid, A Javed, KM Malik, A Irtaza",
     "venue": "IEEE Transactions on Biometrics, Behavior, and Identity Science",
     "year": 2024,
+    "ifValue": "4.4",
     "link": "https://doi.org/10.1109/tbiom.2024.3407650"
   },
   {
@@ -160,6 +165,7 @@
     "authors": "M Nawaz, T Nazir, A Javed, KM Malik, AKJ Saudagar, MB Khan, et al.",
     "venue": "Frontiers in Medicine",
     "year": 2022,
+    "ifValue": "3.6",
     "link": "https://doi.org/10.3389/fmed.2022.1005920"
   },
   {
