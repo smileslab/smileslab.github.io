@@ -18,7 +18,6 @@ const links = z
     linkedin: z.string().url().optional(),
     github: z.string().url().optional(),
     youtube: z.string().url().optional(),
-    email: z.string().email().optional(),
     cv: z.string().optional(),
   })
   .default({})

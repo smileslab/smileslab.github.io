@@ -2,7 +2,6 @@
 import Base from '../layouts/Base.astro'
 import PageHeader from '../components/PageHeader.astro'
 import Icon from '../components/Icon.astro'
-import EmailLink from '../components/EmailLink.astro'
 import { contact, site } from '../data/site'
 
 const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -20,13 +19,13 @@ const routes = [
     icon: 'shield' as const,
     title: 'Research collaboration',
     body: 'Industry and academic partnerships across multimedia forensics, cybersecurity and clinical AI.',
-    action: null,
+    action: { label: 'Contact details', href: contact.directory },
   },
   {
     icon: 'book' as const,
     title: 'Press & speaking',
     body: "Enquiries about deepfake detection, AI trust and safety, or the lab's clinical work.",
-    action: null,
+    action: { label: 'Contact details', href: contact.directory },
   },
 ]
 ---
@@ -53,14 +52,18 @@ const routes = [
               <div>
                 <h2>{route.title}</h2>
                 <p>{route.body}</p>
-                {route.action ? (
-                  <a class="route-action" href={route.action.href}>
-                    {route.action.label}
-                    <Icon name="arrow-right" size={15} />
-                  </a>
-                ) : (
-                  <EmailLink class="route-action" label="Email the lab" showIcon />
-                )}
+                <a
+                  class="route-action"
+                  href={route.action.href}
+                  target={route.action.href.startsWith('http') ? '_blank' : undefined}
+                  rel={route.action.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                >
+                  {route.action.label}
+                  <Icon
+                    name={route.action.href.startsWith('http') ? 'arrow-up-right' : 'arrow-right'}
+                    size={15}
+                  />
+                </a>
               </div>
             </article>
           ))
@@ -101,12 +104,27 @@ const routes = [
               <Icon name="scholar" size={15} />
               Google Scholar
             </a>
+            <a href={contact.directory} target="_blank" rel="noopener noreferrer">
+              <Icon name="globe" size={15} />
+              UM-Flint directory
+            </a>
           </div>
         </div>
 
         <div class="card panel accent">
           <h2>General enquiries</h2>
-          <EmailLink class="email" showIcon />
+          <p class="panel-note">
+            Contact details for the lab are listed on the university directory.
+          </p>
+          <a
+            class="btn btn-primary"
+            href={contact.directory}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            UM-Flint directory
+            <Icon name="arrow-up-right" size={15} />
+          </a>
         </div>
       </aside>
     </div>
@@ -241,18 +259,11 @@ const routes = [
     border-color: var(--accent-border);
   }
 
-  .email {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    font-size: var(--text-lg);
-    font-weight: 620;
-    text-decoration: none;
-    word-break: break-all;
-  }
-
-  .email:hover {
-    text-decoration: underline;
+  .panel-note {
+    margin-bottom: 1.15rem;
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.6;
   }
 
   @media (min-width: 60rem) {

@@ -24,8 +24,12 @@ export const site = {
 } as const
 
 export const contact = {
-  // Never rendered as a literal mailto:, see components/EmailLink.astro.
-  email: 'drmalik@umich.edu',
+  // No email address is published anywhere on this site, by request. Contact
+  // routes point at the university's own faculty listing, which carries
+  // current contact details and is maintained by UM-Flint. Deliberately not
+  // the personal directory URL: that embeds the uniqname, from which the
+  // address is trivially derived.
+  directory: 'https://www.umflint.edu/cit/faculty-staff/computer-science/',
   piName: 'Dr. Khalid Mahmood Malik',
   piRole: 'Director, Cyber Security · Professor of Computer Science',
   // TODO: verify the building and room number.

@@ -5,7 +5,7 @@ import SocialLinks from './SocialLinks.astro'
 
 interface Props {
   person: CollectionEntry<'team'> | CollectionEntry<'alumni'>
-  /** Renders the larger treatment used for faculty. */
+  /** Renders the wider treatment used for faculty. */
   featured?: boolean
 }
 
@@ -24,6 +24,9 @@ const initials = data.name
   .slice(0, 2)
   .map((part) => part[0])
   .join('')
+
+// The avatar renders at 112px (150px for faculty); request 2x for retina.
+const renderPx = featured ? 300 : 224
 ---
 
 <article class:list={['person card card-hover', { featured }]} data-reveal>
@@ -33,9 +36,8 @@ const initials = data.name
         <Image
           src={data.photo}
           alt={`Portrait of ${data.name}`}
-          width={featured ? 480 : 360}
-          height={featured ? 480 : 360}
-          densities={[1, 2]}
+          width={renderPx}
+          height={renderPx}
           loading="lazy"
           decoding="async"
         />
@@ -70,10 +72,10 @@ const initials = data.name
     }
 
     <div class="slot"><slot /></div>
-  </div>
 
-  <div class="foot">
-    <SocialLinks links={data.links} personName={data.name} />
+    <div class="foot">
+      <SocialLinks links={data.links} personName={data.name} />
+    </div>
   </div>
 </article>
 
@@ -81,54 +83,65 @@ const initials = data.name
   .person {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    padding: 1.75rem 1.25rem 1rem;
   }
 
+  /* Small circular portrait rather than a full-bleed image: at card width a
+     square photo dominates the card and reads as a profile page, not a roster. */
   .photo {
-    position: relative;
-    aspect-ratio: 1;
+    width: 112px;
+    height: 112px;
+    flex: none;
     display: grid;
     place-items: center;
+    border-radius: 50%;
+    overflow: hidden;
     background: linear-gradient(
       160deg,
       var(--accent-soft),
       var(--surface-2) 70%
     );
-    overflow: hidden;
+    box-shadow: 0 0 0 1px var(--border);
   }
 
   .photo :global(img) {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 22%;
-    transition: transform 0.5s var(--ease);
+    object-position: center 20%;
+    transition: transform 0.4s var(--ease);
   }
 
   .person:hover .photo :global(img) {
-    transform: scale(1.035);
+    transform: scale(1.06);
   }
 
   .initials {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 650;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     color: var(--accent);
-    opacity: 0.55;
+    opacity: 0.6;
   }
 
   .body {
-    padding: 1.1rem 1.15rem 0.5rem;
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    width: 100%;
+    margin-top: 1.1rem;
   }
 
   h3 {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
     font-weight: 640;
+    line-height: 1.35;
   }
 
   .role {
-    margin-top: 0.2rem;
+    margin-top: 0.25rem;
     color: var(--ink-2);
     font-size: var(--text-sm);
     line-height: 1.5;
@@ -157,10 +170,16 @@ const initials = data.name
   .areas {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    justify-content: center;
+    gap: 0.3rem;
     list-style: none;
     padding: 0;
     margin-top: 0.85rem;
+  }
+
+  .areas .pill {
+    font-size: 0.6875rem;
+    padding: 0.15rem 0.5rem;
   }
 
   .slot:not(:empty) {
@@ -170,28 +189,33 @@ const initials = data.name
     color: var(--ink-2);
     font-size: var(--text-sm);
     line-height: 1.65;
+    text-align: left;
   }
 
   .foot {
-    padding: 0.5rem 0.8rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding-top: 0.9rem;
   }
 
-  /* Faculty get a wider, two-column treatment on roomy viewports. */
+  /* Faculty: portrait beside the bio, still a modest circle. */
   @media (min-width: 46rem) {
     .person.featured {
-      display: grid;
-      grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
-      grid-template-rows: 1fr auto;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      gap: 1.75rem;
+      padding: 2rem 2.25rem;
     }
 
     .person.featured .photo {
-      grid-row: 1 / -1;
-      aspect-ratio: auto;
-      min-height: 100%;
+      width: 150px;
+      height: 150px;
     }
 
     .person.featured .body {
-      padding: 1.6rem 1.75rem 0.75rem;
+      margin-top: 0;
     }
 
     .person.featured h3 {
@@ -202,8 +226,12 @@ const initials = data.name
       font-size: var(--text-base);
     }
 
+    .person.featured .areas {
+      justify-content: flex-start;
+    }
+
     .person.featured .foot {
-      padding: 0 1.5rem 1.4rem;
+      justify-content: flex-start;
     }
   }
 </style>

@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro'
 import PageHeader from '../components/PageHeader.astro'
 import Icon from '../components/Icon.astro'
-import EmailLink from '../components/EmailLink.astro'
+import { contact } from '../data/site'
 
 const profile = [
   "Bachelor's or master's degree in computer science or electrical engineering",
@@ -212,13 +212,18 @@ const materials = [
             </div>
           </dl>
 
-          <EmailLink
-            variant="button"
-            label="Email your application"
-            showIcon
-          />
+          <a
+            class="btn btn-primary"
+            href={contact.directory}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contact details
+            <Icon name="arrow-up-right" size={15} />
+          </a>
           <p class="fineprint">
-            Please put the project you are interested in in the subject line.
+            Dr. Malik's contact details are on his UM-Flint directory page.
+            Please name the project you are interested in when you write.
           </p>
         </div>
 

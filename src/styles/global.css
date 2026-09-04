@@ -272,7 +272,7 @@ hr {
 }
 
 .grid-people {
-  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(210px, 100%), 1fr));
 }
 
 /* ==========================================================================
