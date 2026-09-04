@@ -32,6 +32,7 @@
     "authors": "QU Ain, F Khalid, H Ilyas, A Javed, KM Malik, K Muhammad, A Irtaza",
     "venue": "Information Fusion",
     "year": 2026,
+    "ifValue": "18.16",
     "link": "https://doi.org/10.1016/j.inffus.2025.104120"
   },
   {
@@ -67,6 +68,7 @@
     "authors": "M Irfan, IU Haq, KM Malik, K Muhammad",
     "venue": "Computerized Medical Imaging and Graphics",
     "year": 2025,
+    "ifValue": "5.7",
     "link": "https://doi.org/10.1016/j.compmedimag.2025.102507"
   },
   {
@@ -451,6 +453,7 @@
     "authors": "Q Abbas, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem,and M AlKhathami",
     "venue": "CMC-Computers, Materials & Continua",
     "year": 2022,
+    "ifValue": "3.86",
     "link": "https://cdn.techscience.cn/ueditor/files/cmc/TSP_CMC-72-1/TSP_CMC_24211/TSP_CMC_24211.pdf"
   },
   {
