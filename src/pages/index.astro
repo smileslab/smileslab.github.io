@@ -101,7 +101,6 @@ const areas = [
   <section class="section">
     <div class="wrap">
       <header class="section-head" data-reveal>
-        <p class="eyebrow">What we work on</p>
         <h2 class="section-title">Three questions drive the lab</h2>
         <p class="lede">
           Our work combines machine learning with symbolic reasoning, applied
@@ -133,7 +132,6 @@ const areas = [
     <div class="wrap">
       <header class="section-head with-action" data-reveal>
         <div>
-          <p class="eyebrow">Featured projects</p>
           <h2 class="section-title">Research in progress</h2>
         </div>
         <a href="/research" class="btn btn-secondary btn-sm">
@@ -154,7 +152,6 @@ const areas = [
         <div class="wrap">
           <header class="section-head with-action" data-reveal>
             <div>
-              <p class="eyebrow">Latest</p>
               <h2 class="section-title">News &amp; writing</h2>
             </div>
             <a href="/news" class="btn btn-secondary btn-sm">
@@ -300,6 +297,12 @@ const areas = [
   /* --- sections --- */
   .section-head {
     margin-bottom: clamp(2rem, 4vw, 3rem);
+  }
+
+  /* The label above these headings used to supply the visual break; without
+     it the lede needs its own breathing room. */
+  .section-head .lede {
+    margin-top: 0.75rem;
   }
 
   .section-head.with-action {
