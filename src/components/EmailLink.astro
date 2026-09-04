@@ -88,7 +88,7 @@ const fallback = `${user} [at] ${domain}`
     try {
       address = `${atob(emailUser)}@${atob(emailDomain)}`
     } catch {
-      // Malformed payload — leave the readable fallback in place.
+      // Malformed payload, leave the readable fallback in place.
       continue
     }
 

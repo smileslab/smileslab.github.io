@@ -1,7 +1,7 @@
 ---
 title: The SMILES Lab website has a new home
 date: 2026-09-02
-description: We have rebuilt the lab website from the ground up — faster, fully indexable by search engines, and with a news section so you can follow what we are working on.
+description: We have rebuilt the lab website from the ground up. It is faster, fully indexable by search engines, and has a news section so you can follow what we are working on.
 kind: news
 tags:
   - lab
@@ -19,7 +19,7 @@ The new site fixes that, and adds a few things we have wanted for a while:
 - **Publications are searchable and filterable** across all 55+ papers.
 - **This news section**, where we will post awards, accepted papers, new
   collaborations and longer technical write-ups.
-- **Much faster loading**, particularly on mobile — images are now generated at
+- **Much faster loading**, particularly on mobile. Images are now generated at
   the size they are actually displayed rather than shipped at full resolution.
 
 If you spot something out of date or broken, please

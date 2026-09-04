@@ -43,7 +43,7 @@ const alumni = defineCollection({
   schema: ({ image }) =>
     z.object({
       name: z.string(),
-      /** Role held while in the lab, e.g. "PhD, 2019–2024". */
+      /** Role held while in the lab, e.g. "PhD, 2019-2024". */
       role: z.string(),
       years: z.string().optional(),
       /** Where they went next. */

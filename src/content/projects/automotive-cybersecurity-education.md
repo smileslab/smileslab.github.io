@@ -8,8 +8,8 @@ order: 7
 ---
 
 Cybersecurity education can be a little dry and theoretical, but it doesn't have
-to be that way. Our research group is developing a suite of tools — including
-digital twins and a visual question-answering system — to teach complex,
+to be that way. Our research group is developing a suite of tools, including
+digital twins and a visual question-answering system, to teach complex
 interdisciplinary topics such as automotive cybersecurity.
 
 Using neuro-symbolic logic, AI and the flipped classroom, we're redesigning

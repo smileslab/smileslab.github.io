@@ -4,7 +4,7 @@
  * every SEO tag at once.
  *
  * NOTE: entries marked `TODO:` below are placeholders that need a real value
- * before launch — search the repo for "TODO:" to find them all.
+ * before launch, search the repo for "TODO:" to find them all.
  */
 
 export const site = {
@@ -14,8 +14,8 @@ export const site = {
   acronymExpanded: 'SMILES',
   tagline: 'Making AI systems you can trust.',
   description:
-    'The SMILES Lab at the University of Michigan–Flint builds multimodal, neuro-symbolic AI for multimedia forensics, cybersecurity and clinical decision support.',
-  institution: 'University of Michigan–Flint',
+    'The SMILES Lab at the University of Michigan-Flint builds multimodal, neuro-symbolic AI for multimedia forensics, cybersecurity and clinical decision support.',
+  institution: 'University of Michigan-Flint',
   department: 'College of Innovation & Technology',
   url: 'https://smileslab.github.io',
   /** Used for og:image and Twitter cards. Generated at /og.png is out of
@@ -24,14 +24,14 @@ export const site = {
 } as const
 
 export const contact = {
-  // Never rendered as a literal mailto: — see components/EmailLink.astro.
+  // Never rendered as a literal mailto:, see components/EmailLink.astro.
   email: 'drmalik@umich.edu',
   piName: 'Dr. Khalid Mahmood Malik',
   piRole: 'Director, Cyber Security · Professor of Computer Science',
   // TODO: verify the building and room number.
   address: [
     'College of Innovation & Technology',
-    'University of Michigan–Flint',
+    'University of Michigan-Flint',
     '303 E. Kearsley Street',
     'Flint, MI 48502, USA',
   ],
@@ -77,7 +77,7 @@ export const footerNav: { title: string; items: NavItem[] }[] = [
       { label: 'Join the lab', href: '/join' },
       { label: 'Contact', href: '/contact' },
       {
-        label: 'UM–Flint CIT',
+        label: 'UM-Flint CIT',
         href: 'https://www.umflint.edu/cit/',
       },
     ],

@@ -10,7 +10,7 @@ draft: true
 ---
 
 <!--
-  DRAFT — set the real publication date and change `draft` to false to publish.
+  DRAFT, set the real publication date and change `draft` to false to publish.
 -->
 
 "Federated Fusion Learning with Attention Mechanism for Multi-Client Medical

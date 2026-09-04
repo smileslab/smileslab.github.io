@@ -17,7 +17,7 @@ organizations' sensitive data. They offer a secure, efficient and controlled
 online experience across sectors, addressing concerns related to security,
 productivity and content appropriateness.
 
-UM–Flint has partnered with leading Japanese URL filtering company Netstar Inc.
+UM-Flint has partnered with leading Japanese URL filtering company Netstar Inc.
 to develop a machine learning based solution. The team consists of PhD students
 and postdoctoral researchers from the SMILES Lab together with Netstar
 employees.

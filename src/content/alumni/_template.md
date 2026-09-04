@@ -2,7 +2,7 @@
 # Copy this file and rename it to the person's slug, e.g. jane-doe.md
 name: Full Name
 role: PhD in Computer Science
-years: 2020–2025
+years: 2020-2025
 now: Research Scientist at Example Corp
 # photo: ../../assets/people/jane-doe.jpg
 order: 10

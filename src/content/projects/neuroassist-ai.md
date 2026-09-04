@@ -19,9 +19,9 @@ worldwide and the second leading cause of death. Annually, 15 million people
 worldwide suffer a stroke; of these, 5 million die and another 5 million are
 left permanently disabled.
 
-Early diagnosis and improved clinical management of the factors causing stroke —
-cerebral aneurysms, AVM, and cerebral occlusive disease — is essential if these
-deaths and disabilities are to be prevented. Without a reliable prediction tool
+Early diagnosis and improved clinical management of the factors causing stroke,
+such as cerebral aneurysms, AVM, and cerebral occlusive disease, is essential if
+these deaths and disabilities are to be prevented. Without a reliable prediction tool
 it is difficult to save lives and preserve quality of life for patients at risk
 for subarachnoid hemorrhage. Such a tool would also save significant costs by
 avoiding unnecessary treatment associated with the main surgical procedures,
@@ -38,5 +38,5 @@ This project combines multimodal AI over DSA, MRA and CTA imaging together with
 clinical text, federated learning, RAG-based neuro-symbolic reasoning,
 computational fluid dynamics, and multimodal explainable AI. It takes in patient
 data, infuses it with domain knowledge, and arrives at a clinical severity and
-stroke risk score — with a full, explainable report clinicians can use to build
+stroke risk score, with a full, explainable report clinicians can use to build
 an informed treatment plan.

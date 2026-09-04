@@ -10,7 +10,7 @@ draft: true
 ---
 
 <!--
-  DRAFT — this post is written from the project description already on the site,
+  DRAFT, this post is written from the project description already on the site,
   but the date above is a placeholder. Set the real announcement date and change
   `draft` to false to publish it.
 -->

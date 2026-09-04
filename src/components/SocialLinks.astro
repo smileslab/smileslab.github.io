@@ -51,7 +51,7 @@ const available = order.filter((item) => Boolean(links[item.key]))
             href={item.href(links[item.key]!)}
             target={item.key === 'email' ? undefined : '_blank'}
             rel={item.key === 'email' ? undefined : 'noopener noreferrer'}
-            aria-label={`${personName} — ${item.label}`}
+            aria-label={`${personName}, ${item.label}`}
             title={item.label}
           >
             <Icon name={item.icon} size={size} />

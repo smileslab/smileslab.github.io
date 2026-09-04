@@ -61,7 +61,7 @@ const orgSchema = {
     <link
       rel="alternate"
       type="application/rss+xml"
-      title={`${site.name} — News`}
+      title={`${site.name} News`}
       href="/rss.xml"
     />
 
@@ -101,7 +101,7 @@ const orgSchema = {
           var stored = localStorage.getItem('smiles-theme');
           if (stored === 'light' || stored === 'dark') root.dataset.theme = stored;
         } catch (e) {
-          /* blocked site data — fall back to the OS preference */
+          /* blocked site data, fall back to the OS preference */
         }
       })();
     `}

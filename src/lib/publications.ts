@@ -14,7 +14,7 @@ export type Publication = {
   id: string
   title: string
   authors: string
-  /** Venue with any trailing "(2024)" stripped — the year lives in `year`. */
+  /** Venue with any trailing "(2024)" stripped, the year lives in `year`. */
   venue: string
   impactFactor: string | null
   link: string | null
@@ -82,7 +82,7 @@ export const publications: Publication[] = (raw as RawPublication[])
 
 export const publicationCount = publications.length
 
-/** Distinct venues, most frequent first — drives the venue filter. */
+/** Distinct venues, most frequent first, drives the venue filter. */
 export const venues: { name: string; count: number }[] = Object.entries(
   publications.reduce<Record<string, number>>((acc, publication) => {
     if (!publication.venue) return acc

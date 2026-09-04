@@ -17,7 +17,7 @@ links:
 ---
 
 Khalid Mahmood Malik is a Professor of Computer Science at the University of
-Michigan–Flint. His research interests include multimedia forensics, the
+Michigan-Flint. His research interests include multimedia forensics, the
 development of intelligent decision support systems through analysis of medical
 imaging and clinical text, secure multicast protocols for intelligent
 transportation systems, and automated ontology and knowledge graph generation.
