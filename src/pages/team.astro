@@ -7,17 +7,16 @@ import Icon from '../components/Icon.astro'
 
 const everyone = await getCollection('team')
 
+// The `faculty` key is kept as the data value so existing frontmatter stays
+// valid; only the heading changes. If the lab ever has a second faculty
+// member this title needs revisiting, since there is only ever one PI.
 const groups = [
-  { key: 'faculty', title: 'Faculty', blurb: 'Principal investigator' },
-  {
-    key: 'postdoc',
-    title: 'Research fellows',
-    blurb: 'Postdoctoral and senior researchers',
-  },
-  { key: 'phd', title: 'PhD students', blurb: null },
-  { key: 'ms', title: "Master's students", blurb: null },
-  { key: 'undergrad', title: 'Undergraduate researchers', blurb: null },
-  { key: 'collaborator', title: 'Collaborators', blurb: null },
+  { key: 'faculty', title: 'Principal Investigator' },
+  { key: 'postdoc', title: 'Research fellows' },
+  { key: 'phd', title: 'PhD students' },
+  { key: 'ms', title: "Master's students" },
+  { key: 'undergrad', title: 'Undergraduate researchers' },
+  { key: 'collaborator', title: 'Collaborators' },
 ] as const
 
 const sections = await Promise.all(
@@ -62,10 +61,12 @@ const populated = sections.filter((section) => section.members.length > 0)
           <section class="group" aria-labelledby={`group-${section.key}`}>
             <header class="group-head">
               <h2 id={`group-${section.key}`}>{section.title}</h2>
-              <span class="count">
-                {section.members.length}
-                <span class="sr-only"> members</span>
-              </span>
+              {section.members.length > 1 && (
+                <span class="count">
+                  {section.members.length}
+                  <span class="sr-only"> members</span>
+                </span>
+              )}
             </header>
 
             <div
