@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
 import Base from '../layouts/Base.astro'
 import Icon from '../components/Icon.astro'
@@ -7,7 +6,27 @@ import ProjectCard from '../components/ProjectCard.astro'
 import NewsCard from '../components/NewsCard.astro'
 import { site, stats } from '../data/site'
 import { publicationCount } from '../lib/publications'
-import heroImage from '../assets/lab/lab-1.jpeg'
+import HeroSlideshow from '../components/HeroSlideshow.astro'
+import lab1 from '../assets/lab/lab-1.jpeg'
+import lab2 from '../assets/lab/lab-2.jpeg'
+import lab3 from '../assets/lab/lab-3.jpeg'
+import lab4 from '../assets/lab/lab-4.jpeg'
+import lab5 from '../assets/lab/lab-5.jpeg'
+
+// Leads with people rather than buildings; reorder freely.
+const heroSlides = [
+  { src: lab4, alt: 'Members of the SMILES Lab together at a conference' },
+  {
+    src: lab3,
+    alt: 'Dr. Khalid Malik presenting at an advisory board meeting',
+  },
+  { src: lab5, alt: 'Lab members with colleagues at a conference' },
+  {
+    src: lab1,
+    alt: 'Aerial view of the University of Michigan-Flint campus and the Flint River',
+  },
+  { src: lab2, alt: 'A University of Michigan-Flint campus building' },
+]
 
 const projects = (await getCollection('projects'))
   .filter((project) => project.data.featured)
@@ -70,15 +89,7 @@ const areas = [
       </div>
 
       <div class="hero-media">
-        <Image
-          src={heroImage}
-          alt="Members of the SMILES Lab at a lab event"
-          width={1120}
-          height={840}
-          densities={[1, 2]}
-          loading="eager"
-          fetchpriority="high"
-        />
+        <HeroSlideshow slides={heroSlides} />
       </div>
     </div>
   </section>
@@ -251,14 +262,8 @@ const areas = [
     position: relative;
   }
 
-  .hero-media :global(img) {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: var(--r-lg);
-    box-shadow: var(--shadow-lg);
-    border: 1px solid var(--border);
+  .hero-media {
+    min-width: 0;
   }
 
   /* --- stats --- */
