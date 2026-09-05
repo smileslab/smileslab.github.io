@@ -1,6 +1,6 @@
 ---
 name: Muhammad Umar Farooq
-role: PhD Student, Computer Science
+role: PhD Student, Computing
 group: phd
 photo: ../../assets/people/umar-farooq.jpeg
 order: 23

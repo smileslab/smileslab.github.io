@@ -1,6 +1,6 @@
 ---
 name: Muhammad Irfan
-role: PhD Student, Oakland University
+role: PhD Student, Computing
 group: phd
 photo: ../../assets/people/muhammad-irfan.jpeg
 order: 21

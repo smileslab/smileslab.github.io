@@ -1,6 +1,6 @@
 ---
 name: James Ryan
-role: PhD Student, Computer Science
+role: PhD Student, Computing
 group: phd
 photo: ../../assets/people/james-ryan.jpeg
 order: 24

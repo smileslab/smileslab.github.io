@@ -1,6 +1,6 @@
 ---
 name: Muhammad Saad Saeed
-role: PhD Student, Computer Science
+role: PhD Student, Computing
 group: phd
 photo: ../../assets/people/saad-saeed.jpg
 order: 22

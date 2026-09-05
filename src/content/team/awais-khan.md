@@ -1,6 +1,6 @@
 ---
 name: Awais Khan
-role: PhD Student, Computer Science
+role: PhD Student, Computing
 group: phd
 photo: ../../assets/people/awais-khan.jpg
 order: 20
