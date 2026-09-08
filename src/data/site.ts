@@ -64,7 +64,7 @@ export const footerNav: { title: string; items: NavItem[] }[] = [
     items: [
       { label: 'Projects & funding', href: '/research' },
       { label: 'Publications', href: '/publications' },
-      { label: 'News & blog', href: '/news' },
+      { label: 'News & Blog', href: '/news' },
     ],
   },
   {
