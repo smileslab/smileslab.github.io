@@ -53,7 +53,7 @@ export const nav: NavItem[] = [
   { label: 'Research', href: '/research' },
   { label: 'Publications', href: '/publications' },
   { label: 'Team', href: '/team' },
-  { label: 'News', href: '/news' },
+  { label: 'News & Blog', href: '/news' },
   { label: 'Contact', href: '/contact' },
   { label: 'Join us', href: '/join', cta: true },
 ]
