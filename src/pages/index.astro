@@ -9,10 +9,14 @@ import { publicationCount } from '../lib/publications'
 import HeroSlideshow from '../components/HeroSlideshow.astro'
 import cvpr1 from '../assets/lab/cvpr_1.jpg'
 import cvpr2 from '../assets/lab/cvpr_2.jpg'
+import cvpr3 from '../assets/lab/cvpr_3.jpg'
+import interspeech3 from '../assets/lab/interspeech_3.jpg'
 import interspeech4 from '../assets/lab/interspeech_4.jpg'
+import interspeech5 from '../assets/lab/interspeech_5.jpg'
 import interspeech6 from '../assets/lab/interspeech_6.jpg'
 
-// The slideshow crops to 4:3, so only landscape photos belong here.
+// The slideshow crops every photo to 4:3 around its centre, so portrait
+// shots lose their top and bottom.
 const heroSlides = [
   {
     src: cvpr1,
@@ -27,8 +31,20 @@ const heroSlides = [
     alt: 'Lab members beside the CVPR 2026 sponsor board in Denver',
   },
   {
+    src: interspeech3,
+    alt: 'The Interspeech 2026 banner over a view of Sydney Harbour at night',
+  },
+  {
+    src: cvpr3,
+    alt: 'Two lab members standing in front of the CVPR sign',
+  },
+  {
     src: interspeech6,
     alt: 'The Interspeech 2026 main stage at ICC Sydney',
+  },
+  {
+    src: interspeech5,
+    alt: 'Attendees in the Interspeech 2026 exhibition hall',
   },
 ]
 
