@@ -1,5 +1,39 @@
 [
   {
+    "title": "Exposing and Mitigating Neural Codec Vulnerabilities in Audio Deepfake Detection",
+    "authors": "A Khan, KM Malik",
+    "venue": "IEEE International Workshop on Information Forensics and Security (WIFS)",
+    "year": 2026
+  },
+  {
+    "title": "Dual-Branch Gated Fusion for Open-Set Audio Deepfake Source Tracing",
+    "authors": "A Khan, K Uddin, K Malik",
+    "venue": "Interspeech 2026",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2606.10223"
+  },
+  {
+    "title": "Uncertainty-Aware Deepfake Detection via Multi-View Structural Learning",
+    "authors": "MU Farooq, K Uddin, A Khan, K Malik",
+    "venue": "IEEE/IAPR International Joint Conference on Biometrics (IJCB)",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2607.28769"
+  },
+  {
+    "title": "Do Transformations Reveal the Truth? Generative Residual Learning for Generalized AI-Generated Image Detection",
+    "authors": "K Uddin, N Tasnim, A Khan, MU Farooq, K Malik",
+    "venue": "IEEE/IAPR International Joint Conference on Biometrics (IJCB)",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2607.08674"
+  },
+  {
+    "title": "Diversity Matters: Dataset Diversification and Dual-Branch Network for Generalized AI-Generated Image Detection",
+    "authors": "N Tasnim, K Uddin, K Malik",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2603.27800"
+  },
+  {
     "title": "PSA-Net: Parallel Stacked Aggregation Network for Secure Voice Biometrics in IoT-enabled Consumer Devices",
     "authors": "A Khan, IU Haq, KM Malik",
     "venue": "IEEE Transactions on Consumer Electronics",
@@ -35,6 +69,34 @@
     "year": 2026,
     "ifValue": "18.16",
     "link": "https://doi.org/10.1016/j.inffus.2025.104120"
+  },
+  {
+    "title": "AI-Generated Image Detection: An Empirical Study and Future Research Directions",
+    "authors": "N Tasnim, K Uddin, KM Malik",
+    "venue": "BMVC 2025 Workshop on Media Authenticity",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2511.02791"
+  },
+  {
+    "title": "Adversarial Attacks on Audio Deepfake Detection: A Benchmark and Comparative Study",
+    "authors": "K Uddin, MU Farooq, A Khan, KM Malik",
+    "venue": "BMVC 2025 Workshop on Secure and Robust Biometrics Systems",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2509.07132"
+  },
+  {
+    "title": "Realism to Deception: Investigating Deepfake Detectors Against Face Enhancement",
+    "authors": "MS Saeed, IU Haq, K Malik",
+    "venue": "BMVC 2025 Workshop on Secure and Robust Biometrics Systems",
+    "year": 2025,
+    "link": "https://bmva-archive.org.uk/bmvc/2025/assets/workshops/SRBS/Paper_9/paper.pdf"
+  },
+  {
+    "title": "A Lightweight and Interpretable Deepfake Detection Framework",
+    "authors": "MU Farooq, A Javed, KM Malik, MA Raza",
+    "venue": "International Conference on Advanced Engineering, Technology and Applications",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2501.11927"
   },
   {
     "title": "Domain-Adaptive Representation Learning for Multimodal Deepfake Detection",
