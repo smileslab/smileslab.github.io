@@ -3,39 +3,57 @@ import { Image } from 'astro:assets'
 import Base from '../layouts/Base.astro'
 import PageHeader from '../components/PageHeader.astro'
 import Icon from '../components/Icon.astro'
-import lab1 from '../assets/lab/lab-1.jpeg'
-import lab2 from '../assets/lab/lab-2.jpeg'
-import lab3 from '../assets/lab/lab-3.jpeg'
-import lab4 from '../assets/lab/lab-4.jpeg'
-import lab5 from '../assets/lab/lab-5.jpeg'
+import cvpr1 from '../assets/lab/cvpr_1.jpg'
+import cvpr2 from '../assets/lab/cvpr_2.jpg'
+import cvpr3 from '../assets/lab/cvpr_3.jpg'
+import interspeech2 from '../assets/lab/interspeech_2.jpg'
+import interspeech3 from '../assets/lab/interspeech_3.jpg'
+import interspeech4 from '../assets/lab/interspeech_4.jpg'
+import interspeech5 from '../assets/lab/interspeech_5.jpg'
+import interspeech6 from '../assets/lab/interspeech_6.jpg'
 
-// TODO: add the event name and date to each caption. The descriptions below
-// say what each photograph actually shows, but the specifics are not known.
+// Every fifth photo (index 0, 5, ...) gets a wide tile, so keep landscape
+// shots in those slots.
 const photos = [
   {
-    src: lab4,
-    alt: 'Members of the SMILES Lab together at a conference',
-    caption: 'The lab together at a conference',
+    src: cvpr1,
+    alt: 'SMILES Lab members posing in front of the CVPR sign at CVPR 2026 in Denver',
+    caption: 'The lab at CVPR 2026, Denver',
   },
   {
-    src: lab3,
-    alt: 'Dr. Khalid Malik presenting at an advisory board meeting',
-    caption: 'Dr. Malik presenting at an advisory board meeting',
+    src: cvpr2,
+    alt: 'Lab members beside the CVPR 2026 sponsor board in the Denver convention centre',
+    caption: 'Arriving at CVPR 2026',
   },
   {
-    src: lab5,
-    alt: 'Lab members with colleagues at a conference',
-    caption: 'Lab members with colleagues at a conference',
+    src: cvpr3,
+    alt: 'Two lab members standing in front of the CVPR sign',
+    caption: 'At the CVPR sign, Denver',
   },
   {
-    src: lab1,
-    alt: 'Aerial view of the University of Michigan-Flint campus and the Flint River',
-    caption: 'The UM-Flint campus on the Flint River',
+    src: interspeech4,
+    alt: 'A speaker at the podium of the International Convention Centre Sydney during Interspeech 2026',
+    caption: 'Speaking at Interspeech 2026, Sydney',
   },
   {
-    src: lab2,
-    alt: 'A University of Michigan-Flint campus building',
-    caption: 'University of Michigan-Flint',
+    src: interspeech3,
+    alt: 'The Interspeech 2026 banner over a view of Sydney Harbour at night',
+    caption: 'Interspeech 2026 at ICC Sydney',
+  },
+  {
+    src: interspeech6,
+    alt: 'The main Interspeech 2026 stage set for a panel on AI in communication sciences',
+    caption: 'The Interspeech 2026 main stage',
+  },
+  {
+    src: interspeech5,
+    alt: 'Attendees in the Interspeech 2026 exhibition hall',
+    caption: 'Between sessions at Interspeech 2026',
+  },
+  {
+    src: interspeech2,
+    alt: 'A 2026 sign with a line drawing of the Sydney skyline',
+    caption: 'Interspeech 2026 stage detail',
   },
 ]
 ---
