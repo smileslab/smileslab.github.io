@@ -8,7 +8,7 @@ kind: news # "news" for short announcements, "blog" for long-form posts
 tags:
   - awards
 author: Your Name # optional
-# cover: ../../assets/lab/lab-1.jpeg   # optional header image
+# cover: ../../assets/lab/cvpr_1.jpg   # optional header image
 # coverAlt: Describe the image for screen readers
 # externalUrl: https://...             # optional: link out instead of a full post
 draft: true # set to false to publish
