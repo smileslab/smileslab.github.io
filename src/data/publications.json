@@ -312,6 +312,13 @@
     "link": "https://doi.org/10.1109/ibcast54850.2022.9990223"
   },
   {
+    "title": "AMOUN: Lightweight scalable multi-recipient asymmetric cryptographic scheme for wireless group communication",
+    "authors": "A Mansour, KM Malik, N Kaso",
+    "venue": "Computer Communications",
+    "year": 2021,
+    "ifValue": "2.816"
+  },
+  {
     "title": "A diagnostic system for intracranial saccular and fusiform aneurysms with location detection",
     "authors": "Y Zafar, A Javed, KM Malik, J Santamaria, G Malik",
     "venue": "IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)",
@@ -501,6 +508,13 @@
     "year": 2021,
     "ifValue": "2.16",
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0885230820300656"
+  },
+  {
+    "title": "A Light-weight Replay Detection Framework for Voice Controlled IoT Devices",
+    "authors": "KM Malik, A Javed, H Malik, A Irtaza",
+    "venue": "IEEE Journal of Selected Topics in Signal Processing",
+    "year": 2020,
+    "ifValue": "6.856"
   },
   {
     "title": "ALMS: Asymmetric Lightweight Centralized Group Key Management Protocol for VANETs",
