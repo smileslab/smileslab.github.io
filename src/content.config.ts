@@ -6,6 +6,7 @@ const memberGroup = z.enum([
   'faculty',
   'postdoc',
   'phd',
+  'ra',
   'ms',
   'undergrad',
   'collaborator',
