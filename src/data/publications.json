@@ -4,14 +4,16 @@
     "authors": "K Uddin, MU Farooq, A Khan, MS Saeed, IU Haq, N Tasnim, KM Malik",
     "venue": "IEEE Transactions on Consumer Electronics",
     "year": 2026,
-    "ifValue": "9.9"
+    "ifValue": "9.9",
+    "link": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.176281226.62299206/v1"
   },
   {
     "title": "A review of deep learning-based intracranial aneurysm diagnosis: Methods, datasets, challenges, and emerging trends",
     "authors": "A Kanadath, J Ahmad, K Malik, F Ullah, M Khan, N Zaki",
     "venue": "Computer Science Review",
     "year": 2026,
-    "ifValue": "17.5"
+    "ifValue": "17.5",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1574013726001206"
   },
   {
     "title": "PE-Mamba: Bidirectional Selective Layer Aggregation for AI-Generated Image Detection",
@@ -24,7 +26,8 @@
     "title": "Exposing and Mitigating Neural Codec Vulnerabilities in Audio Deepfake Detection",
     "authors": "A Khan, KM Malik",
     "venue": "IEEE International Workshop on Information Forensics and Security (WIFS)",
-    "year": 2026
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2610.07216"
   },
   {
     "title": "Dual-Branch Gated Fusion for Open-Set Audio Deepfake Source Tracing",
