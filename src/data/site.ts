@@ -87,14 +87,3 @@ export const footerNav: { title: string; items: NavItem[] }[] = [
     ],
   },
 ]
-
-/**
- * Headline numbers shown on the home page. `funding` is the figure the lab
- * quotes publicly across its NSF, MTRAC and BAF awards.
- */
-export const stats = [
-  { value: '$2M+', label: 'in competitive research funding' },
-  { value: '55+', label: 'peer-reviewed publications' },
-  { value: '4', label: 'active funded projects' },
-  { value: '10', label: 'researchers and students' },
-] as const

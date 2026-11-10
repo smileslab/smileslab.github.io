@@ -4,8 +4,7 @@ import Base from '../layouts/Base.astro'
 import Icon from '../components/Icon.astro'
 import ProjectCard from '../components/ProjectCard.astro'
 import NewsCard from '../components/NewsCard.astro'
-import { site, stats } from '../data/site'
-import { publicationCount } from '../lib/publications'
+import { site } from '../data/site'
 import HeroSlideshow from '../components/HeroSlideshow.astro'
 import cvpr1 from '../assets/lab/cvpr_1.jpg'
 import cvpr2 from '../assets/lab/cvpr_2.jpg'
@@ -56,16 +55,6 @@ const posts = (await getCollection('news', ({ data }) => !data.draft))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3)
 
-const team = await getCollection('team')
-
-const liveStats = stats.map((stat) =>
-  stat.label.includes('publications')
-    ? { value: `${publicationCount}`, label: stat.label }
-    : stat.label.includes('researchers')
-      ? { value: `${team.length}`, label: stat.label }
-      : stat
-)
-
 const areas = [
   {
     icon: 'shield' as const,
@@ -111,21 +100,6 @@ const areas = [
       <div class="hero-media">
         <HeroSlideshow slides={heroSlides} />
       </div>
-    </div>
-  </section>
-
-  <section class="stats-band">
-    <div class="wrap">
-      <dl class="stats">
-        {
-          liveStats.map((stat) => (
-            <div data-reveal>
-              <dt>{stat.value}</dt>
-              <dd>{stat.label}</dd>
-            </div>
-          ))
-        }
-      </dl>
     </div>
   </section>
 
@@ -286,39 +260,6 @@ const areas = [
     min-width: 0;
   }
 
-  /* --- stats --- */
-  .stats-band {
-    padding-block: clamp(2rem, 4vw, 2.75rem);
-    background: var(--bg-tint);
-    border-block: 1px solid var(--border);
-  }
-
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.75rem 1rem;
-    margin: 0;
-  }
-
-  .stats div {
-    text-align: center;
-  }
-
-  .stats dt {
-    font-size: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    color: var(--accent);
-    font-variant-numeric: tabular-nums;
-  }
-
-  .stats dd {
-    margin: 0.35rem 0 0;
-    color: var(--ink-2);
-    font-size: var(--text-sm);
-    line-height: 1.45;
-  }
-
   /* --- sections --- */
   .section-head {
     margin-bottom: clamp(2rem, 4vw, 3rem);
@@ -401,12 +342,6 @@ const areas = [
 
   .cta .btn {
     justify-self: start;
-  }
-
-  @media (min-width: 40rem) {
-    .stats {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
   }
 
   @media (min-width: 62rem) {
