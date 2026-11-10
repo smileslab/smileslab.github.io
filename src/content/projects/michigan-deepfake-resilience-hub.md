@@ -5,6 +5,7 @@ area: Multimedia Forensics
 icon: shield
 funder: University of Michigan Strategic Initiative Fund
 status: active
+featured: true
 order: 0
 links:
   - label: Look to Michigan project page

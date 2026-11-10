@@ -145,7 +145,7 @@ const areas = [
         </a>
       </header>
 
-      <div class="grid grid-cards">
+      <div class="grid grid-cards featured-projects">
         {projects.map((project) => <ProjectCard project={project} compact />)}
       </div>
     </div>
@@ -258,6 +258,11 @@ const areas = [
 
   .hero-media {
     min-width: 0;
+  }
+
+  /* Four featured projects: 4 across on desktop, 2x2 on tablets. */
+  .featured-projects {
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   }
 
   /* --- sections --- */
