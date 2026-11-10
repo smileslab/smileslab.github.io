@@ -4,7 +4,6 @@ summary: An NSF-funded site giving undergraduates hands-on research experience i
 area: Education & Outreach
 icon: book
 funder: National Science Foundation
-amount: $429,397
 status: active
 order: 5
 links:
