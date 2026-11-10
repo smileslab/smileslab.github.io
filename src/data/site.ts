@@ -30,7 +30,7 @@ export const contact = {
   // the personal directory URL: that embeds the uniqname, from which the
   // address is trivially derived.
   directory: 'https://www.umflint.edu/cit/faculty-staff/computer-science/',
-  piName: 'Dr. Khalid Mahmood Malik',
+  piName: 'Dr. Khalid Malik',
   piRole: 'Director, Cyber Security · Professor of Computer Science',
   // TODO: verify the building and room number.
   address: [

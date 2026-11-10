@@ -1,7 +1,7 @@
 ---
 title: Dr. Malik leads the Michigan Deepfake Resilience Hub
 date: 2026-11-09
-description: The Michigan Deepfake Resilience Hub, a tri-campus University of Michigan initiative led from UM-Flint by Dr. Khalid Mahmood Malik, is a Look to Michigan Strategic Initiative Fund project.
+description: The Michigan Deepfake Resilience Hub, a tri-campus University of Michigan initiative led from UM-Flint by Dr. Khalid Malik, is a Look to Michigan Strategic Initiative Fund project.
 kind: news
 tags:
   - deepfake
@@ -12,7 +12,7 @@ draft: false
 The [Michigan Deepfake Resilience Hub](https://looktomichigan.umich.edu/sif-projects/the-michigan-deepfake-resilience-hub/)
 (M-DRH) is one of the University of Michigan's
 [Look to Michigan](https://looktomichigan.umich.edu/) Strategic Initiative Fund
-projects. Dr. Khalid Mahmood Malik of the UM-Flint College of Innovation and
+projects. Dr. Khalid Malik of the UM-Flint College of Innovation and
 Technology is the project's lead contact.
 
 The hub brings together explainable AI, human-centered design and education to

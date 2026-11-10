@@ -1,5 +1,5 @@
 ---
-name: Dr. Khalid Mahmood Malik
+name: Dr. Khalid Malik
 role: Director of Cyber Security · Professor of Computer Science
 group: faculty
 photo: ../../assets/people/khalid-malik.jpeg
@@ -16,7 +16,7 @@ links:
   cv: /cv-khalid-malik.pdf
 ---
 
-Khalid Mahmood Malik is a Professor of Computer Science at the University of
+Khalid Malik is a Professor of Computer Science at the University of
 Michigan-Flint. His research interests include multimedia forensics, the
 development of intelligent decision support systems through analysis of medical
 imaging and clinical text, secure multicast protocols for intelligent

@@ -14,7 +14,7 @@ draft: true
 -->
 
 "Federated Fusion Learning with Attention Mechanism for Multi-Client Medical
-Image Analysis" by Muhammad Irfan, Khalid Mahmood Malik and Khan Muhammad has
+Image Analysis" by Muhammad Irfan, Khalid Malik and Khan Muhammad has
 been published in *Information Fusion*.
 
 [Read the paper](https://www.sciencedirect.com/science/article/abs/pii/S1566253524001428).
