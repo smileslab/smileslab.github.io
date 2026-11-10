@@ -1,5 +1,5 @@
 ---
-title: "HemorrhagePredictor: Federated AI for Subarachnoid Hemorrhage Prediction"
+title: "StrokeAssist: Federated AI for Subarachnoid Hemorrhage Prediction"
 summary: A multimodal, neuro-symbolic and federated tool for predicting subarachnoid hemorrhage, funded by Michigan's MTRAC Life Sciences programme.
 area: Clinical AI
 icon: brain
@@ -15,5 +15,5 @@ links:
 
 Dr. Khalid Malik (sole PI) was awarded $221,009 by Michigan Translational
 Research and Commercialization (MTRAC) Life Sciences to support
-"HemorrhagePredictor: A Multimodal, Neuro-symbolic, and Federated AI-based Tool
-for Subarachnoid Hemorrhage Prediction."
+"StrokeAssist: A Multimodal, Neuro-symbolic, and Federated AI-based Tool for
+Subarachnoid Hemorrhage Prediction."

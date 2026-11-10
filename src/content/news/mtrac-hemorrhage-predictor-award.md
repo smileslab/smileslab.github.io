@@ -1,5 +1,5 @@
 ---
-title: "MTRAC Life Sciences awards $221,009 for HemorrhagePredictor"
+title: "MTRAC Life Sciences awards $221,009 for StrokeAssist"
 date: 2026-01-01
 description: Dr. Khalid Malik receives MTRAC Life Sciences funding to develop a multimodal, neuro-symbolic and federated AI tool for subarachnoid hemorrhage prediction.
 kind: news
@@ -17,7 +17,7 @@ draft: true
 
 Dr. Khalid Malik (sole PI) has been awarded $221,009 by Michigan Translational
 Research and Commercialization (MTRAC) Life Sciences to support
-"HemorrhagePredictor: A Multimodal, Neuro-symbolic, and Federated AI-based Tool
-for Subarachnoid Hemorrhage Prediction."
+"StrokeAssist: A Multimodal, Neuro-symbolic, and Federated AI-based Tool for
+Subarachnoid Hemorrhage Prediction."
 
 Read more in [The University Record](https://record.umich.edu/articles/medc-u-m-award-1-8m-for-biomedical-research-projects/).
