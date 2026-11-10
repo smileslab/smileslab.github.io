@@ -1,8 +1,8 @@
 ---
 name: Ryan Raymond
-role: MS in Computer Science
+role: Master's thesis student
 photo: ../../assets/people/ryan-raymond.jpg
-order: 20
+order: 30
 researchAreas:
   - Cybersecurity
   - Networking
@@ -11,3 +11,5 @@ researchAreas:
 links:
   website: https://auxmonster.github.io/
 ---
+
+Thesis: *Web filtering and Internet safety in presence of encrypted DNS traffic*.

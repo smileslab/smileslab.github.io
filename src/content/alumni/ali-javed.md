@@ -1,8 +1,8 @@
 ---
-# TODO: add `years:` and `now:` when known.
 name: Ali Javed
 role: Postdoctoral Researcher
-order: 10
+years: 2018-2019
+order: 20
 researchAreas:
   - Voice spoofing detection
   - Automatic speaker verification
