@@ -327,7 +327,7 @@
   },
   {
     "title": "Federated Fusion Learning with Attention Mechanism for Multi-Client Medical Image Analysis",
-    "authors": "Muhammad Irfan, Khalid Mahmood Malik, Khan Muhammad",
+    "authors": "Muhammad Irfan, Khalid M. Malik, Khan Muhammad",
     "venue": "Information Fusion (2024)",
     "year": 2024,
     "ifValue": "18.16",
@@ -335,7 +335,7 @@
   },
   {
     "title": "HolisticDFD:: Infusing spatiotemporal transformer embeddings for deepfake detection",
-    "authors": "M Anas Raza, K Mahmood Malik, I Ul Haq",
+    "authors": "M Anas Raza, KM Malik, I Ul Haq",
     "venue": "Information Sciences",
     "year": 2023,
     "ifValue": "8.1",
@@ -343,7 +343,7 @@
   },
   {
     "title": "Multimodal Neuro-Symbolic Approach for Explainable Deepfake Detection",
-    "authors": "Ijaz Ul Haq, Khalid Mahmood Malik, Khan Muhammad",
+    "authors": "Ijaz Ul Haq, Khalid M. Malik, Khan Muhammad",
     "venue": "Transactions on Multimedia Computing Communications and Applications",
     "year": 2024,
     "ifValue": "4.094",
@@ -351,7 +351,7 @@
   },
   {
     "title": "Avfakenet: A Unified End-to-End Dense Swin Transformer Deep Learning Model for Audio-Visual Deepfakes Detection",
-    "authors": "Hafsa Ilyas, Ali Javed, Khalid Mahmood Malik",
+    "authors": "Hafsa Ilyas, Ali Javed, Khalid M. Malik",
     "venue": "Applied Soft Computing",
     "year": 2023,
     "ifValue": "8.8",
@@ -359,7 +359,7 @@
   },
   {
     "title": "Battling Voice Spoofing: A Review, Comparative Analysis, and Generalizability Evaluation of State-of-the-Art Voice Spoofing Countermeasures",
-    "authors": "Khan, Awais, Khalid Mahmood Malik, James Ryan, and Mikul Saravanan",
+    "authors": "Khan, Awais, Khalid M. Malik, James Ryan, and Mikul Saravanan",
     "venue": "Artificial Intelligence Review ",
     "year": 2023,
     "ifValue": "9.5",
@@ -375,7 +375,7 @@
   },
   {
     "title": "Strokenet: An automated approach for segmentation and rupture risk prediction of intracranial aneurysm",
-    "authors": "Muhammad Irfan, Khalid Mahmood Malik, Jamil Ahmad, Ghaus Malik",
+    "authors": "Muhammad Irfan, Khalid M. Malik, Jamil Ahmad, Ghaus Malik",
     "venue": "Computerized Medical Imaging and Graphics",
     "year": 2023,
     "ifValue": "5.7",
@@ -383,7 +383,7 @@
   },
   {
     "title": "Context-aggregator: An approach of loss-and class imbalance-aware aggregation in federated learning",
-    "authors": "Qamar Abbas, Khalid Mahmood Malik, Abdul Khader Jilani Saudagar, Muhammad Badruddin Khan",
+    "authors": "Qamar Abbas, Khalid M. Malik, Abdul Khader Jilani Saudagar, Muhammad Badruddin Khan",
     "venue": "Computers in Biology and Medicine",
     "year": 2023,
     "ifValue": "7.7",
@@ -391,7 +391,7 @@
   },
   {
     "title": "DeepInfusion: A dynamic infusion based-neuro-symbolic AI model for segmentation of intracranial aneurysms",
-    "authors": "Iram Abdullah, Ali Javed, Khalid Mahmood Malik, Ghaus Malik",
+    "authors": "Iram Abdullah, Ali Javed, Khalid M. Malik, Ghaus Malik",
     "venue": "Neurocomputing",
     "year": 2023,
     "ifValue": "5.7",
@@ -399,7 +399,7 @@
   },
   {
     "title": "Toward Grading Subarachnoid Hemorrhage Risk Prediction: A Machine Learning-based Aneurysm Rupture Score",
-    "authors": "Khalid Mahmood Malik, Fakhare Alam, Jeremy Santamaria, Madan Krishnamurthy, and Ghaus Malik",
+    "authors": "Khalid M. Malik, Fakhare Alam, Jeremy Santamaria, Madan Krishnamurthy, and Ghaus Malik",
     "venue": "World Neurosurgery ",
     "year": 2023,
     "ifValue": "2.21",
@@ -407,7 +407,7 @@
   },
   {
     "title": "E-Cap Net: an efficient-capsule network for shallow and deepfakes forgery detection",
-    "authors": "Ilyas, Hafsa, Ali Javed, Khalid Mahmood Malik, and Aun Irtaza.",
+    "authors": "Ilyas, Hafsa, Ali Javed, Khalid M. Malik, and Aun Irtaza.",
     "venue": "Multimedia Systems ",
     "year": 2023,
     "ifValue": "2.63",
@@ -415,7 +415,7 @@
   },
   {
     "title": "Towards Predicting Length of Stay and Identification of Cohort Risk Factors Using Self-Attention-Based Transformers and Association Mining: COVID-19 as a Phenotype",
-    "authors": "Fakhare Alam, Obieda Ananbeh, Khalid Mahmood Malik, Abdulrahman Al Odayani, Ibrahim Bin Hussain, Naoufel Kaabia, Amal Al Aidaroos, Abdul Khader Jilani Saudagar",
+    "authors": "Fakhare Alam, Obieda Ananbeh, Khalid M. Malik, Abdulrahman Al Odayani, Ibrahim Bin Hussain, Naoufel Kaabia, Amal Al Aidaroos, Abdul Khader Jilani Saudagar",
     "venue": "Diagnostics",
     "year": 2023,
     "ifValue": "3.6",
@@ -423,7 +423,7 @@
   },
   {
     "title": "Secure Automatic Speaker Verification (SASV) System through sm- ALTP Features and Asymmetric Bagging",
-    "authors": "Muteb Aljasem, Aun Irtaza, Hafiz Malik, Noushin Saba, Ali Javed, Khalid Mahmood Malik, and Mohammad Meharmohammadi",
+    "authors": "Muteb Aljasem, Aun Irtaza, Hafiz Malik, Noushin Saba, Ali Javed, Khalid M. Malik, and Mohammad Meharmohammadi",
     "venue": "IEEE Transactions on Information Forensics and Security",
     "year": 2021,
     "ifValue": "7.17",
@@ -431,7 +431,7 @@
   },
   {
     "title": "Voice Spoofing Detector: A Unified Anti-Spoofing Framework",
-    "authors": "Ali Javed, Khalid Mahmood Malik, Aun Irtaza, and Hafiz Malik",
+    "authors": "Ali Javed, Khalid M. Malik, Aun Irtaza, and Hafiz Malik",
     "venue": "Expert System with Applications",
     "year": 2022,
     "ifValue": "8.6",
@@ -439,7 +439,7 @@
   },
   {
     "title": "Deepview: Deep Learning based Users Field of View Selection in 360∘ Videos for Industrial Environments",
-    "authors": "Muhammad Irfan, Khan Muhammad, Muhammad Sajjad, Khalid Mahmood Malik, Faouzi Alaya Cheikh, Joel JPC Rodrigues, Victor Hugo C de Albuquerque",
+    "authors": "Muhammad Irfan, Khan Muhammad, Muhammad Sajjad, Khalid M. Malik, Faouzi Alaya Cheikh, Joel JPC Rodrigues, Victor Hugo C de Albuquerque",
     "venue": "IEEE Internet of Things Journal",
     "year": 2021,
     "ifValue": "9.51",
@@ -447,7 +447,7 @@
   },
   {
     "title": "Do project-based learning, hands-on activities, and flipped teaching enhance student’s learning of introductory theoretical computing classes?",
-    "authors": "Khalid Mahmood Malik, and Meina Zhu",
+    "authors": "Khalid M. Malik, and Meina Zhu",
     "venue": "Education and Information Technologies",
     "year": 2023,
     "ifValue": "3.66",
@@ -455,7 +455,7 @@
   },
   {
     "title": "Deepfakes Generation and Detection: State-of-the-art, open challenges, countermeasures, and way forward",
-    "authors": "Momina Masood, Marriam Nawaz, Khalid Mahmood Malik, Ali Javed, Aun Irtaza, Hafiz Malik ",
+    "authors": "Momina Masood, Marriam Nawaz, Khalid M. Malik, Ali Javed, Aun Irtaza, Hafiz Malik ",
     "venue": "Applied Intelligence",
     "year": 2023,
     "ifValue": "5.06",
@@ -463,7 +463,7 @@
   },
   {
     "title": "COVID-19 Genome Sequence Analysis for New Variant Prediction and Generation",
-    "authors": "Amin Ullah, , Khalid Mahmood Malik, Abdul Khader Jilani Saudagar, Muhammad Badruddin Khan, Mozaherul Hoque Abul Hasanat, Abdullah AlTameem, Mohammed AlKhathami, and Muhammad Sajjad",
+    "authors": "Amin Ullah, , Khalid M. Malik, Abdul Khader Jilani Saudagar, Muhammad Badruddin Khan, Mozaherul Hoque Abul Hasanat, Abdullah AlTameem, Mohammed AlKhathami, and Muhammad Sajjad",
     "venue": "Mathematics",
     "year": 2022,
     "ifValue": "3.5",
@@ -471,7 +471,7 @@
   },
   {
     "title": "Towards Realigning Automatic Speaker Verification in the Era of COVID-19",
-    "authors": "Awais Khan, Ali Javed, Khalid Mahmood Malik, Muhammad Anas, James Ryan, and Hafiz Malik",
+    "authors": "Awais Khan, Ali Javed, Khalid M. Malik, Muhammad Anas, James Ryan, and Hafiz Malik",
     "venue": "Sensors ",
     "year": 2022,
     "ifValue": "4.38",
@@ -479,7 +479,7 @@
   },
   {
     "title": "Multi-Stage Temporal Convolution Network for COVID-19 Variant Classification",
-    "authors": "Waseem Ullah , Amin Ullah, Khalid Mahmood Malik, Abdul Khader Jilani Saudagar, Muhammad Badruddin Khan, Mozaherul Hoque Abul Hasanat, Abdullah AlTameem, and Mohammed AlKhathami",
+    "authors": "Waseem Ullah , Amin Ullah, Khalid M. Malik, Abdul Khader Jilani Saudagar, Muhammad Badruddin Khan, Mozaherul Hoque Abul Hasanat, Abdullah AlTameem, and Mohammed AlKhathami",
     "venue": "Diagnostics ",
     "year": 2022,
     "ifValue": "3.99",
@@ -487,7 +487,7 @@
   },
   {
     "title": "Prognosis Prediction in COVID-19 Patients through Deep Feature Space Reasoning",
-    "authors": "Ahmad, Jamil, Abdul Khader Jilani Saudagar, Khalid Mahmood Malik, Muhammad Badruddin Khan, Abdullah AlTameem, Mohammed Alkhathami, and Mozaherul Hoque Abul Hasanat",
+    "authors": "Ahmad, Jamil, Abdul Khader Jilani Saudagar, Khalid M. Malik, Muhammad Badruddin Khan, Abdullah AlTameem, Mohammed Alkhathami, and Mozaherul Hoque Abul Hasanat",
     "venue": "Diagnostics ",
     "year": 2023,
     "ifValue": "3.99",
@@ -495,7 +495,7 @@
   },
   {
     "title": "Towards Protecting Cyber- physical and IoT Systems from Single- and Multi-order Voice Spoofing Attacks",
-    "authors": "A Javed, K Mahmood Malik, A Irtaza, and H Malik",
+    "authors": "A Javed, KM Malik, A Irtaza, and H Malik",
     "venue": "Journal of Applied Acoustics",
     "year": 2021,
     "ifValue": "2.63",
@@ -503,7 +503,7 @@
   },
   {
     "title": "Voice Spoofing Detection Corpus for Single and Multi-order Audio Replays",
-    "authors": "R Baumann, K Mahmood Malik, A Javed, A Ball, B Kujawaa, H Malik",
+    "authors": "R Baumann, KM Malik, A Javed, A Ball, B Kujawaa, H Malik",
     "venue": "Computer Speech & Language",
     "year": 2021,
     "ifValue": "2.16",
@@ -532,7 +532,7 @@
   },
   {
     "title": "Automated Domain-Specific Healthcare Knowledge Graph Curation Framework: Subarachnoid Hemorrhage as Phenotype",
-    "authors": "K Mahmood Malik, M Alobaidi, M Krishnamurthy, M Hussain, F Alam, G Malik",
+    "authors": "KM Malik, M Alobaidi, M Krishnamurthy, M Hussain, F Alam, G Malik",
     "venue": "Expert Systems with Applications ",
     "year": 2020,
     "ifValue": "5.42",
@@ -540,7 +540,7 @@
   },
   {
     "title": "Acquiring Guideline-enabled data driven clinical knowledge model using formally verified refined knowledge acquisition method",
-    "authors": "M Hussain, M Afzal, K Mahmood Malik, T Ali, W Ali Khan, M Irfan, A Jamshed, S Lee",
+    "authors": "M Hussain, M Afzal, KM Malik, T Ali, W Ali Khan, M Irfan, A Jamshed, S Lee",
     "venue": "Computer Methods and Programs in Biomedicine",
     "year": 2020,
     "ifValue": "3.62",
@@ -548,7 +548,7 @@
   },
   {
     "title": "A Clinical Context- aware Biomedical Text Summarization using Deep Neural Network: Model Development and Validation",
-    "authors": "M Afzal, F Alam, K Mahmood Malik, G Malik ",
+    "authors": "M Afzal, F Alam, KM Malik, G Malik ",
     "venue": "Journal of Medical Internet Research",
     "year": 2020,
     "ifValue": "5.03",
@@ -556,7 +556,7 @@
   },
   {
     "title": "Introducing the Rupture Criticality Index to Compare Risk Factors and Risk Factor Combinations Associated with Aneurysmal Rupture",
-    "authors": "K Mahmood Malik, M Krishnamurthy, F Alam, H Mostafa Zakaria, G Malik ",
+    "authors": "KM Malik, M Krishnamurthy, F Alam, H Mostafa Zakaria, G Malik ",
     "venue": "Journal of World Neurosurgery ",
     "year": 2021,
     "ifValue": "1.829",
@@ -564,7 +564,7 @@
   },
   {
     "title": "Robust Watermarking Scheme for NIfTI Medical Images",
-    "authors": "K Abhishek, K Udham Singh, V Devadoss Ambeth Kumar, T Kant, A Khader Jilani Saudagar, A Al Tameem, M Al Khathami, M Badruddin Khan, M Hoque Abul Hasanat, and K Mahmood Malik.",
+    "authors": "K Abhishek, K Udham Singh, V Devadoss Ambeth Kumar, T Kant, A Khader Jilani Saudagar, A Al Tameem, M Al Khathami, M Badruddin Khan, M Hoque Abul Hasanat, and KM Malik.",
     "venue": "CMC-COMPUTERS MATERIALS & CONTINUA ",
     "year": 2022,
     "ifValue": "3.86",
@@ -572,7 +572,7 @@
   },
   {
     "title": "Covid-19 related sentiment analysis using state-of-the-art machine learning and deep learning techniques",
-    "authors": "J Zunera, A Abbasi, A Rehman Javed, M Badruddin Khan, M Hoque Abul Hasanat, K Mahmood Malik, and A Khader Jilani Saudagar",
+    "authors": "J Zunera, A Abbasi, A Rehman Javed, M Badruddin Khan, M Hoque Abul Hasanat, KM Malik, and A Khader Jilani Saudagar",
     "venue": "Frontiers in Public Health ",
     "year": 2022,
     "ifValue": "6.46",
@@ -580,7 +580,7 @@
   },
   {
     "title": "A Decision Tree Framework for Shot Classification of Field Sports Videos",
-    "authors": "A Javed, K Mahmood Malik, A Irtaza, H Malik",
+    "authors": "A Javed, KM Malik, A Irtaza, H Malik",
     "venue": "The Journal of Supercomputing",
     "year": 2020,
     "ifValue": "2.46",
@@ -588,7 +588,7 @@
   },
   {
     "title": "Defocus Blur Detection using novel Local Directional Mean Patterns and segmentation via KNN Matting",
-    "authors": "A Khan, A Irtaza, A Javed, T Nazir, H Malik, K Mahmood Malik, M Ammar Khan",
+    "authors": "A Khan, A Irtaza, A Javed, T Nazir, H Malik, KM Malik, M Ammar Khan",
     "venue": "Frontiers of Computer Science",
     "year": 2022,
     "ifValue": "1.27",
@@ -596,7 +596,7 @@
   },
   {
     "title": "COVID-DAI: A novel framework for COVID‐19 detection and infection growth estimation using computed tomography images",
-    "authors": "N Tahira, M Nawaz, A Javed, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem, and M AlKathami",
+    "authors": "N Tahira, M Nawaz, A Javed, KM Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem, and M AlKathami",
     "venue": "Microscopy Research and Technique",
     "year": 2022,
     "ifValue": "2.893",
@@ -612,7 +612,7 @@
   },
   {
     "title": "Convergence Track Based Adaptive Differential Evolution Algorithm (CTbADE)",
-    "authors": "Q Abbas, K Mahmood Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem,and M AlKhathami",
+    "authors": "Q Abbas, KM Malik, A Khader Jilani Saudagar, M Badruddin Khan, M Hoque Abul Hasanat, A AlTameem,and M AlKhathami",
     "venue": "CMC-Computers, Materials & Continua",
     "year": 2022,
     "ifValue": "3.86",
@@ -660,7 +660,7 @@
   },
   {
     "title": "A comprehensive review of type-2 fuzzy Ontology",
-    "authors": "Q Iqbal, M Alam, S Khan, A Wahid Khan, K Mahmood Malik",
+    "authors": "Q Iqbal, M Alam, S Khan, A Wahid Khan, KM Malik",
     "venue": "Artificial Intelligence Review",
     "year": 2020,
     "ifValue": "5.0",
@@ -668,7 +668,7 @@
   },
   {
     "title": "A Hybrid Knowledge and Ensemble Classification Approach for Prediction of Venous Thromboembolism",
-    "authors": "S Susan, K Mahmood Malik, A Muhammad, S Vian, E Charaf",
+    "authors": "S Susan, KM Malik, A Muhammad, S Vian, E Charaf",
     "venue": "Expert Systems",
     "year": 2020,
     "ifValue": "1.5",
@@ -688,7 +688,7 @@
   },
   {
     "title": "Linked open data-based framework for automatic biomedical ontology generation",
-    "authors": "M Alobaidi, Khalid Mahmood Malik, Susan Sabra",
+    "authors": "M Alobaidi, Khalid M. Malik, Susan Sabra",
     "venue": "BMC bioinformatic",
     "year": 2018,
     "ifValue": "3.2",
@@ -696,7 +696,7 @@
   },
   {
     "title": "A Novel Framework for Intracranial Saccular Aneurysm Detection and Quantification using Morphological Analysis of Cerebral Angiograms",
-    "authors": "Khalid Mahmood Malik, Muhammad Shakeel Anjum, Hafiz Malik, Ghaus M. Malik, H. Soltanian- Zadeh",
+    "authors": "Khalid M. Malik, Muhammad Shakeel Anjum, Hafiz Malik, Ghaus M. Malik, H. Soltanian- Zadeh",
     "venue": "IEEE Access",
     "year": 2018,
     "ifValue": "4.0",
@@ -704,7 +704,7 @@
   },
   {
     "title": "Automated Ontology Generation Framework Powered by Linked Biomedical Ontologies for Disease-Drug Domain",
-    "authors": "Alobaidi, Mazen, Khalid Mahmood Malik, Maqbool Hussain",
+    "authors": "Alobaidi, Mazen, Khalid M. Malik, Maqbool Hussain",
     "venue": "Computer Methods and Programs in Biomedicine",
     "year": 2018,
     "ifValue": "4.2",
@@ -712,7 +712,7 @@
   },
   {
     "title": "Prediction of venous thromboembolism using semantic and sentiment analyses of clinical narratives",
-    "authors": "S. Sabra, Khalid Mahmood Malik, M. Alobaidi",
+    "authors": "S. Sabra, Khalid M. Malik, M. Alobaidi",
     "venue": "Computers in Biology and Medicine",
     "year": 2018,
     "ifValue": "2.2",
@@ -720,7 +720,7 @@
   },
   {
     "title": "Autonomous, Decentralized and Privacy-Enabled Data Preparation for Evidence-based Medicine with Brain Aneurysm as a Phenotype",
-    "authors": "Khalid Mahmood Malik, Hisham Kanaan, Vian Sabeeh, Ghaus Malik",
+    "authors": "Khalid M. Malik, Hisham Kanaan, Vian Sabeeh, Ghaus Malik",
     "venue": "IEICE Trans. On communication",
     "year": 2018,
     "ifValue": "1.5",
@@ -728,7 +728,7 @@
   },
   {
     "title": "Representing Social Network Patient Data as Evidence-Based Knowledge to Support Decision Making in Disease Progression for Comorbidities",
-    "authors": "Krishnamurthy Madan, Pawel Marcinek, Khalid Mahmood Malik, and Muhammad Afzal",
+    "authors": "Krishnamurthy Madan, Pawel Marcinek, Khalid M. Malik, and Muhammad Afzal",
     "venue": "IEEE Access",
     "year": 2018,
     "ifValue": "4.0",
@@ -736,7 +736,7 @@
   },
   {
     "title": "Innovative Citizen’s Services through Public Cloud in Pakistan: User’s Privacy Concerns and Impacts on Adoption",
-    "authors": "Ali Umar, Amjad Mehmood, Muhammad Faran Majeed, Siraj Muhammad, Muhammad Kamal Khan, Houbing Song, Khalid Mahmood Malik",
+    "authors": "Ali Umar, Amjad Mehmood, Muhammad Faran Majeed, Siraj Muhammad, Muhammad Kamal Khan, Houbing Song, Khalid M. Malik",
     "venue": "Mobile Networks and Applications ",
     "year": 2019,
     "ifValue": "2.3",
@@ -744,7 +744,7 @@
   },
   {
     "title": "NBC-MAIDS: Naïve Bayesian classification technique in multi-agent system-enriched IDS for securing IoT against DDoS attacks",
-    "authors": "Mehmood, Amjad, Mithun Mukherjee, Syed Hassan Ahmed, Houbing Song, Khalid Mahmood Malik",
+    "authors": "Mehmood, Amjad, Mithun Mukherjee, Syed Hassan Ahmed, Houbing Song, Khalid M. Malik",
     "venue": "The Journal of Supercomputing",
     "year": 2018,
     "ifValue": "2.1",
@@ -806,7 +806,7 @@
   },
   {
     "title": "Autonomous Decentralized Semantic-based Architecture for Dynamic Content Classification",
-    "authors": "Khalid Mahmood Malik, Raza A., Krishnamurthy M., Takahashi H.",
+    "authors": "Khalid M. Malik, Raza A., Krishnamurthy M., Takahashi H.",
     "venue": "IEICE Transactions on Communications",
     "year": 2016,
     "ifValue": "1.5",
@@ -814,7 +814,7 @@
   },
   {
     "title": "Autonomous Decentralized Semantic based Traceability Link Recovery Framework",
-    "authors": "Khalid Mahmood Malik, Alobadi M, Takahashi H.",
+    "authors": "Khalid M. Malik, Alobadi M, Takahashi H.",
     "venue": "IEICE Transaction on Information and Systems",
     "year": 2016,
     "ifValue": "1.3",
@@ -822,7 +822,7 @@
   },
   {
     "title": "Knowledge Extraction Based on Linked Open Data for Clinical Documentation",
-    "authors": "Alobaidi, M, Khalid Mahmood Malik., & Sabra, S.",
+    "authors": "Alobaidi, M, Khalid M. Malik., & Sabra, S.",
     "venue": "The International Journal of Simulation and Process Modelling",
     "year": 2018,
     "link": "https://www.inderscienceonline.com/doi/abs/10.1504/IJSPM.2018.091697"
@@ -889,7 +889,7 @@
   },
   {
     "title": "Autonomous Pull-Push Community Construction Technology for High-Assurance",
-    "authors": "Khalid Mahmood Malik., X.D. Lu, Y. Horikoshi and K. Mori",
+    "authors": "Khalid M. Malik., X.D. Lu, Y. Horikoshi and K. Mori",
     "venue": "IEICE Trans. on INFO. & SYST",
     "year": 2009,
     "ifValue": "1.5",
@@ -921,7 +921,7 @@
   },
   {
     "title": "Autonomous Community Construction Technology to Achieve Service Assurance in ADCS",
-    "authors": "Khalid Mahmood Malik., X. Lu, K. Mori",
+    "authors": "Khalid M. Malik., X. Lu, K. Mori",
     "venue": "IEICE Trans. on INFO. & SYST",
     "year": 2008,
     "ifValue": "1.5",
@@ -929,7 +929,7 @@
   },
   {
     "title": "Autonomous L3 Cache Technology for High Responsiveness",
-    "authors": "Takahashi H., Khalid Mahmood Malik., K. Mori",
+    "authors": "Takahashi H., Khalid M. Malik., K. Mori",
     "venue": "Journal of Information Processing",
     "year": 2012,
     "link": "https://www.jstage.jst.go.jp/article/ipsjjip/20/2/20_2_358/_article/-char/ja/"
@@ -942,7 +942,7 @@
   },
   {
     "title": "Secure Banking: Authenticating Peer-to-Peer Ad Hoc Interactions",
-    "authors": "Khalid Mahmood Malik, I. Hameed, K. Rashid",
+    "authors": "Khalid M. Malik, I. Hameed, K. Rashid",
     "venue": "Journal of Applied Science",
     "year": 2003,
     "link": "https://scialert.net/fulltext/?doi=jas.2003.346.359"
