@@ -12,5 +12,5 @@ links:
 ---
 
 Marouane Kessentini, Douglas Zytko and Khalid Malik (senior personnel) were
-awarded $429,397 by the National Science Foundation to support the work "REU
+awarded funding by the National Science Foundation to support the work "REU
 Site: Research Experience for Undergraduates in Digital Accessibility."
