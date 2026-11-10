@@ -17,3 +17,6 @@ pnpm-debug.log*
 
 # macOS
 .DS_Store
+
+# Private CV drafts shared for site updates (not for publishing)
+/*CV*.docx
