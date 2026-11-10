@@ -510,6 +510,12 @@
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0885230820300656"
   },
   {
+    "title": "Comparative Analysis of Semantic Similarity Techniques for Medical Text",
+    "authors": "F Alam, M Afzal, KM Malik",
+    "venue": "International Conference on Information Networking (ICOIN)",
+    "year": 2020
+  },
+  {
     "title": "A Light-weight Replay Detection Framework for Voice Controlled IoT Devices",
     "authors": "KM Malik, A Javed, H Malik, A Irtaza",
     "venue": "IEEE Journal of Selected Topics in Signal Processing",
@@ -621,6 +627,30 @@
     "link": "https://doi.org/10.3389/fonc.2021.811355"
   },
   {
+    "title": "Exploiting Frequency Response for the Identification of Microphone using Artificial Neural Networks",
+    "authors": "A Hafeez, KM Malik, H Malik",
+    "venue": "AES International Conference on Audio Forensics",
+    "year": 2019
+  },
+  {
+    "title": "AMOUN: Lightweight Scalable Multi-Recipient Asymmetric Cryptographic Scheme",
+    "authors": "A Mansour, KM Malik, N Kaso",
+    "venue": "IEEE Annual Computing and Communication Workshop and Conference (CCWC)",
+    "year": 2019
+  },
+  {
+    "title": "Segmenting Melanoma Lesion using Single Shot Detector (SSD) and Level Set Segmentation Technique",
+    "authors": "F Rashid, A Irtaza, N Nida, A Javed, H Malik, KM Malik",
+    "venue": "International Conference on Mathematics, Actuarial Science, Computer Science and Statistics (MACS)",
+    "year": 2019
+  },
+  {
+    "title": "Towards Vulnerability Analysis of Voice-Driven Interfaces and Countermeasures for Replay Attacks",
+    "authors": "KM Malik, H Malik, R Baumann",
+    "venue": "IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)",
+    "year": 2019
+  },
+  {
     "title": "Impact of Automatic Query Generation and Quality Recognition Using Deep Learning to Curate Evidence From Biomedical Literature: Empirical Study",
     "authors": "M Afzal, M Hussain, KM Malik, S Lee",
     "venue": "JMIR Medical Informatics",
@@ -643,6 +673,18 @@
     "year": 2020,
     "ifValue": "1.5",
     "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/exsy.12388"
+  },
+  {
+    "title": "Saccular Brain Aneurysm Detection and Multiclassifier Rupture Prediction using Digital Subtraction and Magnetic Resonance Angiograms",
+    "authors": "MS Anjum, KM Malik, H Malik, GM Malik, H Soltanian-Zadeh",
+    "venue": "ACM International Conference on Biomedical Engineering and Medical Science (ICBMS)",
+    "year": 2018
+  },
+  {
+    "title": "Impact of size, location, symptomatic-nature and gender on the rupture of saccular intracranial aneurysms",
+    "authors": "KM Malik, M Krishnamurthy, G Malik",
+    "venue": "IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)",
+    "year": 2018
   },
   {
     "title": "Linked open data-based framework for automatic biomedical ontology generation",
@@ -709,6 +751,60 @@
     "link": "https://link.springer.com/article/10.1007/s11227-018-2413-7"
   },
   {
+    "title": "Towards applying OCR and semantic web to achieve optimal learning experience",
+    "authors": "K Badwaik, KM Malik, A Raza",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2017
+  },
+  {
+    "title": "Autonomous Decentralized Kernel Cache Architecture for Multi Ontology Based Information Extraction",
+    "authors": "H Takahashi, KM Malik, U Lakhani",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2017
+  },
+  {
+    "title": "An Ontological Model for Privacy in Emerging Decentralized Healthcare Systems",
+    "authors": "H Kanaan, KM Malik, V Sathyan",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2017
+  },
+  {
+    "title": "A Semantic Extraction and Sentimental Assessment of Risk Factors (SESARF): An NLP Approach for Precision Medicine",
+    "authors": "S Sabra, KM Malik, M Alobaidi",
+    "venue": "IEEE Annual Computer Software and Applications Conference (COMPSAC)",
+    "year": 2017
+  },
+  {
+    "title": "Performance of Blind Microphone Recognition Algorithms in the Presence of Anti-Forensic Attacks",
+    "authors": "A Hafeez, H Malik, KM Malik",
+    "venue": "AES International Conference on Audio Forensics",
+    "year": 2017
+  },
+  {
+    "title": "Autonomous Decentralized Privacy-enabled Data Preparation Architecture for Multicenter Clinical Observational Research",
+    "authors": "KM Malik, V Sathyan, H Kanaan, GM Malik, H Malik",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2017
+  },
+  {
+    "title": "Semantic-based Approach for Predicting Venous Thromboembolism using Kohonen Self Organized Map Neural Network",
+    "authors": "S Sabra, KM Malik, M Alobaidi",
+    "venue": "IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI)",
+    "year": 2016
+  },
+  {
+    "title": "Effect of Key Variable Combinations on the Vibration-Induced Loosening of Preloaded Fasteners",
+    "authors": "JH Lee, KM Malik, SA Nassar",
+    "venue": "ASME International Mechanical Engineering Congress and Exposition (IMECE)",
+    "year": 2016
+  },
+  {
+    "title": "A Hybrid Statistical and Semantic Model for Identification of Mental Health and Behavioral Disorders using Social Network Analysis",
+    "authors": "M Krishnamurthy, KM Malik",
+    "venue": "IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)",
+    "year": 2016
+  },
+  {
     "title": "Autonomous Decentralized Semantic-based Architecture for Dynamic Content Classification",
     "authors": "Khalid Mahmood Malik, Raza A., Krishnamurthy M., Takahashi H.",
     "venue": "IEICE Transactions on Communications",
@@ -732,12 +828,96 @@
     "link": "https://www.inderscienceonline.com/doi/abs/10.1504/IJSPM.2018.091697"
   },
   {
+    "title": "Autonomous Decentralized Semantic Based URL Filtering System for Low Latency",
+    "authors": "H Takahashi, KM Malik, U Lakhani",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2015
+  },
+  {
+    "title": "Semantic based Highly Accurate Autonomous Decentralized URL Classification System for Web Filtering",
+    "authors": "KM Malik, H Takahashi, A Raza, A Qaiser, A Farooqui",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2015
+  },
+  {
+    "title": "Cloud Service for Assessment of News Popularity in Internet based on Google and Wikipedia Indicators",
+    "authors": "AUR Khan, MB Khan, KM Malik",
+    "venue": "IEEE National Symposium on Information Technology: Towards New Smart World (NSITNSW)",
+    "year": 2015
+  },
+  {
+    "title": "Semantic Approach for Traceability Link Recovery Using Uniform Resource Identifier (STURI)",
+    "authors": "M Alobaidi, KM Malik",
+    "venue": "International Conference on Software Engineering Research and Practice (SERP)",
+    "year": 2015
+  },
+  {
+    "title": "A Semantic Approach for Traceability Link Recovery in Aerospace Requirements Management System",
+    "authors": "KM Malik, H Takahashi, M Alobaidi",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2015
+  },
+  {
+    "title": "Emotion Sense Ontology to avoid Human error in Autonomous Decentralized Multi-Layered Cache System",
+    "authors": "H Takahashi, KM Malik, R Takahashi, K Mori",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2013
+  },
+  {
+    "title": "Gateway Access Permission Technology for High Assurance",
+    "authors": "KM Malik, H Takahashi, Y Arakawa",
+    "venue": "International Conference on Distributed Computing Systems Workshops (ICDCSW)",
+    "year": 2012
+  },
+  {
+    "title": "Autonomous Decentralized Community System for Provision of Service-Assurance to Local Majority Users",
+    "authors": "KM Malik, H Takahashi, X Lu, K Mori",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2011
+  },
+  {
+    "title": "Autonomous Decentralized Community Wireless Sensor Network System Architecture to Achieve High-Speed Connectivity under Dynamical Situation",
+    "authors": "S Niki, S Murakami, KM Malik, X Lu, K Mori",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2009
+  },
+  {
+    "title": "Autonomous Hybrid Pull-Push Context-aware Community Service Dissemination Technology to Achieve High Assurance",
+    "authors": "KM Malik, S Niki, X Lu, K Mori",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2009
+  },
+  {
     "title": "Autonomous Pull-Push Community Construction Technology for High-Assurance",
     "authors": "Khalid Mahmood Malik., X.D. Lu, Y. Horikoshi and K. Mori",
     "venue": "IEICE Trans. on INFO. & SYST",
     "year": 2009,
     "ifValue": "1.5",
     "link": "https://search.ieice.org/bin/summary.php?id=e92-d_10_1836"
+  },
+  {
+    "title": "A Novel Ripple-based Context-cognizant Service Discovery Method in Autonomous Decentralized Community System",
+    "authors": "KM Malik, S Niki, X Lu, K Mori",
+    "venue": "IEEE High Assurance Systems Engineering Symposium (HASE)",
+    "year": 2008
+  },
+  {
+    "title": "Context-cognizant community construction in Autonomous Decentralized Community System to Achieve Timeliness",
+    "authors": "KM Malik, S Niki, X Lu, K Mori",
+    "venue": "International Conference on Computer Sciences and Its Applications (CSA)",
+    "year": 2008
+  },
+  {
+    "title": "Progressive Ripple-Based Service Discovery for High Response Time in Autonomous Decentralized Community System",
+    "authors": "KM Malik, Y Horikoshi, S Niki, X Lu, K Mori",
+    "venue": "IEEE International Workshop on Future Trends of Distributed Computing Systems (FTDCS)",
+    "year": 2008
+  },
+  {
+    "title": "Autonomous Decentralized Community Construction Technology for High Quality Information Service",
+    "authors": "KM Malik, Y Kanamaru, X Lu, K Mori",
+    "venue": "International Conference on Distributed Computing Systems Workshops (ICDCSW)",
+    "year": 2008
   },
   {
     "title": "Autonomous Community Construction Technology to Achieve Service Assurance in ADCS",
@@ -753,6 +933,12 @@
     "venue": "Journal of Information Processing",
     "year": 2012,
     "link": "https://www.jstage.jst.go.jp/article/ipsjjip/20/2/20_2_358/_article/-char/ja/"
+  },
+  {
+    "title": "Autonomous Real-Time Navigation for Service Level Agreement in Distributed Information Service System",
+    "authors": "KM Malik, S Niki, Y Nakahara, X Lu, I Luque, K Mori",
+    "venue": "IEEE International Symposium on Autonomous Decentralized Systems (ISADS)",
+    "year": 2007
   },
   {
     "title": "Secure Banking: Authenticating Peer-to-Peer Ad Hoc Interactions",
