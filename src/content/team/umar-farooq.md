@@ -9,6 +9,7 @@ researchAreas:
   - Multimedia forensics
   - Deepfake detection
 links:
+  scholar: https://scholar.google.com/citations?user=ojEWIVEAAAAJ&hl=en
   linkedin: https://www.linkedin.com/in/muhammad-umar-farooq-345a7a141/
   website: https://stackoverflow.com/users/7344164/devloverumar
 ---
