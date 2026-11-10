@@ -1,5 +1,12 @@
 [
   {
+    "title": "AdvBench: A Comprehensive Benchmark of Adversarial Attacks on Deepfake Detectors in Real-World Consumer Applications",
+    "authors": "K Uddin, MU Farooq, A Khan, MS Saeed, IU Haq, N Tasnim, KM Malik",
+    "venue": "IEEE Transactions on Consumer Electronics",
+    "year": 2026,
+    "ifValue": "9.9"
+  },
+  {
     "title": "A review of deep learning-based intracranial aneurysm diagnosis: Methods, datasets, challenges, and emerging trends",
     "authors": "A Kanadath, J Ahmad, K Malik, F Ullah, M Khan, N Zaki",
     "venue": "Computer Science Review",
