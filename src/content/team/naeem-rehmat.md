@@ -1,9 +1,9 @@
 ---
 name: Naeem Rehmat
-role: Research Assistant
-group: ra
+role: PhD Student, Computing
+group: phd
 photo: ../../assets/people/naeem-rehmat.jpeg
-order: 30
+order: 25
 researchAreas:
   - Data science
   - Machine learning
