@@ -1,5 +1,31 @@
 [
   {
+    "title": "Iterative Definition Refinement for Zero-Shot Classification via LLM-Based Semantic Prototype Optimization",
+    "authors": "N Rehmat, MS Saeed, IU Haq, K Malik",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2604.27335"
+  },
+  {
+    "title": "CrossStream-Seg: A Cross-Guided Two-Stream Learning for Boundary-Sensitive ROI Segmentation",
+    "authors": "N Rahim, M Shafique, G Malik, K Malik",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2026
+  },
+  {
+    "title": "POLY-SIM: Polyglot Speaker Identification with Missing Modality Grand Challenge 2026 Evaluation Plan",
+    "authors": "M Moscati, MS Saeed, K Malik",
+    "venue": "ACM International Conference on Multimedia (ACM MM)",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2603.24569"
+  },
+  {
+    "title": "FocusSDF: Boundary-Aware Learning for Medical Image Segmentation via Signed Distance Supervision",
+    "authors": "M Shafique, N Rahim, J Ahmad, M Siadat, K Malik, G Malik",
+    "venue": "IEEE International Symposium on Biomedical Imaging (ISBI)",
+    "year": 2026
+  },
+  {
     "title": "AdvBench: A Comprehensive Benchmark of Adversarial Attacks on Deepfake Detectors in Real-World Consumer Applications",
     "authors": "K Uddin, MU Farooq, A Khan, MS Saeed, IU Haq, N Tasnim, KM Malik",
     "venue": "IEEE Transactions on Consumer Electronics",
@@ -93,6 +119,25 @@
     "year": 2026,
     "ifValue": "18.16",
     "link": "https://doi.org/10.1016/j.inffus.2025.104120"
+  },
+  {
+    "title": "Context-Aware Detection and Grading of Intracranial Aneurysms in DSA Images",
+    "authors": "J Ahmad, K Malik",
+    "venue": "Computing, Communications and IoT Applications (ComComAp)",
+    "year": 2025
+  },
+  {
+    "title": "Classifying Scientific Peer Reviews: Distinguishing Authentic, Generic, and AI-Generated Feedback",
+    "authors": "MA Aftab, JAF Raya, J Shuja, MA Humayun, KM Malik",
+    "venue": "IEEE International Conference on Future Machine Learning and Data Science (FMLDS)",
+    "year": 2025
+  },
+  {
+    "title": "Cybersecurity Challenges in Smart Grid Systems: Current and Emerging Attacks, Opportunities, and Recommendations",
+    "authors": "S Amanlou, MK Hasan, UA Mokhtar, KM Malik, S Islam, MA Khan",
+    "venue": "IEEE Open Journal of the Communications Society",
+    "year": 2025,
+    "ifValue": "6.1"
   },
   {
     "title": "AI-Generated Image Detection: An Empirical Study and Future Research Directions",
@@ -196,6 +241,18 @@
     "venue": "ICASSP 2024 - IEEE International Conference on Acoustics, Speech and Signal Processing",
     "year": 2024,
     "link": "https://doi.org/10.1109/icassp48485.2024.10447500"
+  },
+  {
+    "title": "YouFake: A Novel Multi-Modal Dataset for Fake News Classification",
+    "authors": "SA Fatima, A Zafar, KM Malik",
+    "venue": "International Conference on Artificial Intelligence (ICAI)",
+    "year": 2023
+  },
+  {
+    "title": "MultimodalTrace: Deepfake Detection Using Audiovisual Representation Learning",
+    "authors": "MA Raza, KM Malik",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2023
   },
   {
     "title": "Securing voice biometrics: One-shot learning approach for audio deepfake detection",
