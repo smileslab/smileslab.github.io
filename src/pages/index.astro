@@ -8,6 +8,8 @@ import { site } from '../data/site'
 import { funders } from '../data/funders'
 import { alumniEmployers } from '../data/placements'
 import HeroSlideshow from '../components/HeroSlideshow.astro'
+import agenticGroup from '../assets/lab/agentic_ai_group_1.jpeg'
+import agenticTalk from '../assets/lab/agentic_ai_presentation_2.jpeg'
 import cvpr1 from '../assets/lab/cvpr_1.jpg'
 import cvpr2 from '../assets/lab/cvpr_2.jpg'
 import cvpr3 from '../assets/lab/cvpr_3.jpg'
@@ -20,12 +22,20 @@ import interspeech6 from '../assets/lab/interspeech_6.jpg'
 // shots lose their top and bottom.
 const heroSlides = [
   {
+    src: agenticGroup,
+    alt: 'Dr. Salman Khan with Dr. Khalid Malik and lab members after his seminar at UM-Flint',
+  },
+  {
     src: cvpr1,
     alt: 'SMILES Lab members posing in front of the CVPR sign at CVPR 2026',
   },
   {
     src: interspeech4,
     alt: 'A speaker at the podium during Interspeech 2026 in Sydney',
+  },
+  {
+    src: agenticTalk,
+    alt: 'Dr. Salman Khan presenting on Earth observation agents at UM-Flint',
   },
   {
     src: cvpr2,

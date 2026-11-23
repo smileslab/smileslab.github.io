@@ -3,6 +3,9 @@ import { Image } from 'astro:assets'
 import Base from '../layouts/Base.astro'
 import PageHeader from '../components/PageHeader.astro'
 import Icon from '../components/Icon.astro'
+import agenticGroup from '../assets/lab/agentic_ai_group_1.jpeg'
+import agenticPodium from '../assets/lab/agentic_ai_presentation_1.jpeg'
+import agenticTalk from '../assets/lab/agentic_ai_presentation_2.jpeg'
 import cvpr1 from '../assets/lab/cvpr_1.jpg'
 import cvpr2 from '../assets/lab/cvpr_2.jpg'
 import cvpr3 from '../assets/lab/cvpr_3.jpg'
@@ -16,19 +19,34 @@ import interspeech6 from '../assets/lab/interspeech_6.jpg'
 // shots in those slots.
 const photos = [
   {
+    src: agenticGroup,
+    alt: 'Dr. Salman Khan with Dr. Khalid Malik, faculty and lab members after the seminar at UM-Flint',
+    caption: 'With Dr. Salman Khan after his seminar, November 2026',
+  },
+  {
+    src: agenticPodium,
+    alt: 'Dr. Salman Khan speaking at a UM-Flint podium',
+    caption: 'Dr. Salman Khan on AI for Earth observation',
+  },
+  {
+    src: agenticTalk,
+    alt: 'Dr. Salman Khan presenting a slide on Earth observation agents to a full room',
+    caption: 'From models that see to agents that act',
+  },
+  {
     src: cvpr1,
     alt: 'SMILES Lab members posing in front of the CVPR sign at CVPR 2026 in Denver',
     caption: 'The lab at CVPR 2026, Denver',
   },
   {
-    src: cvpr2,
-    alt: 'Lab members beside the CVPR 2026 sponsor board in the Denver convention centre',
-    caption: 'Arriving at CVPR 2026',
-  },
-  {
     src: cvpr3,
     alt: 'Two lab members standing in front of the CVPR sign',
     caption: 'At the CVPR sign, Denver',
+  },
+  {
+    src: cvpr2,
+    alt: 'Lab members beside the CVPR 2026 sponsor board in the Denver convention centre',
+    caption: 'Arriving at CVPR 2026',
   },
   {
     src: interspeech4,
@@ -41,14 +59,14 @@ const photos = [
     caption: 'Interspeech 2026 at ICC Sydney',
   },
   {
-    src: interspeech6,
-    alt: 'The main Interspeech 2026 stage set for a panel on AI in communication sciences',
-    caption: 'The Interspeech 2026 main stage',
-  },
-  {
     src: interspeech5,
     alt: 'Attendees in the Interspeech 2026 exhibition hall',
     caption: 'Between sessions at Interspeech 2026',
+  },
+  {
+    src: interspeech6,
+    alt: 'The main Interspeech 2026 stage set for a panel on AI in communication sciences',
+    caption: 'The Interspeech 2026 main stage',
   },
   {
     src: interspeech2,
