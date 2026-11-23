@@ -17,13 +17,17 @@ const researchAreas =
 const now = 'now' in data ? data.now : undefined
 const years = 'years' in data ? data.years : undefined
 
-// Initials stand in when a person has no photo yet.
-const initials = data.name
+// Initials stand in when a person has no photo yet. Use the first and last
+// capitalised words, so particles like the "e" in "Fakhr e Alam" are skipped.
+const nameParts = data.name
   .replace(/^(Dr\.|Prof\.)\s+/i, '')
   .split(/\s+/)
-  .slice(0, 2)
-  .map((part) => part[0])
-  .join('')
+  .filter((part) => /^\p{Lu}/u.test(part))
+const initials = (
+  nameParts.length > 1
+    ? nameParts[0][0] + nameParts[nameParts.length - 1][0]
+    : (nameParts[0] ?? data.name).slice(0, 2)
+).toUpperCase()
 
 // The avatar renders at 112px (150px for faculty); request 2x for retina.
 const renderPx = featured ? 300 : 224
