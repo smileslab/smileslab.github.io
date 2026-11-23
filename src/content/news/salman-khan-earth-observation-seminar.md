@@ -32,13 +32,7 @@ check the result, and report what they found and how.
 ## About the speaker
 
 Dr. Khan works on computer vision, foundation models and large multimodal
-models, with a focus on climate change and Earth observation. He leads
-climate-focused AI initiatives with NASA, IBM and the Bill & Melinda Gates
-Foundation, and serves on the AI Alliance Steering Committee. He is a Clarivate
-Highly Cited Researcher, has published more than 150 peer-reviewed papers, and
-holds 18 U.S. patents. He received his Ph.D. from The University of Western
-Australia and has held research positions at Data61 (CSIRO), the Inception
-Institute of AI and the Australian Centre for Robotic Vision.
+models, with a focus on climate change and Earth observation.
 
 Thanks to Dr. Khan, Dr. Gillespie, and everyone who attended in person and on
 Zoom. More photos are in the [gallery](/gallery).
