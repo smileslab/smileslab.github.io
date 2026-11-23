@@ -4,11 +4,14 @@ import Base from '../layouts/Base.astro'
 import PageHeader from '../components/PageHeader.astro'
 import PersonCard from '../components/PersonCard.astro'
 import Icon from '../components/Icon.astro'
+import { alumniEmployers } from '../data/placements'
 
 const alumni = (await getCollection('alumni')).sort(
   (a, b) =>
     a.data.order - b.data.order || a.data.name.localeCompare(b.data.name)
 )
+
+const employers = await alumniEmployers()
 
 // Alumni entries may carry a short note about their time in the lab.
 const entries = await Promise.all(
@@ -26,7 +29,20 @@ const entries = await Promise.all(
   <PageHeader
     title="Alumni"
     lede="Former members of the lab, and where their research took them next."
-  />
+  >
+    {
+      employers.length > 0 && (
+        <div class="placements">
+          <h2>Our alumni now work at</h2>
+          <ul>
+            {employers.map((name) => (
+              <li class="pill">{name}</li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+  </PageHeader>
 
   <div class="section">
     <div class="wrap">
@@ -63,6 +79,33 @@ const entries = await Promise.all(
 </Base>
 
 <style>
+  .placements {
+    margin-top: 1.75rem;
+  }
+
+  .placements h2 {
+    font-size: var(--text-xs);
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-2);
+  }
+
+  .placements ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .placements .pill {
+    font-size: var(--text-sm);
+    padding: 0.3rem 0.75rem;
+    white-space: normal;
+  }
+
   .empty {
     max-width: 44rem;
     margin-inline: auto;
