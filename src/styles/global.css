@@ -465,6 +465,15 @@ hr {
   border: 1px solid var(--border);
 }
 
+/* Keep portrait photos from filling the whole screen. */
+.prose img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 34rem;
+  margin-inline: auto;
+}
+
 .prose blockquote {
   border-left: 3px solid var(--accent);
   padding-left: 1.15em;
