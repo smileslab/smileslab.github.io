@@ -1,0 +1,122 @@
+---
+import Base from '../layouts/Base.astro'
+import PageHeader from '../components/PageHeader.astro'
+import Icon from '../components/Icon.astro'
+import { media } from '../data/media'
+import { contact } from '../data/site'
+
+// Sort newest first; a year-only date sorts as January 1 of that year.
+const items = [...media].sort((a, b) => b.date.localeCompare(a.date))
+
+const formatDate = (date: string) =>
+  date.length === 4
+    ? date
+    : new Date(`${date}T12:00:00`).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })
+---
+
+<Base
+  title="In the media"
+  description="Press coverage of SMILES Lab research on deepfakes, multimedia forensics and stroke informatics."
+>
+  <PageHeader
+    title="In the media"
+    lede={`Selected press coverage of our research. For interviews and media requests, contact ${contact.piName}.`}
+  >
+    <a href="/contact" class="btn btn-secondary btn-sm header-action">
+      Contact the lab
+      <Icon name="arrow-right" size={15} />
+    </a>
+  </PageHeader>
+
+  <div class="section">
+    <div class="wrap">
+      <ol class="media-list">
+        {
+          items.map((item) => (
+            <li class="media-item card card-hover" data-reveal>
+              <a href={item.url} target="_blank" rel="noopener">
+                <div class="meta">
+                  <span class="outlet">{item.outlet}</span>
+                  <time datetime={item.date}>{formatDate(item.date)}</time>
+                </div>
+                <h2>{item.title}</h2>
+                {item.topic && <p class="topic">{item.topic}</p>}
+                <span class="go" aria-hidden="true">
+                  <Icon name="arrow-right" size={18} />
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .header-action {
+    margin-top: 1.5rem;
+  }
+
+  .media-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    max-width: 52rem;
+  }
+
+  .media-item a {
+    position: relative;
+    display: block;
+    padding: 1.35rem 3.5rem 1.35rem 1.5rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.9rem;
+    font-size: var(--text-xs);
+    color: var(--ink-2);
+  }
+
+  .outlet {
+    font-weight: 650;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  h2 {
+    margin-top: 0.45rem;
+    font-size: var(--text-lg);
+    line-height: 1.35;
+  }
+
+  .topic {
+    margin-top: 0.4rem;
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+  }
+
+  .go {
+    position: absolute;
+    right: 1.35rem;
+    top: 50%;
+    translate: 0 -50%;
+    color: var(--ink-2);
+    transition: translate 0.2s var(--ease), color 0.2s var(--ease);
+  }
+
+  .media-item a:hover .go,
+  .media-item a:focus-visible .go {
+    translate: 4px -50%;
+    color: var(--accent);
+  }
+</style>
