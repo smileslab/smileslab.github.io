@@ -31,7 +31,7 @@ export const contact = {
   // address is trivially derived.
   directory: 'https://www.umflint.edu/cit/faculty-staff/computer-science/',
   piName: 'Dr. Khalid Malik',
-  piRole: 'Director, Cyber Security · Professor of Computer Science',
+  piRole: 'Professor of Computer Science · Founding Director, Center for Cybersecurity and AI',
   // TODO: verify the building and room number.
   address: [
     'College of Innovation & Technology',

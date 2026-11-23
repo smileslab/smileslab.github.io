@@ -1,6 +1,6 @@
 ---
 name: Dr. Khalid Malik
-role: Director of Cyber Security · Professor of Computer Science
+role: Professor of Computer Science · Founding Director, Center for Cybersecurity and AI
 group: faculty
 photo: ../../assets/people/khalid-malik.jpeg
 order: 1
